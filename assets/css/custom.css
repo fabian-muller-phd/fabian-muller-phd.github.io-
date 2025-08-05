@@ -34,7 +34,7 @@
 .page__footer footer,
 .footer {
   background: #111 !important;
-  color: #cccccc !important;
+  color: #6f777d !important;
   border: none !important;
 }
 
@@ -42,7 +42,7 @@
   display: block;
   text-align: center;
   font-size: 0.6em;
-  color: #cccccc;
+  color: #6f777d;
   font-weight: 400;
   opacity: 0.92;
   padding-top: 8px;
