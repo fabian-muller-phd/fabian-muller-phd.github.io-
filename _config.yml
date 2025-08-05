@@ -1,7 +1,5 @@
 title: "Fabian Müller, PhD"
-logo: ""   # KEIN Bild, damit nur der Name erscheint (alternativ: transparentes PNG hochladen)
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-# ...rest wie gehabt
 
 
 # Grundlegende Einstellungen
