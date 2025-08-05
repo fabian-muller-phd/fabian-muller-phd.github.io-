@@ -1,5 +1,5 @@
 main:
-  - title: "Home"
+  - title: "Fabian Müller, PhD"
     url: /
   - title: "CV"
     url: /cv/
@@ -7,3 +7,4 @@ main:
     url: /research/
   - title: "Contact"
     url: /contact/
+
