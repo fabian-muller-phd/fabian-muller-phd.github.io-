@@ -6,21 +6,32 @@ name: "Fabian Müller"
 description: "Social psychologist working at the intersection of education, inequality, and policy."
 locale: "en"
 
+# Navigation für den Header
+navigation:
+  - title: "Home"
+    url: /
+  - title: "CV"
+    url: /cv/
+  - title: "Research"
+    url: /research/
+  - title: "Contact"
+    url: /contact/
+    
 # Navigation (Header oben)
-header:
-  background: "#111"
-  text_color: "#fff"
-  logo: false
-  title: "Fabian Müller, PhD"
-  nav:
-    - title: "Home"
-      url: /
-    - title: "CV"
-      url: /cv/
-    - title: "Research"
-      url: /research/
-    - title: "Contact"
-      url: /contact/
+# header:
+#  background: "#111"
+#  text_color: "#fff"
+#  logo: false
+#  title: "Fabian Müller, PhD"
+#  nav:
+#    - title: "Home"
+#      url: /
+#    - title: "CV"
+#      url: /cv/
+#    - title: "Research"
+#      url: /research/
+#    - title: "Contact"
+#      url: /contact/
 
 footer:
   text: ""
