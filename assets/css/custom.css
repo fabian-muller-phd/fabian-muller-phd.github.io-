@@ -13,9 +13,8 @@
   padding: 1rem;
 }
 .homepage-photo {
-  flex: 0 0 440px;  /* oder 320px, 360px, je nach Wunsch */
+  flex: 0 0 440px;  /* Passe nach Wunsch an */
 }
-
 .homepage-photo img {
   width: 100%;
   border-radius: 8px;
@@ -31,38 +30,47 @@
 /* Dunkler Header und Footer wie Slate         */
 /* ------------------------------------------ */
 .site-header, .page__footer {
-  background-color: #111 !important;
+  background: #111 !important;
   color: #fff !important;
-  min-height: 56px !important;
+  min-height: 56px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-  margin-bottom: 0 !important;
 }
 
-/* ------------------------------------------ */
-/* Schriftfarbe für Titel und Menüs            */
-/* ------------------------------------------ */
-.site-title, .site-nav a {
+/* Name (site.title) als "Logo" links, Menü rechts */
+.site-title {
   color: #fff !important;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 700;
+  margin-left: 24px;
+  margin-right: 2.5em;
+  letter-spacing: 0.02em;
+  line-height: 56px;
 }
 
-/* Menü-Links (hover/focus) */
+/* Menü-Links (rechts) */
+.site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.site-nav a {
+  color: #fff !important;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 12px;
+  line-height: 56px;
+}
 .site-nav a:hover, .site-nav a:focus {
   color: #90caf9 !important;
   text-decoration: underline;
 }
 
-/* ------------------------------------------ */
-/* Footer NUR individuell, grau, klein, rechts */
-/* ------------------------------------------ */
+/* Footer individuell (ausblenden, wenn gewünscht) */
 .page__footer-copyright,
 .page__footer .powered-by,
 .page__footer-follow {
   display: none !important;
 }
-
-/* Dein eigener Footertext */
 .mein-footer-rechts {
   display: block;
   text-align: right;
@@ -81,7 +89,6 @@
     flex: 0 0 280px;
   }
 }
-
 @media (max-width: 600px) {
   .homepage-wrapper {
     flex-direction: column;
@@ -101,20 +108,4 @@
     max-width: 95vw;
     text-align: left;
   }
-}
-
-/* Menü: Name ganz links, Rest ganz rechts */
-.site-nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-.site-nav ul li:first-child {
-  margin-right: auto;
-  pointer-events: none;        /* Nicht klickbar */
-}
-.site-nav ul li:first-child a {
-  cursor: default;
-  color: #fff !important;
-  font-weight: 700;
-  text-decoration: none !important;
 }
