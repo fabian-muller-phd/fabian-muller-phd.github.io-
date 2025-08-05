@@ -26,24 +26,6 @@
   max-width: 800px;
 }
 
-/* ------------------------------------------ */
-/* Splash Header: Name schwarz                */
-/* ------------------------------------------ */
-.splash .site-title,
-.splash .page__header .site-title {
-  color: #111 !important;         /* tiefes Grau/Schwarz */
-  font-size: 1.5em !important;    /* etwas größer – Splash ignoriert höhere Werte meist */
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-/* Menü im Splash-Header bleibt Standard */
-/* Falls du die Farbe ändern willst: */
-/*
-.splash .site-nav a {
-  color: #888 !important;
-}
-*/
 
 /* ------------------------------------------ */
 /* Footer: komplett schwarz, zentriert, klein */
@@ -102,4 +84,21 @@
     max-width: 95vw;
     text-align: left;
   }
+}
+
+/* Mein Custom-Header-Name */
+.mein-header-links {
+  color: #111 !important;        /* Schwarz */
+  font-size: 2.2em !important;   /* Deutlich größer */
+  font-weight: 700;
+  margin-left: 48px;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+  position: absolute;
+  left: 48px;
+  top: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  z-index: 20;
 }
