@@ -1,10 +1,18 @@
+title: "Fabian Müller, PhD"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# Grundlegende Einstellungen
+name: "Fabian Müller"
+description: "Social psychologist working at the intersection of education, inequality, and policy."
+locale: "en"
+
+# Seitenelemente
+logo: false
+
+# Navigation
 header:
-  background: "#111"  # dunkel
+  background: "#111"
   text_color: "#fff"
-  logo: false
-  title: "Fabian Müller, PhD"
   nav:
     - title: "Home"
       url: /
@@ -15,8 +23,13 @@ header:
     - title: "Contact"
       url: /contact/
 
+# Footer
 footer:
-  links: []
   text: "© 2025 Fabian Müller – All rights reserved."
   background: "#111"
   text_color: "#fff"
+  links: []
+
+# Plugins (wichtig für Navigation etc.)
+plugins:
+  - jekyll-include-cache
