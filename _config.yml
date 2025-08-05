@@ -22,13 +22,13 @@ header:
     - title: "Contact"
       url: /contact/
 
-# Footer (unten)
 footer:
-  text: ""           # kein Text → kein Standardfooter
+  text: "© 2025 Fabian Müller. All rights reserved."
   background: "#111"
-  text_color: "#fff"
+  text_color: "#cccccc"
   links: []
-  powered_by: false  # entfernt "Powered by Jekyll & Minimal Mistakes."
+  powered_by: false
+
 
 # Plugins (wichtig für Navigation etc.)
 plugins:
