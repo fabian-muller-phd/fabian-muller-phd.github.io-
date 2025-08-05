@@ -63,10 +63,11 @@
 /* Footer-Text mittig & kleiner Abstand */
 .page__footer-copyright {
   text-align: right !important;
-  font-size: 0.85em !important;
+  font-size: 0.8em !important;      /* oder 0.85em, wie du willst */
   font-weight: 400 !important;
-  opacity: 0.90;
+  opacity: 0.92;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-right: 32px;
+  color: #cccccc !important;        /* DAS ist die Änderung: Grauton */
 }
