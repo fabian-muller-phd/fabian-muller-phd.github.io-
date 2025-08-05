@@ -8,12 +8,12 @@
   gap: 2rem;
   margin-top: 2rem;
   max-width: 1200px;
-  margin-left: 48px; 
+  margin-left: 48px;
   margin-right: auto;
   padding: 1rem;
 }
 .homepage-photo {
-  flex: 0 0 440px; /* Passe nach Wunsch an */
+  flex: 0 0 440px;
 }
 .homepage-photo img {
   width: 100%;
@@ -27,74 +27,46 @@
 }
 
 /* ------------------------------------------ */
-/* Header: komplett schwarz, Custom-Name links */
+/* Splash Header: Name schwarz                */
 /* ------------------------------------------ */
-.site-header {
-  position: relative;              /* wichtig für absoluten Custom-Namen */
-  background: #111 !important;
-  color: #fff !important;
-  min-height: 56px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-  border-bottom: none !important;
-}
-.mein-header-links {
-  color: #fff;
-  font-size: 2.5em;          /* größer (z. B. 2em – gerne testen: 2.2em) */
+.splash .site-title,
+.splash .page__header .site-title {
+  color: #111 !important;         /* tiefes Grau/Schwarz */
+  font-size: 1.5em !important;    /* etwas größer – Splash ignoriert höhere Werte meist */
   font-weight: 700;
-  margin-left: 48px;       /* mehr Abstand, damit es mit dem Foto bündig wird */
-  line-height: 56px;
   letter-spacing: 0.02em;
-  position: absolute;
-  left: 48px;              /* gleich wie margin-left, damit wirklich bündig */
-  top: 0;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  z-index: 2;
 }
 
-/* ------------------------------------------ */
-/* Menü rechts im Header                      */
-/* ------------------------------------------ */
-.site-nav ul {
-  display: flex;
-  justify-content: flex-end;
+/* Menü im Splash-Header bleibt Standard */
+/* Falls du die Farbe ändern willst: */
+/*
+.splash .site-nav a {
+  color: #888 !important;
 }
-.site-nav a {
-  color: #fff !important;
-  font-size: 1.1em;
-  font-weight: 600;
-  padding-left: 20px;
-  padding-right: 12px;
-  line-height: 56px;
-}
-.site-nav a:hover, .site-nav a:focus {
-  color: #90caf9 !important;
-  text-decoration: underline;
-}
+*/
 
 /* ------------------------------------------ */
-/* Footer: individuell, rechts                */
+/* Footer: dunkelgrau, klein, zentriert       */
 /* ------------------------------------------ */
-.page__footer {
-  background: #111 !important;
-  color: #cccccc !important;
-}
-.page__footer-copyright,
-.page__footer .powered-by,
-.page__footer-follow {
-  display: none !important;
-}
 .mein-footer-rechts {
   display: block;
-  text-align: right;
-  font-size: 0.8em;
-  color: #cccccc;
+  text-align: center;
+  font-size: 0.75em;
+  color: #444444;
   font-weight: 400;
   opacity: 0.92;
   padding-top: 8px;
   padding-bottom: 8px;
-  margin-right: 32px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------ */
+/* Footer-Minimal Mistakes Defaults entfernen */
+/* ------------------------------------------ */
+.page__footer-copyright,
+.page__footer .powered-by,
+.page__footer-follow {
+  display: none !important;
 }
 
 /* ------------------------------------------ */
@@ -124,8 +96,4 @@
     max-width: 95vw;
     text-align: left;
   }
-}
-
-.splash .site-title {
-  color: #111 !important;    /* oder #000 für echtes Schwarz */
 }
