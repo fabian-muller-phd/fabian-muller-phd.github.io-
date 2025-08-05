@@ -24,10 +24,11 @@ header:
 
 # Footer (unten)
 footer:
-  text: "© 2025 Fabian Müller – Contact – CC License"
+  text: ""           # kein Text → kein Standardfooter
   background: "#111"
   text_color: "#fff"
   links: []
+  powered_by: false  # entfernt "Powered by Jekyll & Minimal Mistakes."
 
 # Plugins (wichtig für Navigation etc.)
 plugins:
@@ -50,8 +51,4 @@ defaults:
 
 atom_feed:
   hide: true
-
-footer:
-  text: ""
-
 
