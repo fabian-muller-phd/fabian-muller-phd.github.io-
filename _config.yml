@@ -6,13 +6,12 @@ name: "Fabian Müller"
 description: "Social psychologist working at the intersection of education, inequality, and policy."
 locale: "en"
 
-# Seitenelemente
-logo: false
-
-# Navigation
+# Navigation (Header oben)
 header:
   background: "#111"
   text_color: "#fff"
+  logo: false
+  title: "Fabian Müller, PhD"
   nav:
     - title: "Home"
       url: /
@@ -23,9 +22,9 @@ header:
     - title: "Contact"
       url: /contact/
 
-# Footer
+# Footer (unten)
 footer:
-  text: "© 2025 Fabian Müller – All rights reserved."
+  text: "© 2025 Fabian Müller – Contact – CC License"
   background: "#111"
   text_color: "#fff"
   links: []
@@ -33,3 +32,18 @@ footer:
 # Plugins (wichtig für Navigation etc.)
 plugins:
   - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-sitemap
+
+# Sass (damit dein eigenes CSS greift)
+sass:
+  style: compressed
+
+# Custom CSS (falls du eigene CSS-Datei einbindest)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      css: "/assets/css/custom.css"
