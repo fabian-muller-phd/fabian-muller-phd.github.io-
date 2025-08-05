@@ -47,3 +47,11 @@ defaults:
       type: "pages"
     values:
       css: "/assets/css/custom.css"
+
+atom_feed:
+  hide: true
+
+footer:
+  text: "© 2025 Fabian Müller – Contact – CC License"
+
+
