@@ -8,7 +8,7 @@
   gap: 2rem;
   margin-top: 2rem;
   max-width: 1200px;
-  margin-left: auto;
+  margin-left: 48px; 
   margin-right: auto;
   padding: 1rem;
 }
@@ -39,13 +39,13 @@
 }
 .mein-header-links {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 2em;          /* größer (z. B. 2em – gerne testen: 2.2em) */
   font-weight: 700;
-  margin-left: 28px;
+  margin-left: 48px;       /* mehr Abstand, damit es mit dem Foto bündig wird */
   line-height: 56px;
   letter-spacing: 0.02em;
   position: absolute;
-  left: 32px;
+  left: 48px;              /* gleich wie margin-left, damit wirklich bündig */
   top: 0;
   height: 56px;
   display: flex;
