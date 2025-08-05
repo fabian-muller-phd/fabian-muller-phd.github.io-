@@ -102,3 +102,19 @@
     text-align: left;
   }
 }
+
+/* Menü: Name ganz links, Rest ganz rechts */
+.site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.site-nav ul li:first-child {
+  margin-right: auto;
+  pointer-events: none;        /* Nicht klickbar */
+}
+.site-nav ul li:first-child a {
+  cursor: default;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
