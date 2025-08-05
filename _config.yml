@@ -6,16 +6,23 @@ name: "Fabian Müller"
 description: "Social psychologist working at the intersection of education, inequality, and policy."
 locale: "en"
 
-# Navigation für den Header
+# Navigation für Minimal Mistakes (DOKU-BEISPIEL)
 main:
   - title: "Home"
     url: /
-  - title: "CV"
-    url: /cv/
-  - title: "Research"
-    url: /research/
-  - title: "Contact"
-    url: /contact/
+  - title: "About"
+    url: /about/
+
+# Navigation für den Header
+#main:
+#  - title: "Home"
+#    url: /
+#  - title: "CV"
+#    url: /cv/
+#  - title: "Research"
+#    url: /research/
+#  - title: "Contact"
+#    url: /contact/
     
 # Navigation (Header oben)
 # header:
