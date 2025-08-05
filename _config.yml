@@ -23,11 +23,12 @@ header:
       url: /contact/
 
 footer:
-  text: "© 2025 Fabian Müller. All rights reserved."
+  text: ""
   background: "#111"
   text_color: "#cccccc"
   links: []
   powered_by: false
+
 
 
 # Plugins (wichtig für Navigation etc.)
