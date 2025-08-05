@@ -13,8 +13,9 @@
   padding: 1rem;
 }
 .homepage-photo {
-  flex: 0 0 260px;
+  flex: 0 0 340px;  /* oder 320px, 360px, je nach Wunsch */
 }
+
 .homepage-photo img {
   width: 100%;
   border-radius: 8px;
