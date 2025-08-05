@@ -1,4 +1,6 @@
-/* Layout Startseite */
+/* ------------------------------------------ */
+/* Layout Startseite (Foto links, Text rechts) */
+/* ------------------------------------------ */
 .homepage-wrapper {
   display: flex;
   flex-direction: row;
@@ -24,21 +26,9 @@
   max-width: 800px;
 }
 
-/* Dunkler Header */
-.site-header {
-  background-color: #111 !important;
-}
-.site-title, .site-nav a {
-  color: #fff !important;
-}
-
-/* Dunkler Footer */
-.page__footer {
-  background-color: #111 !important;
-  color: #fff !important;
-}
-
-/* Header und Footer gleich hoch, dunkel und modern wie bei Slate */
+/* ------------------------------------------ */
+/* Dunkler Header und Footer wie Slate         */
+/* ------------------------------------------ */
 .site-header, .page__footer {
   background-color: #111 !important;
   color: #fff !important;
@@ -47,7 +37,9 @@
   margin-bottom: 0 !important;
 }
 
-/* Schriftfarbe für Titel und Menüs */
+/* ------------------------------------------ */
+/* Schriftfarbe für Titel und Menüs            */
+/* ------------------------------------------ */
 .site-title, .site-nav a {
   color: #fff !important;
   font-size: 1.2em;
@@ -60,17 +52,24 @@
   text-decoration: underline;
 }
 
-.page__footer-copyright {
-  text-align: right !important;
-  font-size: 0.8em !important;
-  font-weight: 400 !important;
+/* ------------------------------------------ */
+/* Footer NUR individuell, grau, klein, rechts */
+/* ------------------------------------------ */
+.page__footer-copyright,
+.page__footer .powered-by,
+.page__footer-follow {
+  display: none !important;
+}
+
+/* Dein eigener Footertext */
+.mein-footer-rechts {
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+  color: #cccccc;
+  font-weight: 400;
   opacity: 0.92;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-right: 32px;
-  color: #cccccc !important;   /* Grauer Text */
-}
-
-.page__footer .powered-by {
-  display: none !important;
 }
