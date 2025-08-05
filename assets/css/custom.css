@@ -1,11 +1,39 @@
-/* Menü rechts ausrichten */
-nav.nav-links {
+/* Layout Startseite */
+.homepage-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
   margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+.homepage-photo {
+  flex: 0 0 260px;
+}
+.homepage-photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+.homepage-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
 }
 
-/* Footer-Stil */
+/* Dunkler Header */
+.site-header {
+  background-color: #111 !important;
+}
+.site-title, .site-nav a {
+  color: #fff !important;
+}
+
+/* Dunkler Footer */
 .page__footer {
   background-color: #111 !important;
   color: #fff !important;
 }
-
