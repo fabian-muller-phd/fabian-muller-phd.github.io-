@@ -13,7 +13,7 @@
   padding: 1rem;
 }
 .homepage-photo {
-  flex: 0 0 340px;  /* oder 320px, 360px, je nach Wunsch */
+  flex: 0 0 360px;  /* oder 320px, 360px, je nach Wunsch */
 }
 
 .homepage-photo img {
