@@ -1,1 +1,11 @@
+/* Menü rechts ausrichten */
+nav.nav-links {
+  margin-left: auto;
+}
+
+/* Footer-Stil */
+.page__footer {
+  background-color: #111 !important;
+  color: #fff !important;
+}
 
