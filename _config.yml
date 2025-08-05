@@ -7,7 +7,8 @@ description: "Social psychologist working at the intersection of education, ineq
 locale: "en"
 
 # Navigation für Minimal Mistakes (DOKU-BEISPIEL)
-nav:
+navigation:
+  main:
   - title: "Home"
     url: /
   - title: "About"
