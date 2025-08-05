@@ -37,3 +37,33 @@
   background-color: #111 !important;
   color: #fff !important;
 }
+
+/* Header und Footer gleich hoch, dunkel und modern wie bei Slate */
+.site-header, .page__footer {
+  background-color: #111 !important;
+  color: #fff !important;
+  min-height: 56px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  margin-bottom: 0 !important;
+}
+
+/* Schriftfarbe für Titel und Menüs */
+.site-title, .site-nav a {
+  color: #fff !important;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* Menü-Links (hover/focus) */
+.site-nav a:hover, .site-nav a:focus {
+  color: #90caf9 !important;
+  text-decoration: underline;
+}
+
+/* Footer-Text mittig & kleiner Abstand */
+.page__footer-copyright {
+  text-align: center;
+  font-size: 1em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
