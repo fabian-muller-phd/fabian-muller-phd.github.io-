@@ -78,3 +78,6 @@ defaults:
 atom_feed:
   hide: true
 
+# Eigener Header-Include
+header:
+  custom: custom-header
