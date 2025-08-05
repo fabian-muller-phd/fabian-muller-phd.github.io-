@@ -125,3 +125,7 @@
     text-align: left;
   }
 }
+
+.splash .site-title {
+  color: #111 !important;    /* oder #000 für echtes Schwarz */
+}
