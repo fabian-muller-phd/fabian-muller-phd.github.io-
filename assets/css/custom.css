@@ -39,7 +39,7 @@
 }
 .mein-header-links {
   color: #fff;
-  font-size: 2em;          /* größer (z. B. 2em – gerne testen: 2.2em) */
+  font-size: 2.5em;          /* größer (z. B. 2em – gerne testen: 2.2em) */
   font-weight: 700;
   margin-left: 48px;       /* mehr Abstand, damit es mit dem Foto bündig wird */
   line-height: 56px;
