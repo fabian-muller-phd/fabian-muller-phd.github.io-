@@ -1,6 +1,4 @@
 main:
-  - title: "Fabian Müller, PhD"
-    url: ""      # Leer lassen = nicht klickbar
   - title: "Home"
     url: /
   - title: "CV"
