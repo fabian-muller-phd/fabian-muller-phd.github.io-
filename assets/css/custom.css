@@ -46,23 +46,29 @@
 */
 
 /* ------------------------------------------ */
-/* Footer: dunkelgrau, klein, zentriert       */
+/* Footer: komplett schwarz, zentriert, klein */
 /* ------------------------------------------ */
+.page__footer,
+.page__footer footer,
+.footer {
+  background: #111 !important;
+  color: #cccccc !important;
+  border: none !important;
+}
+
 .mein-footer-rechts {
   display: block;
   text-align: center;
   font-size: 0.75em;
-  color: #444444;
+  color: #cccccc;
   font-weight: 400;
   opacity: 0.92;
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 0 auto;
+  background: transparent !important;
 }
 
-/* ------------------------------------------ */
-/* Footer-Minimal Mistakes Defaults entfernen */
-/* ------------------------------------------ */
 .page__footer-copyright,
 .page__footer .powered-by,
 .page__footer-follow {
