@@ -8,18 +8,8 @@ description: "Social psychologist working at the intersection of education, ineq
 locale: "en"
 
 # Navigation für Minimal Mistakes (DOKU-BEISPIEL)
-navigation:
-  main:
-  - title: "Home"
-    url: /
-  - title: "CV"
-    url: /cv/
-  - title: "Research"
-    url: /research/
-  - title: "Teaching"
-    url: /teaching/    
-  - title: "Contact"
-    url: /contact/
+navigation: main
+
 
 
 # Navigation für den Header
