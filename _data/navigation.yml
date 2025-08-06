@@ -5,7 +5,19 @@ main:
     url: /cv/
   - title: "Research"
     url: /research/
-  - title: "Teaching"
-    url: /teaching/    
+    children:
+      - title: "Methods"
+        url: /research/methods/
+      - title: "Preprints & Work in Progress"
+        url: /research/preprints/
+      - title: "Publications"
+        url: /research/publications/
+      - title: "Conference Contributions"
+        url: /research/conferences/
+      - title: "Funding & Grants"
+        url: /research/funding/
+      - title: "Research Stays"
+        url: /research/stays/
   - title: "Contact"
     url: /contact/
+
