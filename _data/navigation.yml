@@ -18,6 +18,8 @@ main:
         url: /research/funding/
       - title: "Research Stays"
         url: /research/stays/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Contact"
     url: /contact/
 
