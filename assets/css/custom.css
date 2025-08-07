@@ -2,8 +2,8 @@
    Globale Variablen + Container-Breite
    ========================================== */
 :root{
-  --site-max: 1260px;   /* Gesamtbreite aller Seiten */
-  --text-max: 820px;    /* Lesespaltenbreite für Fließtext */
+  --site-max: 1270px;   /* Gesamtbreite aller Seiten */
+  --text-max: 830px;    /* Lesespaltenbreite für Fließtext */
   --base-font: 16px;
   --brand: #0a4c86; --brand-dark: #083963;
   --ink-1:#111; --ink-2:#222; --ink-3:#333; --muted:#6f777d; --line:#eee;
@@ -41,7 +41,7 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 450px; /* Breite – später anpassen für unten bündig */ }
+.homepage-photo { flex: 0 0 455px; /* Breite – später anpassen für unten bündig */ }
 .homepage-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;   /* macht es quadratisch */
