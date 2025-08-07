@@ -168,7 +168,7 @@ body{
 .research-section{
   max-width: var(--text-max);
   margin: 2rem 0 2.5rem;
-  border-top: 1px solid var(--line);
+  border-top: none; /* Strich entfernt */
   padding-top: 1.25rem;
 }
 
