@@ -100,43 +100,80 @@
   height: 56px;
   display: flex;
   align-items: center;
-
-
-  .research-wrapper {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem 2rem;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
   z-index: 20;
 }
 
 /* ------------------------------------------ */
-/* Research Seite                             */
+/* Research Seite – Wrapper + Typo            */
 /* ------------------------------------------ */
-.page--research .page__content {
+.research-wrapper {
   max-width: 900px;
-  padding: 2rem;
-  font-size: 15px;
+  margin: 2rem auto;
+  padding: 0 1.25rem 2rem;
+  font-size: 16px;
   line-height: 1.7;
-  text-align: justify;
 }
 
-/* ------------------------------------------ */
-/* CV Seite                                   */
-/* ------------------------------------------ */
-.page--cv .page__content {
-  max-width: 700px;
-  font-size: 14px;
-  color: #444;
+.research-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 1.25rem;
 }
 
-/* ------------------------------------------ */
-/* Teaching Seite                             */
-/* ------------------------------------------ */
-.page--teaching .page__content {
-  font-size: 15.5px;
-  line-height: 1.7;
+.research-section {
+  margin: 2rem 0 2.5rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.25rem;
+}
+
+.research-section h2 {
+  font-size: 1.6rem;   /* größer als default */
+  line-height: 1.3;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.2px;
+}
+
+.research-section p {
+  margin: 0.5rem 0 0.25rem;
+  color: #333;
+}
+
+/* kleine Meta-Zeile unter H2 für Permalinks etc. (optional) */
+.section-meta {
+  font-size: 0.9rem;
+  color: #6f777d;
+  margin-bottom: 0.5rem;
+}
+
+/* Karten-Layout (Option B) */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.research-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  background: #fff;
+}
+
+.research-card h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem;
+}
+
+.research-card p {
+  margin: 0.25rem 0 0;
+  color: #333;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 700px) {
+  .research-wrapper { padding: 0 1rem 2rem; }
+  .research-section h2 { font-size: 1.45rem; }
+  .research-grid { grid-template-columns: 1fr; }
 }
