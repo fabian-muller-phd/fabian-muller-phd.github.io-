@@ -5,8 +5,13 @@
   --site-max: 1280px;   /* Gesamtbreite aller Seiten */
   --text-max: 830px;    /* Lesespaltenbreite für Fließtext */
   --base-font: 16px;
-  --brand: #0a4c86; --brand-dark: #083963;
-  --ink-1:#111; --ink-2:#222; --ink-3:#333; --muted:#6f777d; --line:#eee;
+  --brand: #0a4c86;
+  --brand-dark: #083963;
+  --ink-1: #111;
+  --ink-2: #222;
+  --ink-3: #333;
+  --muted: #6f777d;
+  --line: #eee;
 }
 
 /* MM-Container global breiter machen (gilt für ALLE Seiten, inkl. splash) */
@@ -15,24 +20,30 @@
 .archive,
 .splash .page__content{
   max-width: var(--site-max);
-  margin-left:auto;
-  margin-right:auto;
-  padding-left:1.25rem;
-  padding-right:1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 /* Grundtypografie */
-body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
+body{
+  font-size: var(--base-font);
+  line-height: 1.6;
+  color: var(--ink-2);
+}
 .page__content a{ color: var(--brand); }
 .page__content a:hover{ text-decoration: underline; }
+
+/* Sprungziele nicht unter den Header kleben */
 :target { scroll-margin-top: 80px; }
 
-/* ------------------------------------------ */
-/* Layout Startseite (Foto links, Text rechts)*/
-/* ------------------------------------------ */
-.homepage-wrapper {
+/* ------------------------------------------
+   Layout Startseite (Foto links, Text rechts)
+   ------------------------------------------ */
+.homepage-wrapper{
   display: flex;
-  align-items: flex-start; /* Bild oben bündig mit Text */
+  align-items: flex-start;   /* Bild oben bündig mit Text */
   gap: 2rem;
   margin-top: 2rem;
   max-width: var(--site-max);
@@ -41,15 +52,15 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 445px; /* Breite – später anpassen für unten bündig */ }
-.homepage-photo img {
+.homepage-photo{ flex: 0 0 445px; } /* Breite anpassen für unten bündig */
+.homepage-photo img{
   width: 100%;
-  aspect-ratio: 1 / 1;   /* macht es quadratisch */
-  object-fit: cover;     /* kein Verzerren, ggf. Beschnitt */
+  aspect-ratio: 1 / 1;      /* quadratisch */
+  object-fit: cover;        /* kein Verzerren, ggf. Beschnitt */
   border-radius: 8px;
 }
 
-.homepage-text {
+.homepage-text{
   flex: 1;
   font-size: 16px;
   line-height: 1.6;
@@ -59,15 +70,17 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   justify-content: flex-start;
 }
 
-/* ------------------------------------------ */
-/* Footer: komplett schwarz, zentriert, klein */
-/* ------------------------------------------ */
-.page__footer, .page__footer footer, .footer {
+/* ------------------------------------------
+   Footer: komplett schwarz, zentriert, klein
+   ------------------------------------------ */
+.page__footer,
+.page__footer footer,
+.footer{
   background: #111 !important;
   color: #6f777d !important;
   border: none !important;
 }
-.mein-footer-rechts {
+.mein-footer-rechts{
   display: block;
   text-align: center;
   font-size: 0.6em;
@@ -80,41 +93,41 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 .page__footer-copyright,
 .page__footer .powered-by,
-.page__footer-follow { display: none !important; }
+.page__footer-follow{ display: none !important; }
 
-/* ------------------------------------------ */
-/* Responsive Anpassung Startseite            */
-/* ------------------------------------------ */
-@media (max-width: 900px) {
-  .homepage-photo { flex: 0 0 280px; }
+/* ------------------------------------------
+   Responsive Startseite
+   ------------------------------------------ */
+@media (max-width: 900px){
+  .homepage-photo{ flex: 0 0 280px; }
 }
-@media (max-width: 600px) {
-  .homepage-wrapper {
+@media (max-width: 600px){
+  .homepage-wrapper{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  .homepage-photo {
+  .homepage-photo{
     flex: none;
     max-width: 90vw;
     margin-bottom: 1rem;
   }
-  .homepage-photo img {
+  .homepage-photo img{
     width: 100%;
     height: auto;
-    aspect-ratio: auto;
+    aspect-ratio: auto;     /* natürliches Seitenverhältnis mobil */
     max-width: 320px;
   }
-  .homepage-text {
+  .homepage-text{
     max-width: 95vw;
     text-align: left;
   }
 }
 
-/* ------------------------------------------ */
-/* Custom-Header-Name                         */
-/* ------------------------------------------ */
-.mein-header-links {
+/* ------------------------------------------
+   Custom-Header-Name
+   ------------------------------------------ */
+.mein-header-links{
   color: #111 !important;
   font-size: 2.2em !important;
   font-weight: 700;
@@ -122,16 +135,19 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   line-height: 56px;
   letter-spacing: 0.02em;
   position: absolute;
-  left: 48px; top: 0; height: 56px;
-  display: flex; align-items: center;
+  left: 48px;
+  top: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
   z-index: 20;
 }
 
-/* ------------------------------------------ */
-/* Research & Publications – Wrapper + Typo   */
-/* ------------------------------------------ */
+/* ------------------------------------------
+   Research & Publications – Wrapper + Typo
+   ------------------------------------------ */
 .research-wrapper,
-.pubs-wrapper {
+.pubs-wrapper{
   max-width: var(--site-max);
   margin: 2rem auto;
   padding: 0 1.25rem 2rem;
@@ -140,7 +156,7 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 
 .research-intro,
-.pubs-intro {
+.pubs-intro{
   max-width: var(--text-max);
   font-size: 16px;
   line-height: 1.6;
@@ -148,15 +164,15 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   margin-bottom: 1.5rem;
 }
 
-.research-section {
+.research-section{
   max-width: var(--text-max);
   margin: 2rem 0 2.5rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--line);
   padding-top: 1.25rem;
 }
 
 .page--research h2,
-.page--pubs h2 {
+.page--pubs h2{
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
@@ -165,91 +181,94 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 
 .research-section p,
-.pubs-wrapper p {
+.pubs-wrapper p{
   margin: 0.5rem 0 0.25rem;
-  color: #333;
+  color: var(--ink-3);
   font-size: 16px;
   line-height: 1.6;
 }
 
-/* ------------------------------------------ */
-/* Karten-Layout                              */
-/* ------------------------------------------ */
+/* ------------------------------------------
+   Karten-Layout
+   ------------------------------------------ */
 .research-grid,
-.pubs-wrapper .research-grid {
+.pubs-wrapper .research-grid{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   max-width: var(--site-max);
-  margin-left:auto; margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.research-card {
-  border: 1px solid #eee;
+.research-card{
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 1rem 1.1rem;
   background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.research-card:hover {
+.research-card:hover{
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transform: translateY(-2px);
 }
-.research-card h3 { font-size: 1.15rem; margin: 0 0 0.25rem; }
-.research-card p { margin: 0.25rem 0 0; color: #333; }
-
-.page--research .page__content a,
-.page--pubs .page__content a { color: #0a4c86; }
-.page--research .page__content a:hover,
-.page--pubs .page__content a:hover { text-decoration: underline; }
-
-/* ------------------------------------------ */
-/* Mobile Tweaks                              */
-/* ------------------------------------------ */
-@media (max-width: 700px) {
-  .research-wrapper,
-  .pubs-wrapper {
-    padding: 0 1rem 2rem;
-  }
-  .page--research h2,
-  .page--pubs h2 {
-    font-size: 1.35rem;
-  }
-  .research-grid,
-  .pubs-wrapper .research-grid {
-    grid-template-columns: 1fr;
-  }
+.research-card h3{
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem;
+}
+.research-card p{
+  margin: 0.25rem 0 0;
+  color: var(--ink-3);
 }
 
-/* ------------------------------------------ */
-/* Publications – APA7 kompakt mit DOI inline */
-/* ------------------------------------------ */
-.pubs-list {
+/* Links dezent auf Research/Publications */
+.page--research .page__content a,
+.page--pubs .page__content a{ color: var(--brand); }
+.page--research .page__content a:hover,
+.page--pubs .page__content a:hover{ text-decoration: underline; }
+
+/* ------------------------------------------
+   Mobile Tweaks Research/Publications
+   ------------------------------------------ */
+@media (max-width: 700px){
+  .research-wrapper,
+  .pubs-wrapper{ padding: 0 1rem 2rem; }
+  .page--research h2,
+  .page--pubs h2{ font-size: 1.35rem; }
+  .research-grid,
+  .pubs-wrapper .research-grid{ grid-template-columns: 1fr; }
+}
+
+/* ------------------------------------------
+   Publications – APA7 kompakt mit DOI inline
+   ------------------------------------------ */
+.pubs-list{
   list-style: none;
   padding-left: 0;
   margin: 0 0 1.2rem 0;
 }
-.pub { margin: 0.4rem 0; }
-.cite {
+.pub{ margin: 0.4rem 0; }
+
+.cite{
   display: block;
-  padding-left: 1.3rem;
+  padding-left: 1.3rem;  /* Hanging indent */
   text-indent: -1.3rem;
   line-height: 1.6;
 }
-.cite b { font-weight: 700; }
-em { font-style: italic; }
+.cite b{ font-weight: 700; }
+em{ font-style: italic; }
 .cite .doi{
   font-weight: 600;
-  white-space: nowrap;
+  white-space: nowrap;  /* DOI nicht umbrechen */
 }
 
 /* Buttons unterhalb vom Zitat */
 .pubs-list .actions{
   display: inline-flex;
   gap: 0.4rem;
-  margin-left: 1.3rem;
+  margin-left: 1.3rem;  /* bündig mit Hanging indent */
   margin-top: 0.3rem;
 }
 .pubs-list .btn-link,
@@ -258,26 +277,44 @@ em { font-style: italic; }
   font-size: 0.8rem;
   border-radius: 6px;
 }
-.btn-link {
+.btn-link{
   display: inline-block;
   border: 1px solid var(--brand);
   background: var(--brand);
   color: #fff;
   font-weight: 600;
 }
-.btn-ghost {
+.btn-ghost{
   background: #fff;
   color: var(--brand);
-  border-color: #c9d6e5;
+  border: 1px solid #c9d6e5;
   cursor: pointer;
 }
-.btn-link:hover { background: var(--brand-dark); }
-.btn-ghost:hover { background: #f1f5f9; }
+.btn-link:hover{ background: var(--brand-dark); }
+.btn-ghost:hover{ background: #f1f5f9; }
 
-.pub-year {
+.pub-year{
   margin-top: 1.1rem;
   font-size: 1rem;
   color: #374151;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--line);
   padding-top: 0.6rem;
+}
+
+/* ------------------------------------------
+   Breiten-Fix: Research/Publ.-Grids maximal
+   und Wrapper ohne Extra-Padding
+   ------------------------------------------ */
+.page--research .research-wrapper,
+.page--pubs .pubs-wrapper{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page--research .research-grid,
+.page--pubs .research-grid{
+  max-width: var(--site-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;            /* kein zusätzliches Padding am Grid */
 }
