@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: splash
 title: "Research & Policy"
 permalink: /research/
 ---
 
 <link rel="stylesheet" href="/assets/css/custom.css">
 
-<div class="research-wrapper">
+/* <div class="research-wrapper">
 
 
 ## Methods
