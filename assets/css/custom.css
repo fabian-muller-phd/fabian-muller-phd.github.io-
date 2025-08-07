@@ -272,3 +272,23 @@ em { font-style: italic; }
   border-top: 1px solid #eee;
   padding-top: 0.6rem;
 }
+/* DOI inline & dezenter */
+.cite .doi{
+  font-weight: 600;
+  white-space: nowrap;      /* bricht nicht mitten im DOI */
+}
+
+/* Buttons knapp unter dem Zitat, eingerückt wie Hanging Indent */
+.pubs-list .actions{
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-left: 1.3rem;      /* = padding-left der .cite für bündig */
+  margin-top: 0.3rem;
+}
+
+.pubs-list .btn-link,
+.pubs-list .btn-ghost{
+  padding: 0.25rem 0.55rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
