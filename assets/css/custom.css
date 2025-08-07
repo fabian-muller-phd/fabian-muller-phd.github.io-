@@ -2,8 +2,8 @@
    Globale Variablen + Container-Breite
    ========================================== */
 :root{
-  --site-max: 1290px;   /* Gesamtbreite aller Seiten */
-  --text-max: 840px;    /* Lesespaltenbreite für Fließtext */
+  --site-max: 1280px;   /* Gesamtbreite aller Seiten */
+  --text-max: 830px;    /* Lesespaltenbreite für Fließtext */
   --base-font: 16px;
   --brand: #0a4c86; --brand-dark: #083963;
   --ink-1:#111; --ink-2:#222; --ink-3:#333; --muted:#6f777d; --line:#eee;
