@@ -265,35 +265,44 @@ em{ font-style: italic; }
 }
 
 /* Buttons unterhalb vom Zitat */
-.pubs-list .actions{
+.pubs-list .actions {
   display: inline-flex;
   gap: 0.4rem;
   margin-left: 1.3rem;  /* bündig mit Hanging indent */
   margin-top: 0.3rem;
 }
+
 .pubs-list .btn-link,
-.pubs-list .btn-ghost{
-  padding: 0.25rem 0.55rem;
-  font-size: 0.8rem;
-  border-radius: 6px;
+.pubs-list .btn-ghost {
+  padding: 0.2rem 0.5rem; /* kleiner */
+  font-size: 0.8rem;      /* kleinere Schrift */
+  border-radius: 4px;     /* etwas weniger rund */
+  font-weight: 500;       /* nicht so fett wie vorher */
 }
-.btn-link{
+
+.btn-link {
   display: inline-block;
-  border: 1px solid var(--brand);
-  background: var(--brand);
-  color: #fff;
-  font-weight: 600;
+  border: 1px solid #b9d7ef; /* helleres Blau */
+  background: #d9e9f7;
+  color: #064d77; /* gut lesbar */
 }
-.btn-ghost{
-  background: #fff;
-  color: var(--brand);
-  border: 1px solid #c9d6e5;
+
+.btn-link:hover {
+  background: #b9d7ef;
+}
+
+.btn-ghost {
+  background: #f2f2f2; /* hellgrau */
+  color: #333;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
-.btn-link:hover{ background: var(--brand-dark); }
-.btn-ghost:hover{ background: #f1f5f9; }
 
-.pub-year{
+.btn-ghost:hover {
+  background: #e0e0e0;
+}
+
+.pub-year {
   margin-top: 1.1rem;
   font-size: 1rem;
   color: #374151;
