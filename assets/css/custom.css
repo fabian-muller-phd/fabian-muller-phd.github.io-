@@ -1,5 +1,5 @@
 /* ------------------------------------------ */
-/* Layout Startseite (Foto links, Text rechts) */
+/* Layout Startseite (Foto links, Text rechts)*/
 /* ------------------------------------------ */
 .homepage-wrapper {
   display: flex;
@@ -12,32 +12,18 @@
   margin-right: auto;
   padding: 1rem;
 }
-.homepage-photo {
-  flex: 0 0 440px;
-}
-.homepage-photo img {
-  width: 100%;
-  border-radius: 8px;
-}
-.homepage-text {
-  flex: 1;
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 800px;
-}
-
+.homepage-photo { flex: 0 0 440px; }
+.homepage-photo img { width: 100%; border-radius: 8px; }
+.homepage-text { flex: 1; font-size: 16px; line-height: 1.6; max-width: 800px; }
 
 /* ------------------------------------------ */
 /* Footer: komplett schwarz, zentriert, klein */
 /* ------------------------------------------ */
-.page__footer,
-.page__footer footer,
-.footer {
+.page__footer, .page__footer footer, .footer {
   background: #111 !important;
   color: #6f777d !important;
   border: none !important;
 }
-
 .mein-footer-rechts {
   display: block;
   text-align: center;
@@ -45,61 +31,40 @@
   color: #6f777d;
   font-weight: 400;
   opacity: 0.92;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 0;
   margin: 0 auto;
   background: transparent !important;
 }
-
 .page__footer-copyright,
 .page__footer .powered-by,
-.page__footer-follow {
-  display: none !important;
-}
+.page__footer-follow { display: none !important; }
 
 /* ------------------------------------------ */
-/* Responsive Anpassung                       */
+/* Responsive Anpassung Startseite            */
 /* ------------------------------------------ */
 @media (max-width: 900px) {
-  .homepage-photo {
-    flex: 0 0 280px;
-  }
+  .homepage-photo { flex: 0 0 280px; }
 }
 @media (max-width: 600px) {
-  .homepage-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .homepage-photo {
-    flex: 0 0 60vw;
-    max-width: 90vw;
-    margin-bottom: 1rem;
-  }
-  .homepage-photo img {
-    width: 100%;
-    max-width: 320px;
-  }
-  .homepage-text {
-    max-width: 95vw;
-    text-align: left;
-  }
+  .homepage-wrapper { flex-direction: column; align-items: center; gap: 1rem; }
+  .homepage-photo { flex: 0 0 60vw; max-width: 90vw; margin-bottom: 1rem; }
+  .homepage-photo img { width: 100%; max-width: 320px; }
+  .homepage-text { max-width: 95vw; text-align: left; }
 }
 
-/* Mein Custom-Header-Name */
+/* ------------------------------------------ */
+/* Custom-Header-Name                         */
+/* ------------------------------------------ */
 .mein-header-links {
-  color: #111 !important;        /* Schwarz */
-  font-size: 2.2em !important;   /* Deutlich größer */
+  color: #111 !important;
+  font-size: 2.2em !important;
   font-weight: 700;
   margin-left: 48px;
   line-height: 56px;
   letter-spacing: 0.02em;
   position: absolute;
-  left: 48px;
-  top: 0;
-  height: 56px;
-  display: flex;
-  align-items: center;
+  left: 48px; top: 0; height: 56px;
+  display: flex; align-items: center;
   z-index: 20;
 }
 
@@ -113,78 +78,70 @@
   font-size: 16px;
   line-height: 1.7;
 }
-
 .research-intro {
-  font-size: 17px;
-  line-height: 1.8;
+  max-width: 900px;
+  font-size: 1.05rem;
+  line-height: 1.75;
   color: #222;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem; /* etwas mehr Luft */
 }
-
 .research-section {
   margin: 2rem 0 2.5rem;
   border-top: 1px solid #eee;
   padding-top: 1.25rem;
 }
-
-.research-section h2 {
-  font-size: 1.6rem;   /* größer als default */
+.page--research h2 {
+  font-size: 1.6rem;  /* dezenter als default, professionell */
+  font-weight: 700;
   line-height: 1.3;
   margin: 0 0 0.5rem;
   letter-spacing: 0.2px;
 }
+.research-section p { margin: 0.5rem 0 0.25rem; color: #333; }
 
-.research-section p {
-  margin: 0.5rem 0 0.25rem;
-  color: #333;
-}
+/* Sprungziele nicht unter Header kleben */
+:target { scroll-margin-top: 80px; }
 
-/* kleine Meta-Zeile unter H2 für Permalinks etc. (optional) */
-.section-meta {
-  font-size: 0.9rem;
-  color: #6f777d;
-  margin-bottom: 0.5rem;
-}
-
-/* Karten-Layout (Option B) */
+/* ------------------------------------------ */
+/* Karten-Layout                              */
+/* ------------------------------------------ */
 .research-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; /* mehr Abstand zur ersten H2 */
 }
-
 .research-card {
   border: 1px solid #eee;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1rem 1.1rem;
   background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-.research-card h3 {
-  font-size: 1.15rem;
-  margin: 0 0 0.25rem;
+.research-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
 }
+.research-card h3 { font-size: 1.15rem; margin: 0 0 0.25rem; }
+.research-card p { margin: 0.25rem 0 0; color: #333; }
 
-.research-card p {
-  margin: 0.25rem 0 0;
-  color: #333;
-}
+/* Links im Research-Bereich dezent */
+.page--research .page__content a { color: #0a4c86; }
+.page--research .page__content a:hover { text-decoration: underline; }
 
-/* Mobile Tweaks */
+/* ------------------------------------------ */
+/* Mobile Tweaks                              */
+/* ------------------------------------------ */
 @media (max-width: 700px) {
   .research-wrapper { padding: 0 1rem 2rem; }
-  .research-section h2 { font-size: 1.45rem; }
+  .page--research h2 { font-size: 1.45rem; }
   .research-grid { grid-template-columns: 1fr; }
 }
 
-/* Globale, etwas größere Headings (dezent, professionell) */
-.page__content h1 {
-  font-size: 2rem;
-  letter-spacing: 0.2px;
-}
+/* ------------------------------------------ */
+/* Globale Headings (dezente Vereinheitlichung) */
+/* ------------------------------------------ */
+.page__content h1 { font-size: 2rem; letter-spacing: 0.2px; }
+.page__content h2 { letter-spacing: 0.2px; } /* Größe für Research oben definiert */
 
-.page__content h2 {
-  font-size: 1.6rem;
-  letter-spacing: 0.2px;
-}
