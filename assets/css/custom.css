@@ -73,23 +73,24 @@
 /* ------------------------------------------ */
 .research-wrapper,
 .pubs-wrapper {
-  max-width: 1000px; /* gleiche Breite für beide */
+  max-width: 1000px; /* wie Startseite Rahmenbreite */
   margin: 2rem auto;
   padding: 0 1.25rem 2rem;
-  font-size: 0.95rem; /* wie Startseite */
+  font-size: 16px; /* exakt wie Startseite (.homepage-text) */
   line-height: 1.6;
 }
 
 .research-intro,
 .pubs-intro {
-  max-width: 1000px;
-  font-size: 1.05rem;
-  line-height: 1.75;
+  max-width: 800px; /* gleiche Content-Breite wie Startseite Text */
+  font-size: 16px;
+  line-height: 1.6;
   color: #222;
   margin-bottom: 1.5rem;
 }
 
 .research-section {
+  max-width: 800px; /* einheitlich wie Startseite Textbreite */
   margin: 2rem 0 2.5rem;
   border-top: 1px solid #eee;
   padding-top: 1.25rem;
@@ -97,7 +98,7 @@
 
 .page--research h2,
 .page--pubs h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem; /* etwas größer als Fließtext, harmonisch zur Startseite */
   font-weight: 700;
   line-height: 1.3;
   margin: 0 0 0.5rem;
@@ -108,6 +109,8 @@
 .pubs-wrapper p {
   margin: 0.5rem 0 0.25rem;
   color: #333;
+  font-size: 16px; /* Startseite-Textgröße */
+  line-height: 1.6;
 }
 
 /* Sprungziele nicht unter Header kleben */
@@ -169,7 +172,7 @@
   }
   .page--research h2,
   .page--pubs h2 {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
   }
   .research-grid,
   .pubs-wrapper .research-grid {
@@ -194,7 +197,7 @@
   display: block;
   padding-left: 1.3rem;
   text-indent: -1.3rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .cite b { font-weight: 700; }
