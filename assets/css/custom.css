@@ -72,7 +72,7 @@
 /* Research & Publications – Wrapper + Typo   */
 /* ------------------------------------------ */
 .research-wrapper,
-.page--pubs .pubs-wrapper {
+.pubs-wrapper {
   max-width: 1000px; /* gleiche Breite für beide */
   margin: 2rem auto;
   padding: 0 1.25rem 2rem;
@@ -81,7 +81,7 @@
 }
 
 .research-intro,
-.page--pubs .pubs-intro {
+.pubs-intro {
   max-width: 1000px;
   font-size: 1.05rem;
   line-height: 1.75;
@@ -104,7 +104,11 @@
   letter-spacing: 0.2px;
 }
 
-.research-section p { margin: 0.5rem 0 0.25rem; color: #333; }
+.research-section p,
+.pubs-wrapper p {
+  margin: 0.5rem 0 0.25rem;
+  color: #333;
+}
 
 /* Sprungziele nicht unter Header kleben */
 :target { scroll-margin-top: 80px; }
@@ -113,13 +117,14 @@
 /* Karten-Layout                              */
 /* ------------------------------------------ */
 .research-grid,
-.page--pubs .research-grid {
+.pubs-wrapper .research-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .research-card {
   border: 1px solid #eee;
   border-radius: 12px;
@@ -127,58 +132,82 @@
   background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .research-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
-.research-card h3 { font-size: 1.15rem; margin: 0 0 0.25rem; }
-.research-card p { margin: 0.25rem 0 0; color: #333; }
+
+.research-card h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem;
+}
+
+.research-card p {
+  margin: 0.25rem 0 0;
+  color: #333;
+}
 
 /* Links dezent */
 .page--research .page__content a,
-.page--pubs .page__content a { color: #0a4c86; }
+.page--pubs .page__content a {
+  color: #0a4c86;
+}
+
 .page--research .page__content a:hover,
-.page--pubs .page__content a:hover { text-decoration: underline; }
+.page--pubs .page__content a:hover {
+  text-decoration: underline;
+}
 
 /* ------------------------------------------ */
 /* Mobile Tweaks                              */
 /* ------------------------------------------ */
 @media (max-width: 700px) {
   .research-wrapper,
-  .page--pubs .pubs-wrapper { padding: 0 1rem 2rem; }
+  .pubs-wrapper {
+    padding: 0 1rem 2rem;
+  }
   .page--research h2,
-  .page--pubs h2 { font-size: 1.45rem; }
+  .page--pubs h2 {
+    font-size: 1.45rem;
+  }
   .research-grid,
-  .page--pubs .research-grid { grid-template-columns: 1fr; }
+  .pubs-wrapper .research-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ------------------------------------------ */
 /* Publications – APA7 kompakt                */
 /* ------------------------------------------ */
-.page--pubs .pubs-list {
+.pubs-list {
   list-style: none;
   padding-left: 0;
   margin: 0 0 1.2rem 0;
 }
-.page--pubs .pub {
+
+.pub {
   margin: 0.4rem 0;
 }
-.page--pubs .cite {
+
+.cite {
   display: block;
   padding-left: 1.3rem;
   text-indent: -1.3rem;
   line-height: 1.5;
 }
-.page--pubs .cite b { font-weight: 700; }
-.page--pubs em { font-style: italic; }
+
+.cite b { font-weight: 700; }
+em { font-style: italic; }
 
 /* Buttons */
-.page--pubs .actions {
+.actions {
   display: inline-flex;
   gap: 0.4rem;
   margin-left: 0.6rem;
 }
-.page--pubs .btn-link {
+
+.btn-link {
   display: inline-block;
   padding: 0.25rem 0.55rem;
   border-radius: 6px;
@@ -189,17 +218,19 @@
   font-size: 0.8rem;
   text-decoration: none;
 }
-.page--pubs .btn-ghost {
+
+.btn-ghost {
   background: #fff;
   color: #0a4c86;
   border-color: #c9d6e5;
   cursor: pointer;
 }
-.page--pubs .btn-link:hover { background: #083963; }
-.page--pubs .btn-ghost:hover { background: #f1f5f9; }
+
+.btn-link:hover { background: #083963; }
+.btn-ghost:hover { background: #f1f5f9; }
 
 /* Talks & Posters */
-.page--pubs .pub-year {
+.pub-year {
   margin-top: 1.1rem;
   font-size: 1rem;
   color: #374151;
