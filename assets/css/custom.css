@@ -145,76 +145,43 @@
 .page__content h1 { font-size: 2rem; letter-spacing: 0.2px; }
 .page__content h2 { letter-spacing: 0.2px; } /* Größe für Research oben definiert */
 
-/* ---------- Publications ---------- */
+/* ---------- Publications (kompakt, APA7, wie Research-Cards oben) ---------- */
 .page--pubs .page__content a { color: #0a4c86; }
 .page--pubs .page__content a:hover { text-decoration: underline; }
 
-.pubs-wrapper {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1.25rem 2rem;
-  font-size: 16px;
-  line-height: 1.7;
-}
+.pubs-wrapper { max-width: 900px; margin: 2rem auto; padding: 0 1.25rem 2rem; }
+.pubs-intro { font-size: 1.02rem; line-height: 1.65; color:#222; margin-bottom: .75rem; }
 
-.pubs-intro { margin-bottom: 1rem; color: #222; }
+/* gleicher Abstand wie Research */
+.page--pubs .research-grid { margin-top: 2rem; margin-bottom: 2rem; }
 
-.pubs-nav {
-  display: flex; flex-wrap: wrap; gap: .5rem;
-  margin: 0 0 1rem 0;
-}
-.pubs-nav a{
-  display:inline-block;
-  padding:.3rem .6rem;
-  border:1px solid #e5e7eb;
-  border-radius: 999px;
-  text-decoration:none;
-  font-size:.92rem;
-  background:#fff;
-}
-.pubs-nav a:hover{ background:#f7fafc; }
+/* Listen: Hanging indent, kompakt */
+.pubs-list { list-style: none; margin: .25rem 0 1rem; padding-left: 0; }
+.pubs-list--tight li { margin: .25rem 0; }
 
-.pub-item{
-  border:1px solid #eee;
-  border-radius:12px;
-  padding:1rem 1.1rem;
-  margin: 1rem 0;
-  background:#fff;
+.pub { margin: .35rem 0; }
+.pub .cite {
+  display: block;
+  padding-left: 1.25rem;      /* hanging indent */
+  text-indent: -1.25rem;
+  line-height: 1.55;
+  color:#111;
 }
-.pub-title{ font-weight:400; }
-.pub-title em{ font-style:italic; }
-.pub-meta{ font-size:.95rem; color:#6f777d; margin-top:.25rem; }
+.pub em { font-style: italic; }
 
-.pub-actions{
-  display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.6rem;
-}
+/* kleine, dezente Buttons rechts daneben */
+.actions { display: inline-flex; gap: .4rem; margin-left: .6rem; }
 .btn-link{
-  display:inline-block;
-  padding:.35rem .7rem;
-  border-radius:8px;
-  border:1px solid #0a4c86;
-  text-decoration:none;
-  font-weight:600;
-  font-size:.92rem;
-  background:#0a4c86;
-  color:#fff;
+  display:inline-block; padding:.28rem .55rem; border-radius:8px;
+  border:1px solid #0a4c86; background:#0a4c86; color:#fff;
+  text-decoration:none; font-weight:600;
 }
-.btn-link:hover{ opacity:.95; }
+.btn-ghost{ background:#fff; color:#0a4c86; border-color:#c9d6e5; }
+.btn-xs{ font-size:.85rem; line-height:1; }
 
-.btn-ghost{
-  background:#fff; color:#0a4c86; border-color:#c9d6e5;
-}
+/* Zwischenüberschriften */
+.page--pubs h2 { font-size: 1.45rem; margin-top: 1.25rem; margin-bottom: .5rem; }
+.pub-year { margin-top:1.1rem; font-size:1.02rem; color:#374151; border-top:1px solid #eee; padding-top:.6rem; }
 
-.pub-year{
-  margin-top:1.6rem;
-  font-size:1.05rem;
-  color:#374151;
-  border-top:1px solid #eee;
-  padding-top:.75rem;
-}
-
-.pub-list{ margin:.5rem 0 1rem 1.25rem; }
-.pub-list li{ margin:.35rem 0; }
-
-/* Scroll-Offset für Anker */
+/* Scroll-Offset */
 :target { scroll-margin-top: 80px; }
