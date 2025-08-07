@@ -2,6 +2,7 @@
 layout: splash
 title: "Research & Policy"
 permalink: /research/
+class: page--research
 ---
 
 <link rel="stylesheet" href="/assets/css/custom.css">
@@ -32,29 +33,30 @@ permalink: /research/
     </div>
   </div>
 
- <!-- Detailed sections -->
-<div class="research-section" id="methods">
-  <h2>Methods</h2>
-  <p>Ein kurzer Absatz zu deinen Methoden…</p>
-</div>
+  <!-- Detailed sections -->
+  <div class="research-section" id="methods">
+    <h2>Methods</h2>
+    <p>Ein kurzer Absatz zu deinen Methoden…</p>
+  </div>
 
-<div class="research-section" id="social-class">
-  <h2>Social class</h2>
-  <p>Ein kurzer Abschnitt über soziale Herkunft…</p>
-</div>
+  <div class="research-section" id="social-class">
+    <h2>Social class</h2>
+    <p>Ein kurzer Abschnitt über soziale Herkunft…</p>
+  </div>
 
-<div class="research-section" id="sen">
-  <h2>SEN (Special Educational Needs)</h2>
-  <p>Ein kurzer Abschnitt über deine Forschung zu Schüler·innen mit Behinderungen…</p>
-</div>
+  <div class="research-section" id="sen">
+    <h2>SEN (Special Educational Needs)</h2>
+    <p>Ein kurzer Abschnitt über deine Forschung zu Schüler·innen mit Behinderungen…</p>
+  </div>
 
-<div class="research-section" id="assessment">
-  <h2>Assessment</h2>
-  <p>Ein Abschnitt zu deinen Arbeiten zu Leistungsmessung…</p>
-</div>
+  <div class="research-section" id="assessment">
+    <h2>Assessment</h2>
+    <p>Ein Abschnitt zu deinen Arbeiten zu Leistungsmessung…</p>
+  </div>
 
-<div class="research-section" id="lgbtiq">
-  <h2>LGBTIQ+</h2>
-  <p>Ein Abschnitt über queere Bildungsforschung…</p>
-</div>
+  <div class="research-section" id="lgbtiq">
+    <h2>LGBTIQ+</h2>
+    <p>Ein Abschnitt über queere Bildungsforschung…</p>
+  </div>
 
+</div>
