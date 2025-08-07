@@ -41,7 +41,7 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 450px; /* Breite – später anpassen für unten bündig */ }
+.homepage-photo { flex: 0 0 445px; /* Breite – später anpassen für unten bündig */ }
 .homepage-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;   /* macht es quadratisch */
