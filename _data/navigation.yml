@@ -1,10 +1,24 @@
 main:
   - title: "CV"
     url: /cv/
-  - title: "Research, Publications & Policy"
+  - title: "Research & Policy"
     url: /research/
+    children:
+      - title: "Methods"
+        url: /research/methods/
+      - title: "Social Class"
+        url: /research/social-class/
+      - title: "SEN"
+        url: /research/sen/
+      - title: "Assessment"
+        url: /research/assessment/
+      - title: "LGBTIQ+"
+        url: /research/lgbtiq/
+  - title: "Publications"
+    url: /publications/
   - title: "Teaching"
     url: /teaching/
   - title: "Contact"
     url: /contact/
+
 
