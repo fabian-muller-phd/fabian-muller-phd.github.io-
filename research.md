@@ -8,10 +8,6 @@ permalink: /research/
 
 <div class="research-wrapper">
 
-  <p class="research-intro">
-    I use quantitative methods to study how structural factors shape learning trajectories and educational experiences — and how policy can reduce inequalities.
-  </p>
-
   <!-- Quick overview cards -->
   <div class="research-grid">
     <div class="research-card">
