@@ -29,14 +29,19 @@ class: page--pubs
   <div class="actions">
     <a class="btn-link" href="https://doi.org/10.31234/osf.io/fx7jc_v1" target="_blank" rel="noopener">Preprint</a>
     <!-- Platzhalter – später ersetzen, wenn du PDF in GitHub hochlädst -->
-    <a class="btn-ghost" href="/assets/papers/mueller_2025_preprint.pdf" download>PDF (Author)</a>
+    <a class="btn-ghost" href="/assets/papers/mueller_2025_preprint.pdf" download>Download</a>
   </div>
 </li>
 
   <li class="pub">
-    <span class="cite">Jury, M., Stanzcak, A., Huron, C., <b>Müller, F.</b>, Aelenei, C., & Sireci, S. (2025, July 11). <em>Perceived fairness of exam accommodations for students with special educational needs</em> [Preprint]. PsyArXiv.</span>
-    <div><a href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">https://doi.org/10.31219/osf.io/fcnz4_v1</a></div>
-  </li>
+    <span class="cite">Jury, M., Stanzcak, A., Huron, C., <b>Müller, F.</b>, Aelenei, C., & Sireci, S. (2025, July 11). <em>Perceived fairness of exam accommodations for students with special educational needs</em> [Preprint]. PsyArXiv.
+    <a href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">https://doi.org/10.31219/osf.io/fcnz4_v1</a></span>
+  <div class="actions">
+    <a class="btn-link" href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">Preprint</a>
+    <!-- Platzhalter – später ersetzen, wenn du PDF in GitHub hochlädst -->
+    <a class="btn-ghost" href="/assets/papers/jury_2025_preprint.pdf" download>Download</a>
+  </div>
+</li>
 
   <li class="pub">
     <span class="cite"><b>Müller, F.</b>, Goudeau, S., Aelenei, C., & Sanitioso, R. B. (in progress). <em>Beyond degrees: Navigating cultural mismatch and social-class identity in higher education across national contexts</em>. Manuscript in preparation, Université Paris Cité, France.</span>
