@@ -32,7 +32,7 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 /* ------------------------------------------ */
 .homepage-wrapper {
   display: flex;
-  align-items: stretch; /* sorgt für gleiche Höhe beider Spalten */
+  align-items: flex-start; /* Bild oben bündig mit Text */
   gap: 2rem;
   margin-top: 2rem;
   max-width: var(--site-max);
@@ -41,11 +41,11 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 440px; }
+.homepage-photo { flex: 0 0 350px; /* Breite – später anpassen für unten bündig */ }
 .homepage-photo img {
   width: 100%;
-  height: 100%;         /* gleiche Höhe wie Text */
-  object-fit: cover;    /* Bild füllt Bereich aus, kein Verzerren */
+  aspect-ratio: 1 / 1;   /* macht es quadratisch */
+  object-fit: cover;     /* kein Verzerren, ggf. Beschnitt */
   border-radius: 8px;
 }
 
@@ -56,7 +56,7 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   max-width: var(--text-max);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* oben beginnen */
+  justify-content: flex-start;
 }
 
 /* ------------------------------------------ */
@@ -101,7 +101,8 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   }
   .homepage-photo img {
     width: 100%;
-    height: auto; /* wieder normales Verhalten im Mobile */
+    height: auto;
+    aspect-ratio: auto;
     max-width: 320px;
   }
   .homepage-text {
@@ -223,7 +224,7 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 
 /* ------------------------------------------ */
-/* Publications – APA7 kompakt                */
+/* Publications – APA7 kompakt mit DOI inline */
 /* ------------------------------------------ */
 .pubs-list {
   list-style: none;
@@ -239,22 +240,30 @@ body{ font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 .cite b { font-weight: 700; }
 em { font-style: italic; }
+.cite .doi{
+  font-weight: 600;
+  white-space: nowrap;
+}
 
-.actions {
+/* Buttons unterhalb vom Zitat */
+.pubs-list .actions{
   display: inline-flex;
   gap: 0.4rem;
-  margin-left: 0.6rem;
+  margin-left: 1.3rem;
+  margin-top: 0.3rem;
+}
+.pubs-list .btn-link,
+.pubs-list .btn-ghost{
+  padding: 0.25rem 0.55rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
 }
 .btn-link {
   display: inline-block;
-  padding: 0.25rem 0.55rem;
-  border-radius: 6px;
   border: 1px solid var(--brand);
   background: var(--brand);
   color: #fff;
   font-weight: 600;
-  font-size: 0.8rem;
-  text-decoration: none;
 }
 .btn-ghost {
   background: #fff;
@@ -271,24 +280,4 @@ em { font-style: italic; }
   color: #374151;
   border-top: 1px solid #eee;
   padding-top: 0.6rem;
-}
-/* DOI inline & dezenter */
-.cite .doi{
-  font-weight: 600;
-  white-space: nowrap;      /* bricht nicht mitten im DOI */
-}
-
-/* Buttons knapp unter dem Zitat, eingerückt wie Hanging Indent */
-.pubs-list .actions{
-  display: inline-flex;
-  gap: 0.4rem;
-  margin-left: 1.3rem;      /* = padding-left der .cite für bündig */
-  margin-top: 0.3rem;
-}
-
-.pubs-list .btn-link,
-.pubs-list .btn-ghost{
-  padding: 0.25rem 0.55rem;
-  font-size: 0.8rem;
-  border-radius: 6px;
 }
