@@ -18,13 +18,15 @@
 .page__content,
 .initial-content,
 .archive,
-.splash .page__content{
-  max-width: var(--site-max);
+/* vorher: .splash .page__content */
+.layout--splash .page__content {
+  max-width: var(--site-max)!important; }
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+
 
 /* Grundtypografie */
 body{
