@@ -183,5 +183,26 @@
 .page--pubs h2 { font-size: 1.45rem; margin-top: 1.25rem; margin-bottom: .5rem; }
 .pub-year { margin-top:1.1rem; font-size:1.02rem; color:#374151; border-top:1px solid #eee; padding-top:.6rem; }
 
+.page--pubs .pubs-wrapper {
+  max-width: 1100px; /* mehr Platz nutzen */
+}
+
+.page--pubs .pubs-list {
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.page--pubs .cite strong {
+  font-weight: 700;
+}
+
+.btn-ghost {
+  background: #fff;
+  color: #0a4c86;
+  border-color: #c9d6e5;
+  cursor: pointer;
+}
+
+
 /* Scroll-Offset */
 :target { scroll-margin-top: 80px; }
