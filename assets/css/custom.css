@@ -7,8 +7,8 @@
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
-  max-width: 1200px;
-  margin-left: 48px;
+  max-width: 1000px;
+  margin-left: auto;
   margin-right: auto;
   padding: 1rem;
 }
@@ -69,34 +69,41 @@
 }
 
 /* ------------------------------------------ */
-/* Research Seite – Wrapper + Typo            */
+/* Research & Publications – Wrapper + Typo   */
 /* ------------------------------------------ */
-.research-wrapper {
-  max-width: 1250px; /* vorher 900px */
+.research-wrapper,
+.page--pubs .pubs-wrapper {
+  max-width: 1000px; /* gleiche Breite für beide */
   margin: 2rem auto;
-  padding: 0 2rem 2rem; /* vorher 0 1.25rem 2rem für gleichen Abstand wie pubs */
-  font-size: 16px;
-  line-height: 1.7;
+  padding: 0 1.25rem 2rem;
+  font-size: 0.95rem; /* wie Startseite */
+  line-height: 1.6;
 }
-.research-intro {
-  max-width: 900px;
+
+.research-intro,
+.page--pubs .pubs-intro {
+  max-width: 1000px;
   font-size: 1.05rem;
   line-height: 1.75;
   color: #222;
   margin-bottom: 1.5rem;
 }
+
 .research-section {
   margin: 2rem 0 2.5rem;
   border-top: 1px solid #eee;
   padding-top: 1.25rem;
 }
-.page--research h2 {
+
+.page--research h2,
+.page--pubs h2 {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.3;
   margin: 0 0 0.5rem;
   letter-spacing: 0.2px;
 }
+
 .research-section p { margin: 0.5rem 0 0.25rem; color: #333; }
 
 /* Sprungziele nicht unter Header kleben */
@@ -105,7 +112,8 @@
 /* ------------------------------------------ */
 /* Karten-Layout                              */
 /* ------------------------------------------ */
-.research-grid {
+.research-grid,
+.page--pubs .research-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 1rem;
@@ -126,75 +134,45 @@
 .research-card h3 { font-size: 1.15rem; margin: 0 0 0.25rem; }
 .research-card p { margin: 0.25rem 0 0; color: #333; }
 
-/* Links im Research-Bereich dezent */
-.page--research .page__content a { color: #0a4c86; }
-.page--research .page__content a:hover { text-decoration: underline; }
+/* Links dezent */
+.page--research .page__content a,
+.page--pubs .page__content a { color: #0a4c86; }
+.page--research .page__content a:hover,
+.page--pubs .page__content a:hover { text-decoration: underline; }
 
 /* ------------------------------------------ */
 /* Mobile Tweaks                              */
 /* ------------------------------------------ */
 @media (max-width: 700px) {
-  .research-wrapper { padding: 0 1rem 2rem; }
-  .page--research h2 { font-size: 1.45rem; }
-  .research-grid { grid-template-columns: 1fr; }
+  .research-wrapper,
+  .page--pubs .pubs-wrapper { padding: 0 1rem 2rem; }
+  .page--research h2,
+  .page--pubs h2 { font-size: 1.45rem; }
+  .research-grid,
+  .page--pubs .research-grid { grid-template-columns: 1fr; }
 }
 
 /* ------------------------------------------ */
-/* Globale Headings                           */
+/* Publications – APA7 kompakt                */
 /* ------------------------------------------ */
-.page__content h1 { font-size: 2rem; letter-spacing: 0.2px; }
-.page__content h2 { letter-spacing: 0.2px; }
-
-/* ------------------------------------------ */
-/* Publications – APA7 kompakt, volle Breite  */
-/* ------------------------------------------ */
-.page--pubs .page__content a { color: #0a4c86; }
-.page--pubs .page__content a:hover { text-decoration: underline; }
-
-.page--pubs .pubs-wrapper {
-  max-width: 1250px;
-  margin: 2rem auto;
-  padding: 0 2rem 2rem;
-  font-size: 0.94rem;
-  line-height: 1.55;
-}
-
-.page--pubs .pubs-intro {
-  font-size: 1.02rem;
-  line-height: 1.65;
-  color: #222;
-  margin-bottom: .75rem;
-}
-
 .page--pubs .pubs-list {
   list-style: none;
   padding-left: 0;
-  margin: 0 0 1.3rem 0;
+  margin: 0 0 1.2rem 0;
 }
-
 .page--pubs .pub {
-  margin: 0.55rem 0 1rem 0;
+  margin: 0.4rem 0;
 }
-
 .page--pubs .cite {
   display: block;
-  padding-left: 1.6rem;   /* Einrückung */
-  text-indent: -1.6rem;   /* Hanging indent */
+  padding-left: 1.3rem;
+  text-indent: -1.3rem;
+  line-height: 1.5;
 }
+.page--pubs .cite b { font-weight: 700; }
+.page--pubs em { font-style: italic; }
 
-.page--pubs .cite b {
-  font-weight: 700;
-}
-
-.page--pubs .pub > div {
-  margin-top: 0.15rem; /* kleiner Abstand Link-Zeile */
-}
-
-.page--pubs em {
-  font-style: italic;
-}
-
-/* Buttons neben Einträgen */
+/* Buttons */
 .page--pubs .actions {
   display: inline-flex;
   gap: 0.4rem;
@@ -220,13 +198,7 @@
 .page--pubs .btn-link:hover { background: #083963; }
 .page--pubs .btn-ghost:hover { background: #f1f5f9; }
 
-/* Zwischenüberschriften */
-.page--pubs h2 {
-  font-size: 1.35rem;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
+/* Talks & Posters */
 .page--pubs .pub-year {
   margin-top: 1.1rem;
   font-size: 1rem;
@@ -234,12 +206,3 @@
   border-top: 1px solid #eee;
   padding-top: 0.6rem;
 }
-
-/* Research-grid-Karten wie Research-Seite */
-.page--pubs .research-grid {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* Scroll-Offset */
-:target { scroll-margin-top: 80px; }
