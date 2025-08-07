@@ -29,6 +29,7 @@ footer:
   text_color: "#cccccc"
   links: []
   powered_by: false
+  custom: custom
 
 
 
