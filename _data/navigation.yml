@@ -3,17 +3,6 @@ main:
     url: /cv/
   - title: "Research & Policy"
     url: /research/
-    children:
-      - title: "Methods"
-        url: /research/methods/
-      - title: "Social Class"
-        url: /research/social-class/
-      - title: "SEN"
-        url: /research/sen/
-      - title: "Assessment"
-        url: /research/assessment/
-      - title: "LGBTIQ+"
-        url: /research/lgbtiq/
   - title: "Publications"
     url: /publications/
   - title: "Teaching"
