@@ -4,6 +4,9 @@ title: "Research & Policy"
 permalink: /research/
 ---
 
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+
 ## Methods
 
 Ein kurzer Absatz zu deinen Methoden...
