@@ -72,9 +72,9 @@
 /* Research Seite – Wrapper + Typo            */
 /* ------------------------------------------ */
 .research-wrapper {
-  max-width: 900px;
+  max-width: 1250px; /* vorher 900px */
   margin: 2rem auto;
-  padding: 0 1.25rem 2rem;
+  padding: 0 2rem 2rem; /* vorher 0 1.25rem 2rem für gleichen Abstand wie pubs */
   font-size: 16px;
   line-height: 1.7;
 }
@@ -152,11 +152,11 @@
 .page--pubs .page__content a:hover { text-decoration: underline; }
 
 .page--pubs .pubs-wrapper {
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 2rem auto;
-  padding: 0 1.25rem 2rem;
-  font-size: 0.92rem;
-  line-height: 1.5;
+  padding: 0 2rem 2rem;
+  font-size: 0.94rem;
+  line-height: 1.55;
 }
 
 .page--pubs .pubs-intro {
@@ -169,22 +169,25 @@
 .page--pubs .pubs-list {
   list-style: none;
   padding-left: 0;
-  margin: 0 0 1.2rem 0;
+  margin: 0 0 1.3rem 0;
 }
 
 .page--pubs .pub {
-  margin: 0.4rem 0;
+  margin: 0.55rem 0 1rem 0;
 }
 
 .page--pubs .cite {
   display: block;
-  padding-left: 1.3rem;
-  text-indent: -1.3rem;
-  line-height: 1.5;
+  padding-left: 1.6rem;   /* Einrückung */
+  text-indent: -1.6rem;   /* Hanging indent */
 }
 
 .page--pubs .cite b {
-  font-weight: 700; /* Müller, F. fett */
+  font-weight: 700;
+}
+
+.page--pubs .pub > div {
+  margin-top: 0.15rem; /* kleiner Abstand Link-Zeile */
 }
 
 .page--pubs em {
