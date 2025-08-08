@@ -338,22 +338,51 @@ body {
 /* ==========================================
    Contact
    ========================================== */
-/* ===== Contact (Option A – Typo-Chips) ===== */
-.contact-section { max-width: var(--text-max); margin: 2rem auto; padding: 0 1.25rem; }
-.contact-section h2 { margin: 0 0 0.6rem; }
+/* ===== Contact (Option A – Typo-Chips, linksbündig) ===== */
+.page--contact .contact-section{
+  max-width: var(--site-max);    /* statt --text-max */
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  text-align: left;
+}
 
-.email-link { font-weight: 600; text-decoration: none; color: var(--brand); }
-.email-link:hover { text-decoration: underline; }
+/* Email-Link */
+.email-link{ font-weight:600; color:var(--brand); text-decoration:none; }
+.email-link:hover{ text-decoration:underline; }
 
-.contact-list { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
-.contact-chip {
-  display: inline-flex; align-items: center; gap: .4rem;
-  padding: .45rem .65rem; border-radius: 8px; text-decoration: none;
-  background: #fff; border: 1px solid var(--line); color: var(--ink-2); font-weight: 500;
+/* Chips nebeneinander */
+.contact-list{
+  margin: .6rem 0 0;
+  padding: 0;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;               /* bricht sauber auf Mobile um */
+}
+.contact-list li{ list-style: none; }
+
+/* Chip-Stil */
+.contact-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .65rem .45rem .75rem;  /* Platz für Farbstreifen links */
+  border-radius: 8px;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  font-weight: 500;
   position: relative;
+  white-space: nowrap;
 }
-.contact-chip::before {
-  content: ""; width: 3px; height: 100%; border-radius: 8px 0 0 8px;
-  position: absolute; left: 0; top: 0; background: var(--brand);
+.contact-chip::before{
+  content: "";
+  width: 3px; height: 100%;
+  border-radius: 8px 0 0 8px;
+  position: absolute; left: 0; top: 0;
+  background: var(--brand);
 }
-.contact-chip:hover { box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px); }
+.contact-chip:hover{
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  transform: translateY(-1px);
+}
