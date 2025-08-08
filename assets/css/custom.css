@@ -266,3 +266,55 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   margin-right: auto;
   padding: 0;
 }
+
+/* ============================
+   Publications – Typo & Buttons kleiner
+   ============================ */
+
+/* Section-Überschriften kompakter */
+.page--pubs h2,
+.page--research h2 {
+  font-size: 1.28rem;   /* vorher 1.5rem */
+  line-height: 1.35;
+  margin: 0 0 0.4rem;
+}
+
+/* Karten oben: kleinere Titel + Copy */
+.page--pubs .research-card h3,
+.page--research .research-card h3 { font-size: 1rem; }
+.page--pubs .research-card p,
+.page--research .research-card p { font-size: 0.95rem; color: var(--ink-3); }
+
+/* Download-Buttons dezenter */
+.page--pubs .pubs-list .actions a {
+  font-size: 0.8rem !important;
+  padding: 0.22rem 0.5rem !important;
+  border-radius: 6px !important;
+}
+
+/* Abstand zwischen Zitat und Buttons minimal */
+.page--pubs .pubs-list .actions { margin-top: 0.25rem !important; }
+
+/* ============================
+   Talks & Posters – hängender Einzug
+   ============================ */
+
+/* hängender Einzug wie bei den Zitaten */
+.page--pubs .pubs-list--tight li {
+  display: block;
+  padding-left: 1.3rem;     /* Einzugsbreite */
+  text-indent: -1.3rem;     /* hängend */
+  line-height: 1.55;
+  margin: 0.35rem 0;
+}
+
+/* Links in den Tight-Listen normal blau */
+.page--pubs .pubs-list--tight a { color: var(--brand); }
+.page--pubs .pubs-list--tight a:hover { text-decoration: underline; }
+
+/* Jahres-Subheader kleiner */
+.page--pubs .pub-year {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.1rem 0 0.4rem;
+}
