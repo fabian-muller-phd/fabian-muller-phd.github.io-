@@ -2,7 +2,7 @@
 layout: splash
 title: "Publications"
 permalink: /publications/
-class: page--pubs
+classes: page--pubs
 ---
 
 <link rel="stylesheet" href="/assets/css/custom.css">
