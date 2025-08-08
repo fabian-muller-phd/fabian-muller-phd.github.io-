@@ -46,69 +46,67 @@ class: page--pubs
 
   </ul>
 
-  <!-- Journal Articles -->
-  <h2 id="journals">Journal Articles</h2>
-  <ul class="pubs-list">
+<!-- Journal Articles -->
+<h2 id="journals">Journal Articles</h2>
+<ul class="pubs-list">
 
   <li class="pub">
-  <span class="cite">
-    Melzel, S., Altvater-Mackensen, N., Ganglmayer, K., <b>Müller, F.</b>, Steinmassl, K., Hauf, P., & Paulus, M. (2025). 
-    The development of children’s and adults’ use of kinematic cues for visual anticipation and verbal prediction of action. 
-    <em>Journal of Experimental Child Psychology, 249</em>, 106064. 
-    <span class="meta">(SCImago Q1 – Developmental and Educational Psychology)</span>.
-    <a href="https://doi.org/10.1016/j.jecp.2024.106064" target="_blank" rel="noopener">https://doi.org/10.1016/j.jecp.2024.106064</a>
-  </span>
-  <div class="actions">
-    <a class="btn-ghost" href="/assets/papers/melzel_2025_jecp.pdf" download>Download</a>
-  </div>
-</li>
+    <span class="cite">
+      Melzel, S., Altvater-Mackensen, N., Ganglmayer, K., <b>Müller, F.</b>, Steinmassl, K., Hauf, P., & Paulus, M. (2025). 
+      The development of children’s and adults’ use of kinematic cues for visual anticipation and verbal prediction of action. 
+      <em>Journal of Experimental Child Psychology, 249</em>, 106064. 
+      <a href="https://doi.org/10.1016/j.jecp.2024.106064" target="_blank" rel="noopener">https://doi.org/10.1016/j.jecp.2024.106064</a>
+    </span>
+    <div class="actions">
+      <a class="btn-ghost" href="/assets/papers/melzel_2025_jecp.pdf" download>Download</a>
+    </div>
+  </li>
 
   <li class="pub">
-  <span class="cite">
-    <b>Müller, F.</b>, Goudeau, S., Stephens, N. M., Aelenei, C., & Sanitioso, R. B. (2023). 
-    Social-class inequalities in distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers. 
-    <em>International Review of Social Psychology, 36</em>(1): 3, 1–17. 
-    <span class="meta">(SCImago Q1 – Social Psychology)</span>.
-    <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">https://doi.org/10.5334/irsp.716</a>
-  </span>
-  <div class="actions">
-    <a class="btn-ghost" href="/assets/papers/müller_2023_irsp.pdf" download>Download</a>
-  </div>
-</li>
+    <span class="cite">
+      <b>Müller, F.</b>, Goudeau, S., Stephens, N. M., Aelenei, C., & Sanitioso, R. B. (2023). 
+      Social-class inequalities in distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers. 
+      <em>International Review of Social Psychology, 36</em>(1): 3, 1–17. 
+      <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">https://doi.org/10.5334/irsp.716</a>
+    </span>
+    <div class="actions">
+      <a class="btn-ghost" href="/assets/papers/mueller_2023_irsp.pdf" download>Download</a>
+    </div>
+  </li>
 
   <li class="pub">
-  <span class="cite">
-    <b>Müller, F.*</b>, Denk, A.*, Lubaway, E.*, Sälzer, C., Kozina, A., Perše, T. V., Rasmusson, M., Jugović, I., Nielsen, B. L., Rozman, M., Ojsteršek, A., & Jurko, S. (2020). 
-    Assessing social, emotional, and intercultural competences of students and school staff: A systematic literature review. 
-    <em>Educational Research Review, 29</em>, 100304. 
-    <span class="meta">(SCImago Q1 – Education)</span>.
-    <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">https://doi.org/10.1016/j.edurev.2019.100304</a>
-    <br>* equal contribution
-  </span>
-  <div class="actions">
-    <a class="btn-ghost" href="/assets/papers/müller_2020_ERR.pdf" download>Download</a>
-  </div>
-</li>
+    <span class="cite">
+      <b>Müller, F.*</b>, Denk, A.*, Lubaway, E.*, Sälzer, C., Kozina, A., Perše, T. V., Rasmusson, M., Jugović, I., Nielsen, B. L., Rozman, M., Ojsteršek, A., & Jurko, S. (2020). 
+      Assessing social, emotional, and intercultural competences of students and school staff: A systematic literature review. 
+      <em>Educational Research Review, 29</em>, 100304. 
+      <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">https://doi.org/10.1016/j.edurev.2019.100304</a>
+      <br>*equal contribution.
+    </span>
+    <div class="actions">
+      <a class="btn-ghost" href="/assets/papers/mueller_2020_ERR.pdf" download>Download</a>
+    </div>
+  </li>
 
   <li class="pub">
-  <span class="cite">
-    Strohmaier, A.R., Schiepe-Tiska, A., Chang, Y.-P., Müller, F., Lin, F.-L., & Reiss, K.R. (2020). 
-    Comparing eye movements during mathematical word problem solving in Chinese and German. 
-    <em>ZDM Mathematics Education, 52</em>, 45 - 58.
-    <span class="meta">(SCImago Q1 – Education)</span>.
-    <a href="https://doi.org/10.1007/s11858-019-01080-6" target="_blank" rel="noopener">https://doi.org/10.1007/s11858-019-01080-6</a>
-  </span>
-</li>
+    <span class="cite">
+      Strohmaier, A.R., Schiepe-Tiska, A., Chang, Y.-P., Müller, F., Lin, F.-L., & Reiss, K.R. (2020). 
+      Comparing eye movements during mathematical word problem solving in Chinese and German. 
+      <em>ZDM Mathematics Education, 52</em>, 45–58.
+      <a href="https://doi.org/10.1007/s11858-019-01080-6" target="_blank" rel="noopener">https://doi.org/10.1007/s11858-019-01080-6</a>
+    </span>
+  </li>
 
   <li class="pub">
-  <span class="cite">
-    Schuwerk, T., Schurz, M., Müller, F., Rupprecht, R., & Sommer, M. (2017). 
-    The rTPJ’s overarching cognitive function in networks for attention and Theory of Mind. 
-    <em>Social Cognitive and Affective Neuroscience, 12</em>(1), 157 - 168. 
-    <span class="meta">(SCImago Q1 – Cognitive Neuroscience)</span>.
-    <a href="https://doi.org/10.1093/scan/nsw163" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsw163</a>
-  </span>
-</li>
+    <span class="cite">
+      Schuwerk, T., Schurz, M., Müller, F., Rupprecht, R., & Sommer, M. (2017). 
+      The rTPJ’s overarching cognitive function in networks for attention and Theory of Mind. 
+      <em>Social Cognitive and Affective Neuroscience, 12</em>(1), 157–168. 
+      <a href="https://doi.org/10.1093/scan/nsw163" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsw163</a>
+    </span>
+  </li>
+
+</ul>
+
 
 
   </ul>
