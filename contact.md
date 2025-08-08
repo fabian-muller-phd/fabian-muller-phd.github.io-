@@ -7,11 +7,12 @@ classes: page--contact
 
 <link rel="stylesheet" href="/assets/css/custom.css">
 
-<section class="homepage-wrapper">
-  <div class="homepage-photo">
-    <img src="/assets/images/Fabian_Muller.jpg" alt="Fabian Müller">
+<div class="contact-wrapper">
+  <div class="contact-photo">
+    <img src="/assets/images/Fabian_Muller.jpg" alt="Portrait of Fabian Müller">
   </div>
-  <div class="homepage-text">
+
+  <div class="contact-panel">
     <h2>Get in Touch</h2>
     <p><a class="email-link" href="mailto:fabian.muller.phd@icloud.com">Email me</a></p>
 
@@ -22,4 +23,4 @@ classes: page--contact
       <li><a class="contact-chip" href="https://orcid.org/0000-0002-8363-9285" target="_blank" rel="noopener">ORCID iD</a></li>
     </ul>
   </div>
-</section>
+</div>
