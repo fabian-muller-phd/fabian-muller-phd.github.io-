@@ -11,16 +11,16 @@ class: page--pubs
 
   <!-- Top cards -->
   <div class="research-grid">
-    <div class="research-card"><h3><a href="#wip">Work in progress</a></h3><p>Preprints & in-progress manuscripts.</p></div>
-    <div class="research-card"><h3><a href="#journals">Journal articles</a></h3><p>Peer-reviewed publications.</p></div>
-    <div class="research-card"><h3><a href="#chapters">Book chapters</a></h3><p>Chapters & handbooks.</p></div>
-    <div class="research-card"><h3><a href="#policy">Policy & practice</a></h3><p>Guides & applied outputs.</p></div>
+    <div class="research-card"><h3><a href="#wip">Work in Progress</a></h3><p>Preprints & in-progress manuscripts.</p></div>
+    <div class="research-card"><h3><a href="#journals">Journal Articles</a></h3><p>Peer-reviewed publications.</p></div>
+    <div class="research-card"><h3><a href="#chapters">Book Chapters</a></h3><p>Chapters & handbooks.</p></div>
+    <div class="research-card"><h3><a href="#policy">Policy & Practice</a></h3><p>Guides & applied outputs.</p></div>
     <div class="research-card"><h3><a href="#thesis">Dissertation</a></h3><p>HAL repository.</p></div>
     <div class="research-card"><h3><a href="#talks">Talks & Posters</a></h3><p>Conference contributions.</p></div>
   </div>
 
-  <!-- Work in progress -->
-  <h2 id="wip">Work in progress</h2>
+  <!-- Work in Progress -->
+  <h2 id="wip">Work in Progress</h2>
   <ul class="pubs-list">
 
   <li class="pub">
@@ -46,15 +46,15 @@ class: page--pubs
 
   </ul>
 
-  <!-- Journal articles -->
-  <h2 id="journals">Peer-reviewed journal articles</h2>
+  <!-- Journal Articles -->
+  <h2 id="journals">Journal Articles</h2>
   <ul class="pubs-list">
 
   <li class="pub">
   <span class="cite">
     Melzel, S., Altvater-Mackensen, N., Ganglmayer, K., <b>Müller, F.</b>, Steinmassl, K., Hauf, P., & Paulus, M. (2025). 
     The development of children’s and adults’ use of kinematic cues for visual anticipation and verbal prediction of action. 
-    <em>Journal of Experimental Child Psychology, 249</em>, 106064 
+    <em>Journal of Experimental Child Psychology, 249</em>, 106064. 
     <span class="meta">(SCImago Q1 – Developmental and Educational Psychology)</span>.
     <a href="https://doi.org/10.1016/j.jecp.2024.106064" target="_blank" rel="noopener">https://doi.org/10.1016/j.jecp.2024.106064</a>
   </span>
@@ -63,30 +63,90 @@ class: page--pubs
   </div>
 </li>
 
+  <li class="pub">
+  <span class="cite">
+    <b>Müller, F.</b>, Goudeau, S., Stephens, N. M., Aelenei, C., & Sanitioso, R. B. (2023). 
+    Social-class inequalities in distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers. 
+    <em>International Review of Social Psychology, 36</em>(1): 3, 1–17. 
+    <span class="meta">(SCImago Q1 – Social Psychology)</span>.
+    <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">https://doi.org/10.5334/irsp.716</a>
+  </span>
+  <div class="actions">
+    <a class="btn-ghost" href="/assets/papers/müller_2023_irsp.pdf" download>Download</a>
+  </div>
+</li>
 
+  <li class="pub">
+  <span class="cite">
+    <b>Müller, F.*</b>, Denk, A.*, Lubaway, E.*, Sälzer, C., Kozina, A., Perše, T. V., Rasmusson, M., Jugović, I., Nielsen, B. L., Rozman, M., Ojsteršek, A., & Jurko, S. (2020). 
+    Assessing social, emotional, and intercultural competences of students and school staff: A systematic literature review. 
+    <em>Educational Research Review, 29</em>, 100304. 
+    <span class="meta">(SCImago Q1 – Education)</span>.
+    <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">https://doi.org/10.1016/j.edurev.2019.100304</a>
+    <br>* equal contribution
+  </span>
+  <div class="actions">
+    <a class="btn-ghost" href="/assets/papers/müller_2020_ERR.pdf" download>Download</a>
+  </div>
+</li>
 
-  <!-- weitere Artikel hier im gleichen Muster -->
+  <li class="pub">
+  <span class="cite">
+    Strohmaier, A.R., Schiepe-Tiska, A., Chang, Y.-P., Müller, F., Lin, F.-L., & Reiss, K.R. (2020). 
+    Comparing eye movements during mathematical word problem solving in Chinese and German. 
+    <em>ZDM Mathematics Education, 52</em>, 45 - 58.
+    <span class="meta">(SCImago Q1 – Education)</span>.
+    <a href="https://doi.org/10.1007/s11858-019-01080-6" target="_blank" rel="noopener">https://doi.org/10.1007/s11858-019-01080-6</a>
+  </span>
+</li>
+
+  <li class="pub">
+  <span class="cite">
+    Schuwerk, T., Schurz, M., Müller, F., Rupprecht, R., & Sommer, M. (2017). 
+    The rTPJ’s overarching cognitive function in networks for attention and Theory of Mind. 
+    <em>Social Cognitive and Affective Neuroscience, 12</em>(1), 157 - 168. 
+    <span class="meta">(SCImago Q1 – Cognitive Neuroscience)</span>.
+    <a href="https://doi.org/10.1093/scan/nsw163" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsw163</a>
+  </span>
+</li>
+
 
   </ul>
 
-  <!-- Book chapters -->
-  <h2 id="chapters">Book chapters</h2>
+  <!-- Book Chapters -->
+  <h2 id="chapters">Book Chapters</h2>
   <ul class="pubs-list">
 
   <li class="pub">
-    <span class="cite">Sälzer, C., Denk, A., <b>Müller, F.</b>, & Grosche, M. (2020). Spezifische Herausforderungen des Einbezugs von Schüler*innen mit sonderpädagogischem Förderbedarf in internationale Large-Scale-Assessments [Specific challenges for the inclusion of students with special educational needs in international large-scale assessments]. In C. Gresch, P. Kuhl, M. Grosche, C. Sälzer, & P. Stanat (Eds.), <em>Schüler*innen mit sonderpädagogischem Förderbedarf in Schulleistungserhebungen</em> (pp. 55–74). Springer Fachmedien Wiesbaden.</span>
-    <div><a href="https://doi.org/10.1007/978-3-658-27608-9_3" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-658-27608-9_3</a></div>
+    <span class="cite">Sälzer, C., Denk, A., <b>Müller, F.</b>, & Grosche, M. (2020). Spezifische Herausforderungen des Einbezugs von Schüler*innen mit sonderpädagogischem Förderbedarf in internationale Large-Scale-Assessments [Specific challenges for the inclusion of students with special educational needs in international large-scale assessments]. In C. Gresch, P. Kuhl, M. Grosche, C. Sälzer, & P. Stanat (Eds.), <em>Schüler*innen mit sonderpädagogischem Förderbedarf in Schulleistungserhebungen</em> (pp. 55–74). Springer Fachmedien Wiesbaden.
+    <a href="https://doi.org/10.1007/978-3-658-27608-9_3" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-658-27608-9_3</a></span>
   </li>
 
   </ul>
 
-  <!-- Policy -->
-  <h2 id="policy">Policy & practice guidelines</h2>
+  <!-- Policy & Practice -->
+  <h2 id="policy">Policy & Practice</h2>
   <ul class="pubs-list">
 
   <li class="pub">
-    <span class="cite"><b>Müller, F.</b> (2019). <em>HOW TO Nr. 3: Sprechen Sie LGBT*IQ? Leitfaden für eine genderinklusive und -gerechte Sprache</em> [Do you speak LGBT*IQ? Guideline for gender-inclusive and fair language]. PrOut@Work-Foundation.</span>
-    <div><a href="https://www.proutatwork.de/produkt/how-to-3-sprechen-sie-lgbtiq/" target="_blank" rel="noopener">https://www.proutatwork.de/produkt/how-to-3-sprechen-sie-lgbtiq/</a></div>
+    <span class="cite"><b>Müller, F.</b> (2019). <em>HOW TO Nr. 3: Sprechen Sie LGBT*IQ? Leitfaden für eine genderinklusive und -gerechte Sprache</em> [Do you speak LGBT*IQ? Guideline for gender-inclusive and fair language]. PrOut@Work-Foundation.
+    <a href="https://www.proutatwork.de/produkt/how-to-3-sprechen-sie-lgbtiq/" target="_blank" rel="noopener">https://www.proutatwork.de/produkt/how-to-3-sprechen-sie-lgbtiq/</a></span>
+  </li>
+
+    <li class="pub">
+    <span class="cite"><b>Müller, F.</b> (2019). <em>HOW TO Nr. 4: LGBT*IQ für Einsteiger. Warum sich Vielfalt am Arbeitsplatz lohnt. Leitfaden für Arbeitgeber_innen</em> [HOW TO Nr. 4: LGBT*IQ for beginners. Why diversity in the workplace pays off. A guide for employers]. PrOut@Work-Foundation.
+    <a href="https://www.proutatwork.de/produkt/how-to-4-lgbtiq-fuer-einsteigerinnen/" target="_blank" rel="noopener">https://www.proutatwork.de/produkt/how-to-4-lgbtiq-fuer-einsteigerinnen/</a></span>
+  </li>
+
+    <li class="pub">
+    <span class="cite"><b>Müller, F.</b> (2019). <em>LGBT*IQ – und Du? Coming Out für Insider. Leitfaden für Arbeitnehmer_innen</em> [HOW TO Nr. 5: LGBT*IQ – and you? Coming out for insiders. A guide for employees]. PrOut@Work-Foundation.
+    <a href="https://www.proutatwork.de/produkt/how-to-5-queere-themen/" target="_blank" rel="noopener">https://www.proutatwork.de/produkt/how-to-5-queere-themen/</a></span>
+  </li>
+
+    <li class="pub">
+    <span class="cite">Denk, A.*, <b>Müller, F.*</b>, Lubaway, E.*, Sälzer, C., Kozina, A., Vidmar, M., Rasmusson, M., Jugović, I., Nielsen, B. L., Vieluf, S., Ojsteršek, A., Jurko, S. (2017). <em>Catalogue for the assessment of social, emotional, and intercultural competences.</em> HAND in HAND project.
+    <a href="https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf" target="_blank" rel="noopener">https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf</a>
+    <br>*equal contribution.</span>
   </li>
 
   </ul>
@@ -95,8 +155,8 @@ class: page--pubs
   <h2 id="thesis">Dissertation</h2>
   <ul class="pubs-list">
   <li class="pub">
-    <span class="cite"><b>Müller, F.</b> (2023). <em>Closing the achievement gap: Learning from working-class students’ acculturation and success in higher education</em> (Doctoral dissertation, Université Paris Cité). HAL theses.</span>
-    <div><a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">https://theses.hal.science/tel-04163355</a></div>
+    <span class="cite"><b>Müller, F.</b> (2023). <em>Closing the achievement gap: Learning from working-class students’ acculturation and success in higher education</em> (Doctoral dissertation, Université Paris Cité). HAL theses.
+    <a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">https://theses.hal.science/tel-04163355</a></span>
   </li>
   </ul>
 
@@ -108,10 +168,10 @@ class: page--pubs
     <li>Jury, M., <b>Müller, F.</b>, & Aelenei, C. (submitted). <em>Perceived academic success of students with special educational needs: Interaction with students’ gender</em>. EARLI, Graz, Austria.</li>
     <li><b>Müller, F.</b>, Goudeau, S., Aelenei, C., & Sanitioso, R. B. (2023, June). <em>Acculturation in higher education institutions: How high-performing working-class students reduce cultural mismatch at university</em>. EASP, Kraków, Poland.</li>
     <li><b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July). <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>. EASP-SPSSI, London, UK.</li>
-    <li><b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July). <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>. 14ème CIPS, Bordeaux, France.</li>
-    <li>Tobias, S., Ganglmayer, K., <b>Müller, F.</b>, Hauf, P., & Paulus, M. (2019, Sept.). <em>The development of children’s use of kinematic cues for action prediction: An assessment of explicit and implicit processing</em>. DGPs, Leipzig, Germany.</li>
-    <li>Denk, A.*, <b>Müller, F.*</b>, & Sälzer, C. (2017, Dec.). <em>Hand in Hand – Social and emotional skills for tolerant and non-discriminative societies (a whole school approach)</em>. Education and Refugees: Research Meets Practice, Berlin, Germany. *equal contribution.</li>
-    <li>Strohmaier, A. R., Schiepe-Tiska, A., <b>Müller, F.</b>, & Reiss, K. M. (2017, Mar.). <em>Über den Zusammenhang zwischen mathematikbezogener Ängstlichkeit und Blickbewegungen beim Lesen von Mathematikaufgaben in unterschiedlichen situationellen Kontexten</em> [On the relationship between mathematics-related anxiety and eye movements while reading math problems in different situational contexts]. GEBF, Heidelberg, Germany.</li>
+    <li><b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July). <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>. CIPS, Bordeaux, France.</li>
+    <li>Tobias, S., Ganglmayer, K., <b>Müller, F.</b>, Hauf, P., & Paulus, M. (2019, September). <em>The development of children’s use of kinematic cues for action prediction: An assessment of explicit and implicit processing</em>. DGPs, Leipzig, Germany.</li>
+    <li>Denk, A.*, <b>Müller, F.*</b>, & Sälzer, C. (2017, December). <em>Hand in Hand – Social and emotional skills for tolerant and non-discriminative societies (a whole school approach)</em>. Education and Refugees: Research Meets Practice, Berlin, Germany. <br>*equal contribution.</li>
+    <li>Strohmaier, A. R., Schiepe-Tiska, A., <b>Müller, F.</b>, & Reiss, K. M. (2017, March). <em>Über den Zusammenhang zwischen mathematikbezogener Ängstlichkeit und Blickbewegungen beim Lesen von Mathematikaufgaben in unterschiedlichen situationellen Kontexten</em> [On the relationship between mathematics-related anxiety and eye movements while reading math problems in different situational contexts]. GEBF, Heidelberg, Germany.</li>
   </ul>
 
   <h3 class="pub-year">Posters</h3>
