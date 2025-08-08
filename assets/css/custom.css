@@ -226,7 +226,7 @@ body {
 }
 
 .cv-section h2 {
-  font-size: 1.20rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin: 2rem 0 0.6rem;
 }
@@ -279,4 +279,14 @@ body {
 
 .cv-section .dl-btn:hover {
   background: #b9d7ef;
+}
+
+@media (max-width: 600px) {
+  .cv-entry {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .cv-years {
+    flex: none;
+  }
 }
