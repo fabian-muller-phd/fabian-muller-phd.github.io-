@@ -34,6 +34,9 @@ classes: page--pubs
   <li class="pub">
     <span class="cite">Jury, M., Stanzcak, A., Huron, C., <b>Müller, F.</b>, Aelenei, C., & Sireci, S. (2025, July 11). <em>Perceived fairness of exam accommodations for students with special educational needs</em> [Preprint]. PsyArXiv.
     <a href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">https://doi.org/10.31219/osf.io/fcnz4_v1</a></span>
+<div class="actions">
+    <a class="dl-btn" href="/assets/papers/jury_2025_preprint.pdf" download>Download</a>
+  </div>
 </li>
 
   <li class="pub">
