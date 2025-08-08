@@ -104,12 +104,9 @@ class: page--pubs
       <a href="https://doi.org/10.1093/scan/nsw163" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsw163</a>
     </span>
   </li>
-
 </ul>
 
 
-
-  </ul>
 
   <!-- Book Chapters -->
   <h2 id="chapters">Book Chapters</h2>
