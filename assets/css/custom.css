@@ -1,17 +1,28 @@
 /* ==========================================
-   Globale Variablen + Container-Breite
+   Basis & Variablen
    ========================================== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
 :root {
   --site-max: 1280px;
   --text-max: 830px;
   --base-font: 16px;
+
   --brand: #0a4c86;
   --brand-dark: #083963;
+
   --ink-1: #111;
   --ink-2: #222;
   --ink-3: #333;
   --muted: #6f777d;
   --line: #eee;
+
+  /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
+  --photo-col: 445px;     /* Desktop-Spalte */
+  --photo-col-sm: 280px;  /* Tablet-Spalte */
+  --photo-mobile: 320px;  /* Fixbreite am Phone */
 }
 
 /* ==========================================
@@ -32,13 +43,27 @@ body {
   font-size: var(--base-font);
   line-height: 1.6;
   color: var(--ink-2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+img { max-width: 100%; height: auto; display: block; }
+
 .page__content a { color: var(--brand); }
 .page__content a:hover { text-decoration: underline; }
 :target { scroll-margin-top: 80px; }
 
+/* Headlines */
+.page__content h2 {
+  font-size: 1.1rem !important;
+  line-height: 1.35 !important;
+  margin: 0 0 0.4rem !important;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
 /* ==========================================
-   Startseite Layout
+   Startseite
    ========================================== */
 .homepage-wrapper {
   display: flex;
@@ -50,13 +75,15 @@ body {
   margin-right: auto;
   padding: 1rem;
 }
-.homepage-photo { flex: 0 0 445px; }
+
+.homepage-photo { flex: 0 0 var(--photo-col); }
 .homepage-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
 }
+
 .homepage-text {
   flex: 1;
   font-size: 16px;
@@ -64,17 +91,6 @@ body {
   max-width: var(--text-max);
   display: flex;
   flex-direction: column;
-}
-
-/* Responsive Startseite */
-@media (max-width: 900px) {
-  .homepage-photo { flex: 0 0 280px; }
-}
-@media (max-width: 600px) {
-  .homepage-wrapper { flex-direction: column; align-items: center; gap: 1rem; }
-  .homepage-photo { flex: none; max-width: 90vw; margin-bottom: 1rem; }
-  .homepage-photo img { max-width: 320px; aspect-ratio: auto; }
-  .homepage-text { max-width: 95vw; text-align: left; }
 }
 
 /* ==========================================
@@ -101,17 +117,6 @@ body {
 .page__footer-follow { display: none !important; }
 
 /* ==========================================
-   Einheitliche H2-Größe auf allen Seiten
-   ========================================== */
-.page__content h2 {
-  font-size: 1.1rem !important;
-  line-height: 1.35 !important;
-  margin: 0 0 0.4rem !important;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-
-/* ==========================================
    Research & Publications Wrapper + Typo
    ========================================== */
 .research-wrapper,
@@ -130,9 +135,7 @@ body {
 }
 .research-section { max-width: var(--text-max); margin: 2rem 0 2.5rem; }
 
-/* ==========================================
-   Karten-Layout
-   ========================================== */
+/* Karten-Layout */
 .research-grid,
 .pubs-wrapper .research-grid {
   display: grid;
@@ -152,19 +155,13 @@ body {
 .research-card h3 { font-size: 1rem; margin: 0 0 0.25rem; }
 .research-card p { font-size: 0.95rem; color: var(--ink-3); margin: 0.25rem 0 0; }
 
-/* Mobile Grid */
-@media (max-width: 700px) {
-  .research-wrapper, .pubs-wrapper { padding: 0 1rem 2rem; }
-  .research-grid, .pubs-wrapper .research-grid { grid-template-columns: 1fr; }
-}
-
 /* ==========================================
    Publications Listenformat
    ========================================== */
 .pubs-list { list-style: none; padding-left: 0; margin: 0 0 1.2rem 0; }
 .pub { margin: 0.4rem 0; }
 
-/* Hängender Einzug für Zitate */
+/* hängender Einzug für Zitate */
 .page--pubs .cite {
   display: block;
   padding-left: 1.3rem;
@@ -172,7 +169,7 @@ body {
   line-height: 1.6;
 }
 
-/* Download-Buttons extra klein */
+/* Download-Buttons kompakt */
 .pubs-wrapper .pubs-list .actions a,
 .pubs-wrapper .dl-btn {
   -webkit-appearance: none;
@@ -180,9 +177,9 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 1.2;
-  padding: 0.18rem 0.40rem;  /* weniger Innenabstand */
-  font-size: 0.75rem;        /* kleinerer Text */
-  border-radius: 4px;        /* kleinere Rundung */
+  padding: 0.18rem 0.40rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
   font-weight: 500;
   white-space: nowrap;
   cursor: pointer;
@@ -191,17 +188,10 @@ body {
   color: #064d77;
 }
 .pubs-wrapper .pubs-list .actions a:hover,
-.pubs-wrapper .dl-btn:hover {
-  background: #b9d7ef;
-}
-
+.pubs-wrapper .dl-btn:hover { background: #b9d7ef; }
 
 /* Talks & Posters */
-.page--pubs .pubs-list--tight {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
+.page--pubs .pubs-list--tight { list-style: none; margin-left: 0; padding-left: 0; }
 .page--pubs .pubs-list--tight li {
   display: block;
   padding-left: 1.3rem;
@@ -218,52 +208,23 @@ body {
 /* ==========================================
    CV
    ========================================== */
-
 .cv-section {
   max-width: var(--site-max);
   margin: 2rem auto;
   padding: 0 1.25rem;
 }
-
 .cv-section h2 {
   font-size: 1.1rem;
   font-weight: 700;
   margin: 2rem 0 0.6rem;
 }
-
-.cv-entry {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.cv-years {
-  flex: 0 0 130px;
-  font-weight: 600;
-  color: var(--muted);
-}
-
-.cv-details {
-  flex: 1;
-}
-
-.cv-details a {
-  color: var(--brand);
-}
-
-.cv-details a:hover {
-  text-decoration: underline;
-}
-
-.cv-section ul {
-  margin: 0 0 1rem 1rem;
-  padding: 0;
-}
-
-.cv-section li {
-  margin-bottom: 0.4rem;
-}
-
+.cv-entry { display: flex; gap: 1rem; margin-bottom: 1rem; }
+.cv-years { flex: 0 0 130px; font-weight: 600; color: var(--muted); }
+.cv-details { flex: 1; }
+.cv-details a { color: var(--brand); }
+.cv-details a:hover { text-decoration: underline; }
+.cv-section ul { margin: 0 0 1rem 1rem; padding: 0; }
+.cv-section li { margin-bottom: 0.4rem; }
 .cv-section .dl-btn {
   display: inline-block;
   font-size: 0.75rem;
@@ -276,75 +237,35 @@ body {
   font-weight: 500;
   margin-top: 1rem;
 }
-
-.cv-section .dl-btn:hover {
-  background: #b9d7ef;
-}
-
-@media (max-width: 600px) {
-  .cv-entry {
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-  .cv-years {
-    flex: none;
-  }
-}
+.cv-section .dl-btn:hover { background: #b9d7ef; }
 
 /* ==========================================
    Teaching
    ========================================== */
-
 .teaching-section {
-  max-width: var(--site-max); /* gleiche Breite wie CV */
+  max-width: var(--site-max);
   margin: 2rem auto;
   padding: 0 1.25rem;
-  line-height: 1.6; /* Basis-Zeilenhöhe */
+  line-height: 1.6;
 }
-
 .teaching-section h2 {
-  font-size: 1.1rem; /* gleiche H2-Größe wie auf allen Seiten */
+  font-size: 1.1rem;
   font-weight: 700;
   margin: 2rem 0 0.6rem;
 }
-
-.teaching-entry {
-  margin-bottom: 1.5rem;
-}
-
-.teaching-years {
-  font-weight: 600;
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-
-.teaching-section a {
-  color: var(--brand);
-}
-
-.teaching-section a:hover {
-  text-decoration: underline;
-}
-
-.teaching-section ul {
-  margin: 0 0 1rem 1rem;
-  padding: 0;
-}
-
-.teaching-section li {
-  margin-bottom: 0.4rem;
-}
+.teaching-entry { margin-bottom: 1.5rem; }
+.teaching-years { font-weight: 600; color: var(--muted); margin-bottom: 0.4rem; }
+.teaching-section a { color: var(--brand); }
+.teaching-section a:hover { text-decoration: underline; }
+.teaching-section ul { margin: 0 0 1rem 1rem; padding: 0; }
+.teaching-section li { margin-bottom: 0.4rem; }
 
 /* ==========================================
-   Contact – Foto links, Panel rechts (wie Startseite)
+   Contact – wie Startseite
    ========================================== */
-
-/* Splash-Zentrierung nur auf Contact zuverlässig aufheben */
-.page--contact .splash .page__content,
-.page--contact .splash .page__inner-wrap,
-.page--contact .page__content {
-  text-align: left !important;
-}
+/* Splash-Zentrierung auf Contact neutralisieren */
+body.page--contact .splash .page__content,
+body.page--contact .splash .page__inner-wrap { text-align: left !important; }
 
 /* Wrapper exakt wie .homepage-wrapper */
 .page--contact .contact-wrapper {
@@ -355,11 +276,11 @@ body {
   max-width: var(--site-max);
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; /* wichtig: wie Startseite */
+  padding: 1rem; /* identisch zur Startseite */
 }
 
-/* Bild-Spalte (wie Startseite) */
-.page--contact .contact-photo { flex: 0 0 445px; }
+/* Bild-Spalte identisch */
+.page--contact .contact-photo { flex: 0 0 var(--photo-col); }
 .page--contact .contact-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -368,23 +289,16 @@ body {
 }
 
 /* Text/Actions rechts */
-.page--contact .contact-panel {
-  flex: 1;
-  max-width: var(--text-max);
-}
+.page--contact .contact-panel { flex: 1; max-width: var(--text-max); }
 .page--contact .contact-panel h2 {
-  font-size: 1.1rem;      /* matcht globale H2 */
+  font-size: 1.1rem;
   line-height: 1.35;
   margin: 0 0 .6rem;
   font-weight: 700;
 }
 
 /* Email-Link */
-.page--contact .email-link {
-  font-weight: 600;
-  color: var(--brand);
-  text-decoration: none;
-}
+.page--contact .email-link { font-weight: 600; color: var(--brand); text-decoration: none; }
 .page--contact .email-link:hover { text-decoration: underline; }
 
 /* Chips */
@@ -396,7 +310,6 @@ body {
   flex-wrap: wrap;
 }
 .page--contact .contact-list li { list-style: none; }
-
 .page--contact .contact-chip {
   display: inline-flex;
   align-items: center;
@@ -418,29 +331,61 @@ body {
   position: absolute; left: 0; top: 0;
   background: var(--brand);
 }
-.page--contact .contact-chip:hover {
-  box-shadow: 0 2px 10px rgba(0,0,0,.06);
-  transform: translateY(-1px);
+.page--contact .contact-chip:hover { box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px); }
+
+/* ==========================================
+   Responsive
+   ========================================== */
+/* Tablet */
+@media (max-width: 900px) {
+  .homepage-photo,
+  .page--contact .contact-photo { flex-basis: var(--photo-col-sm); }
 }
 
-/* Breakpoints IDENTISCH zur Startseite -> einheitliche Bildgröße am Phone */
-@media (max-width: 900px) {
-  .page--contact .contact-photo { flex: 0 0 280px; }
+/* Mobile */
+@media (max-width: 700px) {
+  .research-wrapper, .pubs-wrapper { padding: 0 1rem 2rem; }
+  .research-grid, .pubs-wrapper .research-grid { grid-template-columns: 1fr; }
 }
+
 @media (max-width: 600px) {
+  /* Layout-Stacking + identische Bildgröße */
+  .homepage-wrapper,
   .page--contact .contact-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
+
+  .homepage-photo,
   .page--contact .contact-photo {
     flex: none;
     max-width: 90vw;
     margin-bottom: 1rem;
   }
+
+  .homepage-photo img,
   .page--contact .contact-photo img {
-    max-width: 320px;   /* exakt wie Startseite */
-    aspect-ratio: auto;
+    width: min(var(--photo-mobile), 90vw);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
   }
-  .page--contact .contact-panel { max-width: 95vw; }
+
+  .homepage-text,
+  .page--contact .contact-panel { max-width: 95vw; text-align: left; }
+
+  /* Bessere Lesbarkeit & Klickflächen */
+  body { font-size: 17px; line-height: 1.7; }
+  .research-card, .pubs-wrapper .research-grid > * { padding: .9rem 1rem; }
+  .page__content h2 { margin-bottom: .5rem; }
+  .contact-chip { padding: .5rem .7rem; }
+}
+
+/* Tastaturfokus sichtbar (A11y) */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
 }
