@@ -339,32 +339,26 @@ body {
    Contact
    ========================================== */
 .contact-section {
-  max-width: var(--text-max);
+  max-width: var(--text-max); /* gleiche Breite wie Textspalten */
   margin: 2rem auto;
   padding: 0 1.25rem;
-  line-height: 1.6;
+  text-align: left; /* Links­bündig */
 }
 
-.contact-section h2 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 2rem 0 0.6rem;
+.contact-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  justify-content: flex-start; /* sorgt für linksbündig */
 }
 
-.contact-section a {
-  color: var(--brand);
-  text-decoration: none;
+.contact-icons a img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  transition: opacity 0.2s ease;
 }
 
-.contact-section a:hover {
-  text-decoration: underline;
-}
-
-.contact-section ul {
-  margin: 0 0 1rem 1rem;
-  padding: 0;
-}
-
-.contact-section li {
-  margin-bottom: 0.4rem;
+.contact-icons a:hover img {
+  opacity: 0.75;
 }
