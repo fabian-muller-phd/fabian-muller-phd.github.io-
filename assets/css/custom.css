@@ -336,62 +336,68 @@ body {
 }
 
 /* ==========================================
-   Contact – Typo-Chips, linksbündig
+   Contact – Option B: Foto links, Text rechts
    ========================================== */
 
-/* Splash-Zentrierung nur auf Contact-Seite überschreiben */
-.page--contact .splash-inner {
-  display: block;
+/* Splash-Theme-Zentrierung auf der Contact-Seite killen */
+.page--contact .splash-inner,
+.page--contact .page__content,
+.page--contact .initial-content {
   text-align: left !important;
   max-width: var(--site-max);
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
-/* Haupt-Container der Contact-Seite */
-.page--contact .contact-section {
-  max-width: var(--site-max);
+/* Zweispaltiges Layout wie Startseite */
+.contact-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
   margin: 2rem auto;
+  max-width: var(--site-max);
   padding: 0 1.25rem;
 }
 
-/* Intro-Text-Block */
-.page--contact .contact-intro {
+/* Foto-Spalte */
+.contact-photo { flex: 0 0 280px; }
+.contact-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Text-Spalte */
+.contact-text {
+  flex: 1;
   max-width: var(--text-max);
-  margin-left: 0;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Email-Link */
-.email-link {
-  font-weight: 600;
-  color: var(--brand);
-  text-decoration: none;
-}
-.email-link:hover {
-  text-decoration: underline;
-}
+.email-link { font-weight: 600; color: var(--brand); text-decoration: none; }
+.email-link:hover { text-decoration: underline; }
 
-/* Liste der Kontakt-Links (Chips nebeneinander) */
+/* Chips nebeneinander */
 .contact-list {
-  margin: 0.6rem 0 0;
+  list-style: none;
+  margin: .6rem 0 0;
   padding: 0;
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap; /* bricht auf Mobile automatisch um */
+  gap: .5rem;
+  flex-wrap: wrap;
 }
-.contact-list li {
-  list-style: none;
-}
+.contact-list li { list-style: none; }
 
-/* Einzelner Kontakt-Chip */
-.contact-chip {
+/* Chip-Stil */
+.contact-chip{
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.65rem 0.45rem 0.75rem; /* Platz für Farbstreifen links */
+  gap: .4rem;
+  padding: .45rem .65rem .45rem .75rem;  /* Platz für Farbstreifen links */
   border-radius: 8px;
   text-decoration: none;
   background: #fff;
@@ -401,20 +407,24 @@ body {
   position: relative;
   white-space: nowrap;
 }
-
-/* Farbstreifen links am Chip */
-.contact-chip::before {
+.contact-chip::before{
   content: "";
-  width: 3px;
-  height: 100%;
+  width: 3px; height: 100%;
   border-radius: 8px 0 0 8px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: absolute; left: 0; top: 0;
   background: var(--brand);
 }
-
-.contact-chip:hover {
+.contact-chip:hover{
   box-shadow: 0 2px 10px rgba(0,0,0,.06);
   transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-photo { flex: 0 0 220px; }
+}
+@media (max-width: 600px) {
+  .contact-wrapper { flex-direction: column; align-items: center; gap: 1rem; }
+  .contact-photo { flex: none; max-width: 90vw; margin-bottom: 1rem; }
+  .contact-text { max-width: 95vw; }
 }
