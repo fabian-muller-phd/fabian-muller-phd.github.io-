@@ -334,10 +334,10 @@ body.page--contact .splash .page__inner-wrap { text-align: left !important; }
 .page--contact .contact-chip:hover { box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px); }
 
 /* ==========================================
-   Responsive
+   Responsive (Mobile & Tablet Optimierungen)
    ========================================== */
 
-/* Tablet (bis 900px): Foto-Spalte verkleinern wie geplant */
+/* Tablet */
 @media (max-width: 900px) {
   .homepage-photo,
   .page--contact .contact-photo {
@@ -345,51 +345,29 @@ body.page--contact .splash .page__inner-wrap { text-align: left !important; }
   }
 }
 
-/* Kleine Tablets / große Phones (bis 768px):
-   CV frühzeitig stapeln + etwas mehr Luft geben */
-@media (max-width: 768px) {
-  /* CV: Zwei Spalten -> untereinander */
-  .cv-entry {
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-  .cv-years {
-    flex: none;
-    margin-bottom: 0.2rem;
-    text-align: left; /* wirkt ruhiger mobil */
-  }
-  .cv-section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .cv-details {
-    max-width: 95vw;
-  }
-}
-
-/* Mobile (bis 700px):
-   Research/Publication-Grids einspaltig + kompakter */
+/* Mobile allgemeine Abstände & 1-spaltige Grids */
 @media (max-width: 700px) {
   .research-wrapper,
   .pubs-wrapper {
     padding: 0 1rem 2rem;
   }
+
   .research-grid,
   .pubs-wrapper .research-grid {
     grid-template-columns: 1fr;
-    gap: 0.75rem;       /* etwas enger als Desktop */
-    margin: 1.5rem auto;/* weniger vertikaler Weißraum */
+    max-width: 100vw;
+    overflow-wrap: break-word;
   }
-  .research-card p {
-    font-size: 0.92rem; /* bessere Lesbarkeit mobil */
-    line-height: 1.5;
+
+  .pubs-wrapper .research-grid > * {
+    max-width: 95vw;
+    box-sizing: border-box;
   }
 }
 
-/* Phones (bis 600px):
-   Home/Contact stacken + identische Bildgrößen */
+/* Mobile Portrait & sehr kleine Geräte */
 @media (max-width: 600px) {
-  /* Layout-Stacking + identische Bildgröße */
+  /* Layout-Stacking + identische Bildgröße für Home & Contact */
   .homepage-wrapper,
   .page--contact .contact-wrapper {
     flex-direction: column;
@@ -420,14 +398,38 @@ body.page--contact .splash .page__inner-wrap { text-align: left !important; }
     text-align: left;
   }
 
-  /* Bessere Lesbarkeit & Klickflächen */
-  body { font-size: 17px; line-height: 1.7; }
-  .page__content h2 { margin-bottom: .5rem; }
-  .contact-chip { padding: .5rem .7rem; }
+  /* CV-Seite: Jahreszahlen & Text untereinander */
+  .cv-entry {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .cv-years {
+    flex: none;
+  }
+  .cv-details {
+    word-break: break-word;
+  }
+
+  /* Lesbarkeit & Klickflächen */
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .research-card,
+  .pubs-wrapper .research-grid > * {
+    padding: .9rem 1rem;
+  }
+  .page__content h2 {
+    margin-bottom: .5rem;
+  }
+  .contact-chip {
+    padding: .5rem .7rem;
+  }
 }
 
 /* Tastaturfokus sichtbar (A11y) */
-a:focus-visible, button:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
