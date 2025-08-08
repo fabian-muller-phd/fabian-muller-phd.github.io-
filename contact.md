@@ -5,7 +5,7 @@ permalink: /contact/
 classes: page--contact
 ---
 
-<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
 <div class="contact-wrapper">
   <div class="contact-photo">
