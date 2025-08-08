@@ -256,30 +256,19 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 /* ------------------------------------------
    Breiten-Fix: Research/Publ.-Grids
    ------------------------------------------ */
+/* === Einheitliche Seiten-Gutter für Research/Publications === */
 .page--research .research-wrapper,
-.page--pubs .pubs-wrapper { padding-left: 0; padding-right: 0; }
-
+.page--pubs .pubs-wrapper { padding: 0 1.25rem 2rem; } /* symmetrisch wie Startseite */
 .page--research .research-grid,
-.page--pubs .research-grid {
-  max-width: var(--site-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+.page--pubs .research-grid { padding: 0; } /* kein Extra-Padding in der Grid */
+
+/* Kleinere H2 + Card-Typo (dezenter) */
+.page--pubs .page__content h2,
+.page--research .page__content h2 { 
+  font-size: 1.28rem; 
+  line-height: 1.35; 
+  margin: 0 0 0.4rem; 
 }
-
-/* ============================
-   Publications – Typo & Buttons kleiner
-   ============================ */
-
-/* Section-Überschriften kompakter */
-.page--pubs h2,
-.page--research h2 {
-  font-size: 1.28rem;   /* vorher 1.5rem */
-  line-height: 1.35;
-  margin: 0 0 0.4rem;
-}
-
-/* Karten oben: kleinere Titel + Copy */
 .page--pubs .research-card h3,
 .page--research .research-card h3 { font-size: 1rem; }
 .page--pubs .research-card p,
@@ -292,29 +281,16 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   border-radius: 6px !important;
 }
 
-/* Abstand zwischen Zitat und Buttons minimal */
-.page--pubs .pubs-list .actions { margin-top: 0.25rem !important; }
-
-/* ============================
-   Talks & Posters – hängender Einzug
-   ============================ */
-
-/* hängender Einzug wie bei den Zitaten */
+/* Hängender Einzug für Talks/Poster */
 .page--pubs .pubs-list--tight li {
   display: block;
-  padding-left: 1.3rem;     /* Einzugsbreite */
-  text-indent: -1.3rem;     /* hängend */
+  padding-left: 1.3rem;
+  text-indent: -1.3rem;
   line-height: 1.55;
   margin: 0.35rem 0;
 }
+.page--pubs .pub-year { font-size: 1.05rem; font-weight: 700; margin: 1.1rem 0 0.4rem; }
 
-/* Links in den Tight-Listen normal blau */
-.page--pubs .pubs-list--tight a { color: var(--brand); }
-.page--pubs .pubs-list--tight a:hover { text-decoration: underline; }
-
-/* Jahres-Subheader kleiner */
-.page--pubs .pub-year {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin: 1.1rem 0 0.4rem;
-}
+/* Falls nötig: Grid sauber mittig halten */
+.page--research .research-grid,
+.page--pubs .research-grid { margin-left: auto; margin-right: auto; }
