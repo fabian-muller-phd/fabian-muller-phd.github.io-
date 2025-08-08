@@ -294,3 +294,59 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 /* Falls nötig: Grid sauber mittig halten */
 .page--research .research-grid,
 .page--pubs .research-grid { margin-left: auto; margin-right: auto; }
+
+/* Überschriften in Research & Publications kleiner (direkt am Wrapper) */
+.pubs-wrapper h2,
+.research-wrapper h2 {
+  font-size: 1.20rem;      /* ggf. 1.16rem, sag Bescheid */
+  line-height: 1.35;
+  margin: 0 0 0.45rem;
+}
+
+/* Karten-Typo dezenter */
+.pubs-wrapper .research-card h3,
+.research-wrapper .research-card h3 { font-size: 1.0rem; }
+.pubs-wrapper .research-card p,
+.research-wrapper .research-card p { font-size: 0.95rem; color: var(--ink-3); }
+
+/* Download-Button klein & neutral – greift NUR in Publications */
+.pubs-wrapper .pubs-list .actions a,
+.pubs-wrapper .dl-btn {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  padding: 0.22rem 0.50rem !important;
+  font-size: 0.80rem !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  border: 1px solid #b9d7ef !important;
+  background: #d9e9f7 !important;
+  color: #064d77 !important;
+}
+.pubs-wrapper .pubs-list .actions a:hover,
+.pubs-wrapper .dl-btn:hover { background: #b9d7ef !important; }
+
+/* Talks & Posters – zuerst Liste neutralisieren, dann hängender Einzug */
+.page--pubs .pubs-list--tight {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.page--pubs .pubs-list--tight li {
+  display: block;
+  padding-left: 1.3rem;  /* Einzug */
+  text-indent: -1.3rem;  /* hängend */
+  line-height: 1.55;
+  margin: 0.35rem 0;
+}
+
+/* Sicherheit: Grid mittig und symmetrische Gutter (wie Startseite) */
+.page--research .research-wrapper,
+.page--pubs .pubs-wrapper { padding: 0 1.25rem 2rem; }
+.page--research .research-grid,
+.page--pubs .research-grid { margin-left: auto; margin-right: auto; padding: 0; }
+
