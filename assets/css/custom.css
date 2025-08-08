@@ -296,15 +296,14 @@ body {
    ========================================== */
 
 .teaching-section {
-  max-width: var(--site-max);
+  max-width: var(--text-max); /* gleiche Breite wie Research & CV */
   margin: 2rem auto;
   padding: 0 1.25rem;
-  font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.6; /* Basis-Zeilenhöhe */
 }
 
 .teaching-section h2 {
-  font-size: 1.20rem;
+  font-size: 1.1rem; /* gleiche H2-Größe wie auf allen Seiten */
   font-weight: 700;
   margin: 2rem 0 0.6rem;
 }
@@ -316,5 +315,22 @@ body {
 .teaching-years {
   font-weight: 600;
   color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.teaching-section a {
+  color: var(--brand);
+}
+
+.teaching-section a:hover {
+  text-decoration: underline;
+}
+
+.teaching-section ul {
+  margin: 0 0 1rem 1rem;
+  padding: 0;
+}
+
+.teaching-section li {
   margin-bottom: 0.4rem;
 }
