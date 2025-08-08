@@ -352,9 +352,9 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 
-/* Mobile – einspaltig + keine Überläufe */
+/* Mobile – bis 700px */
 @media (max-width: 700px) {
-  /* Container-Polster & kein X-Scrollen */
+  /* Wrapper für Research & Publications angleichen */
   .research-wrapper,
   .pubs-wrapper {
     padding: 0 1rem 2rem;
@@ -362,31 +362,45 @@ img { max-width: 100%; height: auto; display: block; }
     overflow-x: hidden;
   }
 
-  /* Einspaltige Grids für Research & Publications */
+  /* Einspaltige Grids */
   .research-grid,
   .pubs-wrapper .research-grid {
     grid-template-columns: 1fr;
-  }
-
-  /* Karten in Publications sicher begrenzen */
-  .pubs-wrapper .research-grid {
     padding-left: 0;
     padding-right: 0;
   }
+
+  /* Karten in Research & Publications */
+  .research-card,
   .pubs-wrapper .research-grid > *,
   .pubs-wrapper .pub-card {
     box-sizing: border-box;
     max-width: 100%;
     padding: .9rem 1rem;
-    overflow-wrap: anywhere;   /* lange Links/Titel umbrechen */
+    overflow-wrap: anywhere;   /* lange Worte umbrechen */
     word-break: break-word;
   }
 
-  /* Globale Sicherheit: kein horizontales Scrollen */
+  /* Lange Listen / Texte in Publications */
+  .pubs-wrapper .page__content {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* Tabellen oder Listen innerhalb halten */
+  .pubs-wrapper table,
+  .pubs-wrapper ul,
+  .pubs-wrapper ol {
+    max-width: 100%;
+  }
+
+  /* Sicherheit: kein horizontales Scrollen */
   body { overflow-x: hidden; }
 }
 
-/* Mobile Portrait & sehr kleine Geräte */
+/* Mobile Portrait & sehr kleine Geräte – bis 600px */
 @media (max-width: 600px) {
   /* Home & Contact: gleicher Stack + Bildgröße */
   .homepage-wrapper,
@@ -427,7 +441,6 @@ img { max-width: 100%; height: auto; display: block; }
 
   /* Lesbarkeit & Touch-Flächen */
   body { font-size: 17px; line-height: 1.7; }
-  .research-card { padding: .9rem 1rem; }
   .page__content h2 { margin-bottom: .5rem; }
   .contact-chip { padding: .5rem .7rem; }
 }
