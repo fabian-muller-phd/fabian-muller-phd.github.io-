@@ -338,13 +338,18 @@ body {
 /* ==========================================
    Contact
    ========================================== */
-/* ===== Contact (Option A – Typo-Chips, linksbündig) ===== */
-.page--contact .contact-section{
-  max-width: var(--site-max);    /* statt --text-max */
+/* ===== Contact (Option A – Typo-Chips, linksbündig wie andere Seiten) ===== */
+.page--contact .contact-section {
+  max-width: var(--site-max);    /* volle Breite */
   margin: 2rem auto;
   padding: 0 1.25rem;
+}
+
+.page--contact .contact-intro {
+  max-width: var(--text-max);    /* begrenzt Textbreite wie .pubs-intro */
   text-align: left;
 }
+
 
 /* Email-Link */
 .email-link{ font-weight:600; color:var(--brand); text-decoration:none; }
