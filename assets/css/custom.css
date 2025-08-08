@@ -457,3 +457,21 @@ button:focus-visible {
   word-break: break-word;   /* bricht notfalls mitten im Wort */
 }
 
+/* --- Last-Resort: Contact linksbündig wie Startseite (nur Desktop) --- */
+@media (min-width: 1000px) {
+  .page--contact .splash .page__content,
+  .page--contact .splash .page__inner-wrap,
+  .page--contact .page__content {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .page--contact .contact-wrapper {
+    max-width: 1000px !important;   /* gleiche Arbeitsbreite wie Home */
+    margin-left: 0 !important;       /* linksbündig */
+    margin-right: auto !important;
+    padding: 1rem !important;
+  }
+}
