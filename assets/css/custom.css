@@ -350,3 +350,56 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 .page--research .research-grid,
 .page--pubs .research-grid { margin-left: auto; margin-right: auto; padding: 0; }
 
+/* ===== HARD OVERRIDES: pubs + research ===== */
+
+/* Grids bündig + mittig wie Startseite */
+body.page--research .research-wrapper,
+body.page--pubs .pubs-wrapper { padding: 0 1.25rem 2rem !important; }
+body.page--research .research-grid,
+body.page--pubs .research-grid { margin-left: auto !important; margin-right: auto !important; padding: 0 !important; }
+
+/* Kleinere H2 auf beiden Seiten */
+body.page--pubs .page__content h2,
+body.page--research .page__content h2 { 
+  font-size: 1.28rem !important;
+  line-height: 1.35 !important;
+  margin: 0 0 0.45rem !important;
+}
+
+/* Karten-Typo dezenter */
+body.page--pubs .research-card h3,
+body.page--research .research-card h3 { font-size: 1rem !important; margin: 0 0 0.25rem !important; }
+body.page--pubs .research-card p,
+body.page--research .research-card p { font-size: 0.95rem !important; color: var(--ink-3) !important; }
+
+/* Download-Buttons deutlich kleiner (greift für btn, btn-ghost und nackte <a>) */
+body.page--pubs .pubs-list .actions a,
+body.page--pubs .pubs-list .actions a.btn,
+body.page--pubs .pubs-list .actions a.btn-ghost {
+  font-size: 0.8rem !important;
+  line-height: 1.2 !important;
+  padding: 0.22rem 0.5rem !important;
+  border-radius: 6px !important;
+}
+
+/* Hängender Einzug für Talks & Poster – inkl. UL-Reset gegen Theme-Defaults */
+body.page--pubs .pubs-list--tight { 
+  margin-left: 0 !important; 
+  padding-left: 0 !important; 
+  list-style: none !important; 
+}
+body.page--pubs .pubs-list--tight li {
+  display: block !important;
+  margin: 0.35rem 0 !important;
+  padding-left: 1.3rem !important;
+  text-indent: -1.3rem !important;
+  line-height: 1.55 !important;
+}
+
+/* Überschrift der Unterlisten (Talks/Posters) dezenter */
+body.page--pubs .pub-year { 
+  font-size: 1.05rem !important; 
+  font-weight: 700 !important; 
+  margin: 1.1rem 0 0.4rem !important; 
+}
+
