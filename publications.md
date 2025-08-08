@@ -5,7 +5,7 @@ permalink: /publications/
 classes: page--pubs
 ---
 
-<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
 <div class="pubs-wrapper">
 
