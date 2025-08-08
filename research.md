@@ -2,7 +2,7 @@
 layout: splash
 title: "Research & Policy"
 permalink: /research/
-class: page--research
+classes: page--research
 ---
 
 <link rel="stylesheet" href="/assets/css/custom.css">
