@@ -336,27 +336,31 @@ body {
 }
 
 /* ==========================================
-   Contact – Option B: Foto links, Panel rechts
+   Contact – Foto links, Panel rechts (wie Startseite)
    ========================================== */
 
-/* harte Splash-Zentrierung neutralisieren, nur auf Contact */
-.page--contact .page__content,
-.page--contact .initial-content,
-.page--contact .splash .page__content { text-align: left !important; }
+/* Splash-Zentrierung nur auf Contact zuverlässig aufheben */
+.page--contact .splash .page__content,
+.page--contact .splash .page__inner-wrap,
+.page--contact .page__content {
+  text-align: left !important;
+}
 
-/* Wrapper im gleichen Raster wie Startseite */
-.page--contact .contact-wrapper{
+/* Wrapper exakt wie .homepage-wrapper */
+.page--contact .contact-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+  margin-top: 2rem;
   max-width: var(--site-max);
-  margin: 2rem auto;
-  padding: 0 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem; /* wichtig: wie Startseite */
 }
 
-/* Bild-Spalte */
-.page--contact .contact-photo{ flex: 0 0 445px; }
-.page--contact .contact-photo img{
+/* Bild-Spalte (wie Startseite) */
+.page--contact .contact-photo { flex: 0 0 445px; }
+.page--contact .contact-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -364,36 +368,36 @@ body {
 }
 
 /* Text/Actions rechts */
-.page--contact .contact-panel{
+.page--contact .contact-panel {
   flex: 1;
   max-width: var(--text-max);
 }
-.page--contact .contact-panel h2{
-  font-size: 1.1rem;           /* matcht deine globalen H2 */
+.page--contact .contact-panel h2 {
+  font-size: 1.1rem;      /* matcht globale H2 */
   line-height: 1.35;
   margin: 0 0 .6rem;
   font-weight: 700;
 }
 
 /* Email-Link */
-.page--contact .email-link{
+.page--contact .email-link {
   font-weight: 600;
   color: var(--brand);
   text-decoration: none;
 }
-.page--contact .email-link:hover{ text-decoration: underline; }
+.page--contact .email-link:hover { text-decoration: underline; }
 
 /* Chips */
-.page--contact .contact-list{
+.page--contact .contact-list {
   margin: .6rem 0 0;
   padding: 0;
   display: flex;
   gap: .5rem;
   flex-wrap: wrap;
 }
-.page--contact .contact-list li{ list-style: none; }
+.page--contact .contact-list li { list-style: none; }
 
-.page--contact .contact-chip{
+.page--contact .contact-chip {
   display: inline-flex;
   align-items: center;
   gap: .4rem;
@@ -407,42 +411,36 @@ body {
   position: relative;
   white-space: nowrap;
 }
-.page--contact .contact-chip::before{
+.page--contact .contact-chip::before {
   content: "";
   width: 3px; height: 100%;
   border-radius: 8px 0 0 8px;
   position: absolute; left: 0; top: 0;
   background: var(--brand);
 }
-.page--contact .contact-chip:hover{
+.page--contact .contact-chip:hover {
   box-shadow: 0 2px 10px rgba(0,0,0,.06);
   transform: translateY(-1px);
 }
 
-/* Responsive wie Startseite */
-@media (max-width: 900px){
-  .page--contact .contact-photo{ flex: 0 0 280px; }
+/* Breakpoints IDENTISCH zur Startseite -> einheitliche Bildgröße am Phone */
+@media (max-width: 900px) {
+  .page--contact .contact-photo { flex: 0 0 280px; }
 }
-@media (max-width: 600px){
-  .page--contact .contact-wrapper{ flex-direction: column; align-items: center; gap: 1rem; }
-  .page--contact .contact-photo{ flex: none; max-width: 90vw; margin-bottom: 1rem; }
-  .page--contact .contact-photo img{ max-width: 320px; aspect-ratio: auto; }
-  .page--contact .contact-panel{ max-width: 95vw; }
-}
-
-/* Gleiche Ausrichtung wie Startseite */
-.page--contact .page__content,
-.page--contact .initial-content,
-.page--contact .splash .page__content {
-  max-width: none !important;     /* entfernt die zentrierte Containerbreite */
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.page--contact .contact-wrapper {
-  max-width: var(--site-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+@media (max-width: 600px) {
+  .page--contact .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .page--contact .contact-photo {
+    flex: none;
+    max-width: 90vw;
+    margin-bottom: 1rem;
+  }
+  .page--contact .contact-photo img {
+    max-width: 320px;   /* exakt wie Startseite */
+    aspect-ratio: auto;
+  }
+  .page--contact .contact-panel { max-width: 95vw; }
 }
