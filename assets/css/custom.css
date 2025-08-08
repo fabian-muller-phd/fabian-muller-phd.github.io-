@@ -310,6 +310,12 @@ em { font-style: italic; }
   padding-top: 0.6rem;
 }
 
+.cite .meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
 /* ------------------------------------------
    Breiten-Fix: Research/Publ.-Grids
    ------------------------------------------ */
