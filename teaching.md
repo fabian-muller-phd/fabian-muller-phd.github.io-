@@ -1,0 +1,64 @@
+---
+layout: splash
+title: "Teaching"
+permalink: /teaching/
+classes: page--teaching
+---
+
+<section class="teaching-section">
+
+  <h2>Teaching Overview</h2>
+  <p>
+    I teach undergraduate and graduate courses in psychology and education, with a strong emphasis on research methodology, critical analysis, and the practical application of evidence-based approaches.
+    My teaching integrates collaborative learning, academic writing, and quantitative research skills to prepare students for both academic and professional contexts.
+  </p>
+
+  <h2>Courses Taught</h2>
+
+  <div class="teaching-entry">
+    <div class="teaching-years">Université Paris Cité, France (2019 – present)</div>
+    <ul>
+      <li>
+        <strong>English for Psychologists – Introduction to Psychological Research (Bachelor Year 1)</strong><br>
+        Introduces research methodology with a focus on experimental, survey, and observational designs. Develops students’ academic writing and critical reading skills for empirical research.<br>
+        <em>Course Language: English</em>
+      </li>
+      <li>
+        <strong>English for Psychologists – Advanced Research Analysis (Bachelor Year 2)</strong><br>
+        Strengthens analytical skills for evaluating psychological research using frameworks such as QALMRI. Focuses on synthesizing scientific findings and presenting them effectively.<br>
+        <em>Course Language: English</em>
+      </li>
+      <li>
+        <strong>English for Psychologists – Research Project Development (Bachelor Year 3)</strong><br>
+        Guides students through the development of research proposals, emphasizing scientific method, effective communication, and collaborative project work.<br>
+        <em>Course Language: English</em>
+      </li>
+      <li>
+        <strong>Social Psychology (Bachelor Year 3)</strong><br>
+        Covers topics such as emotion, self-perception, and stereotype inhibition through interactive discussions and applied exercises.<br>
+        <em>Course Language: French</em>
+      </li>
+    </ul>
+  </div>
+
+  <div class="teaching-entry">
+    <div class="teaching-years">Technical University of Munich, Germany (2017 – 2018)</div>
+    <ul>
+      <li>
+        <strong>Methods of Empirical Educational Science (Master Year 1)</strong><br>
+        Introduced study design, data collection methods, and statistical techniques for educational research. Developed students’ ability to critically evaluate empirical studies.<br>
+        <em>Course Language: German</em>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Teaching Approach</h2>
+  <ul>
+    <li><strong>Research engagement</strong> – connecting students directly with empirical projects.</li>
+    <li><strong>Analytical skills</strong> – fostering the ability to evaluate and synthesize research evidence.</li>
+    <li><strong>Academic communication</strong> – training in both written and oral scientific communication.</li>
+    <li><strong>Practical application</strong> – linking theory and research methods to real-world contexts.</li>
+    <li><strong>Interactive learning</strong> – group work, literature reviews, and collaborative project development.</li>
+  </ul>
+
+</section>
