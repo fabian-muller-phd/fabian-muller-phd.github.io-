@@ -196,42 +196,34 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 .pubs-list { list-style: none; padding-left: 0; margin: 0 0 1.2rem 0; }
 .pub { margin: 0.4rem 0; }
 
-/* Hängende Einrückung für alle Publikationslisten */
-.pubs-list li {
-  padding-left: 1.3rem;
-  text-indent: -1.3rem;
-  line-height: 1.6;
+/* ===== Publications: rechter Versatz fixen ===== */
+.page--pubs .pubs-list { margin-left: 0; padding-left: 0; }
+.page--pubs .pubs-list li {
+  padding-left: 0;   /* vorher 1.3rem -> entfernt */
+  text-indent: 0;    /* Sicherheit */
 }
 
-/* --- Fix #1: überall linksbündig (verhindert zentrierte Absätze bei Dissertation) --- */
-.page--pubs .pubs-wrapper,
-.page--pubs .pubs-list,
-.page--pubs .pubs-list li,
-.page--pubs .cite { text-align: left; }
-
-.cite {
+/* Hängender Einzug NUR über .cite */
+.page--pubs .cite {
   display: block;
   padding-left: 1.3rem;
   text-indent: -1.3rem;
   line-height: 1.6;
+  text-align: left;
 }
-.cite b { font-weight: 700; }
-em { font-style: italic; }
-.cite .doi { font-weight: 600; white-space: nowrap; }
 
-/* Buttons unterhalb vom Zitat */
-.pubs-list .actions {
+/* Buttons unter dem Zitat sauber darstellen */
+.page--pubs .pubs-list .actions {
   display: inline-flex;
   gap: 0.4rem;
-  margin-left: 1.3rem;
+  margin-left: 1.3rem;  /* bündig mit der zweiten Zeile der .cite */
   margin-top: 0.3rem;
 }
 
-/* --- Fix #3: Download-Buttons nicht „verzogen“ (saubere Link-Buttons) --- */
-.pubs-list .btn-link,
-.pubs-list .btn-ghost {
-  -webkit-appearance: none;
-  appearance: none;
+.page--pubs .pubs-list a.btn-ghost,
+.page--pubs .pubs-list a.btn-link {
+  -webkit-appearance: none !important;
+  appearance: none !important;
   display: inline-block;
   text-decoration: none;
   line-height: 1.2;
@@ -240,41 +232,42 @@ em { font-style: italic; }
   border-radius: 6px;
   font-weight: 500;
   border: 1px solid transparent;
-  box-shadow: none;
+  box-shadow: none !important;
   vertical-align: baseline;
   white-space: nowrap;
   cursor: pointer;
+  background-clip: padding-box;
+  font-family: inherit;
 }
-.pubs-list .btn-link {
+
+.page--pubs .pubs-list a.btn-link {
   border-color: #b9d7ef;
   background: #d9e9f7;
   color: #064d77;
 }
-.pubs-list .btn-link:hover { background: #b9d7ef; }
-.pubs-list .btn-ghost {
+.page--pubs .pubs-list a.btn-link:hover { background: #b9d7ef; }
+
+.page--pubs .pubs-list a.btn-ghost {
   background: #f2f2f2;
   color: #333;
   border-color: #ccc;
 }
-.pubs-list .btn-ghost:hover { background: #e0e0e0; }
+.page--pubs .pubs-list a.btn-ghost:hover { background: #e0e0e0; }
 
-.cite .meta { font-size: 0.85rem; color: var(--muted); font-style: italic; }
-
-/* Unterüberschriften in Publikationen */
-.pub-year {
-  margin-top: 1.1rem;
-  border-top: 1px solid var(--line);
-  padding-top: 0.6rem;
-  color: #374151;
-}
-
-/* --- Fix #2: „Talks“ & „Posters“ (h3.pub-year) so klein wie der Abschnittstitel --- */
+/* „Talks & Posters“ vs. „Talks“/„Posters“ – h3 kleiner machen */
 .page--pubs h3.pub-year {
-  font-size: 1.35rem !important;  /* identisch zu .page--pubs h2 im Mobile, etwas kleiner am Desktop */
+  font-size: 1.1rem;   /* kleiner als dein h2 (1.5rem) */
   font-weight: 700;
   line-height: 1.25;
+  color: #374151;
   margin: 1.1rem 0 0.4rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
 }
+
+/* Falls irgendwo noch zentriert geerbt wurde, hart linksbündig erzwingen */
+.page--pubs .pubs-wrapper,
+.page--pubs .pubs-list { text-align: left; }
 
 /* ------------------------------------------
    Breiten-Fix: Research/Publ.-Grids
