@@ -261,13 +261,17 @@ img { max-width: 100%; height: auto; display: block; }
 .teaching-section li { margin-bottom: 0.4rem; }
 
 /* ==========================================
-   Contact – wie Startseite
+   Contact – exakt wie Startseite (Foto links)
    ========================================== */
-/* Splash-Zentrierung auf Contact neutralisieren */
-body.page--contact .splash .page__content,
-body.page--contact .splash .page__inner-wrap { text-align: left !important; }
 
-/* Wrapper exakt wie .homepage-wrapper */
+/* Splash-/Theme-Zentrierung sicher deaktivieren */
+.page--contact .splash .page__content,
+.page--contact .page__content,
+.page--contact .initial-content { text-align: left !important; }
+
+.page--contact .splash .page__inner-wrap { padding: 0 !important; }
+
+/* Wrapper IDENTISCH zu .homepage-wrapper */
 .page--contact .contact-wrapper {
   display: flex;
   align-items: flex-start;
@@ -276,11 +280,11 @@ body.page--contact .splash .page__inner-wrap { text-align: left !important; }
   max-width: var(--site-max);
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; /* identisch zur Startseite */
+  padding: 1rem; /* exakt wie Startseite */
 }
 
-/* Bild-Spalte identisch */
-.page--contact .contact-photo { flex: 0 0 var(--photo-col); }
+/* Bildspalte IDENTISCH zu .homepage-photo */
+.page--contact .contact-photo { flex: 0 0 445px; }
 .page--contact .contact-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -288,8 +292,11 @@ body.page--contact .splash .page__inner-wrap { text-align: left !important; }
   border-radius: 8px;
 }
 
-/* Text/Actions rechts */
-.page--contact .contact-panel { flex: 1; max-width: var(--text-max); }
+/* Textspalte IDENTISCH zu .homepage-text */
+.page--contact .contact-panel {
+  flex: 1;
+  max-width: var(--text-max);
+}
 .page--contact .contact-panel h2 {
   font-size: 1.1rem;
   line-height: 1.35;
@@ -297,41 +304,41 @@ body.page--contact .splash .page__inner-wrap { text-align: left !important; }
   font-weight: 700;
 }
 
-/* Email-Link */
+/* Links/Chips (unverändert) */
 .page--contact .email-link { font-weight: 600; color: var(--brand); text-decoration: none; }
 .page--contact .email-link:hover { text-decoration: underline; }
-
-/* Chips */
-.page--contact .contact-list {
-  margin: .6rem 0 0;
-  padding: 0;
-  display: flex;
-  gap: .5rem;
-  flex-wrap: wrap;
-}
+.page--contact .contact-list { margin: .6rem 0 0; padding: 0; display: flex; gap: .5rem; flex-wrap: wrap; }
 .page--contact .contact-list li { list-style: none; }
 .page--contact .contact-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
+  display: inline-flex; align-items: center; gap: .4rem;
   padding: .45rem .65rem .45rem .75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  background: #fff;
-  border: 1px solid var(--line);
-  color: var(--ink-2);
-  font-weight: 500;
-  position: relative;
-  white-space: nowrap;
+  border-radius: 8px; text-decoration: none; background: #fff;
+  border: 1px solid var(--line); color: var(--ink-2); font-weight: 500;
+  position: relative; white-space: nowrap;
 }
 .page--contact .contact-chip::before {
-  content: "";
-  width: 3px; height: 100%;
-  border-radius: 8px 0 0 8px;
-  position: absolute; left: 0; top: 0;
-  background: var(--brand);
+  content: ""; width: 3px; height: 100%; border-radius: 8px 0 0 8px;
+  position: absolute; left: 0; top: 0; background: var(--brand);
 }
 .page--contact .contact-chip:hover { box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px); }
+
+/* Breakpoints 1:1 wie Startseite -> gleiche Bildgröße auf Phone */
+@media (max-width: 900px) {
+  .page--contact .contact-photo { flex: 0 0 280px; }
+}
+@media (max-width: 600px) {
+  .page--contact .contact-wrapper {
+    flex-direction: column; align-items: center; gap: 1rem;
+  }
+  .page--contact .contact-photo {
+    flex: none; max-width: 90vw; margin-bottom: 1rem;
+  }
+  .page--contact .contact-photo img {
+    max-width: 320px; /* exakt wie .homepage-photo img */
+    aspect-ratio: auto;
+  }
+  .page--contact .contact-panel { max-width: 95vw; }
+}
 
 /* ==========================================
    Responsive (Mobile & Tablet Optimierungen)
