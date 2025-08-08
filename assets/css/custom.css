@@ -403,3 +403,12 @@ body.page--pubs .pub-year {
   margin: 1.1rem 0 0.4rem !important; 
 }
 
+/* Einheitliche H2-Größe für alle Seiten */
+.page__content h2,
+.page--research h2,
+.page--pubs h2 {
+  font-size: 1.28rem !important;
+  line-height: 1.35 !important;
+  margin: 0 0 0.4rem !important;
+}
+
