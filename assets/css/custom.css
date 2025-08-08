@@ -429,3 +429,20 @@ body {
   .page--contact .contact-photo img{ max-width: 320px; aspect-ratio: auto; }
   .page--contact .contact-panel{ max-width: 95vw; }
 }
+
+/* Gleiche Ausrichtung wie Startseite */
+.page--contact .page__content,
+.page--contact .initial-content,
+.page--contact .splash .page__content {
+  max-width: none !important;     /* entfernt die zentrierte Containerbreite */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.page--contact .contact-wrapper {
+  max-width: var(--site-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
