@@ -2,8 +2,8 @@
    Globale Variablen + Container-Breite
    ========================================== */
 :root {
-  --site-max: 1280px;   /* Gesamtbreite aller Seiten */
-  --text-max: 830px;    /* Lesespaltenbreite für Fließtext */
+  --site-max: 1280px;
+  --text-max: 830px;
   --base-font: 16px;
   --brand: #0a4c86;
   --brand-dark: #083963;
@@ -14,7 +14,9 @@
   --line: #eee;
 }
 
-/* MM-Container global breiter (gilt für ALLE Seiten, inkl. splash) */
+/* ==========================================
+   Globale Container + Typografie
+   ========================================== */
 .page__content,
 .initial-content,
 .archive,
@@ -26,17 +28,18 @@
   padding-right: 1.25rem;
 }
 
-/* Grundtypografie */
-body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
+body {
+  font-size: var(--base-font);
+  line-height: 1.6;
+  color: var(--ink-2);
+}
 .page__content a { color: var(--brand); }
 .page__content a:hover { text-decoration: underline; }
-
-/* Sprungziele nicht unter den Header kleben */
 :target { scroll-margin-top: 80px; }
 
-/* ------------------------------------------
-   Layout Startseite (Foto links, Text rechts)
-   ------------------------------------------ */
+/* ==========================================
+   Startseite Layout
+   ========================================== */
 .homepage-wrapper {
   display: flex;
   align-items: flex-start;
@@ -61,12 +64,22 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   max-width: var(--text-max);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
-/* ------------------------------------------
-   Footer: komplett schwarz, zentriert, klein
-   ------------------------------------------ */
+/* Responsive Startseite */
+@media (max-width: 900px) {
+  .homepage-photo { flex: 0 0 280px; }
+}
+@media (max-width: 600px) {
+  .homepage-wrapper { flex-direction: column; align-items: center; gap: 1rem; }
+  .homepage-photo { flex: none; max-width: 90vw; margin-bottom: 1rem; }
+  .homepage-photo img { max-width: 320px; aspect-ratio: auto; }
+  .homepage-text { max-width: 95vw; text-align: left; }
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
 .page__footer,
 .page__footer footer,
 .footer {
@@ -82,43 +95,25 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   font-weight: 400;
   opacity: 0.92;
   padding: 8px 0;
-  margin: 0 auto;
-  background: transparent !important;
 }
 .page__footer-copyright,
 .page__footer .powered-by,
 .page__footer-follow { display: none !important; }
 
-/* ------------------------------------------
-   Responsive Startseite
-   ------------------------------------------ */
-@media (max-width: 900px) { .homepage-photo { flex: 0 0 280px; } }
-@media (max-width: 600px) {
-  .homepage-wrapper { flex-direction: column; align-items: center; gap: 1rem; }
-  .homepage-photo { flex: none; max-width: 90vw; margin-bottom: 1rem; }
-  .homepage-photo img { width: 100%; height: auto; aspect-ratio: auto; max-width: 320px; }
-  .homepage-text { max-width: 95vw; text-align: left; }
-}
-
-/* ------------------------------------------
-   Custom-Header-Name
-   ------------------------------------------ */
-.mein-header-links {
-  color: #111 !important;
-  font-size: 2.2em !important;
+/* ==========================================
+   Einheitliche H2-Größe auf allen Seiten
+   ========================================== */
+.page__content h2 {
+  font-size: 1.28rem !important;
+  line-height: 1.35 !important;
+  margin: 0 0 0.4rem !important;
   font-weight: 700;
-  margin-left: 48px;
-  line-height: 56px;
-  letter-spacing: 0.02em;
-  position: absolute;
-  left: 48px; top: 0; height: 56px;
-  display: flex; align-items: center;
-  z-index: 20;
+  letter-spacing: 0.2px;
 }
 
-/* ------------------------------------------
-   Research & Publications – Wrapper + Typo
-   ------------------------------------------ */
+/* ==========================================
+   Research & Publications Wrapper + Typo
+   ========================================== */
 .research-wrapper,
 .pubs-wrapper {
   max-width: var(--site-max);
@@ -130,34 +125,14 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 .research-intro,
 .pubs-intro {
   max-width: var(--text-max);
-  font-size: 16px;
-  line-height: 1.6;
-  color: #222;
+  color: var(--ink-2);
   margin-bottom: 1.5rem;
 }
-
-/* Einheitlicher Strich + Abstand direkt nach den Cards */
-.page--research .research-section:first-of-type,
-.page--pubs h2:first-of-type {
-  border-top: 1px solid var(--line);
-  padding-top: 1.25rem;
-  margin-top: 2rem;
-}
-
 .research-section { max-width: var(--text-max); margin: 2rem 0 2.5rem; }
 
-.page--research h2,
-.page--pubs h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0 0 0.5rem;
-  letter-spacing: 0.2px;
-}
-
-/* ------------------------------------------
+/* ==========================================
    Karten-Layout
-   ------------------------------------------ */
+   ========================================== */
 .research-grid,
 .pubs-wrapper .research-grid {
   display: grid;
@@ -174,163 +149,53 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .research-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-2px); }
-.research-card h3 { font-size: 1.15rem; margin: 0 0 0.25rem; }
-.research-card p { margin: 0.25rem 0 0; color: var(--ink-3); }
+.research-card h3 { font-size: 1rem; margin: 0 0 0.25rem; }
+.research-card p { font-size: 0.95rem; color: var(--ink-3); margin: 0.25rem 0 0; }
 
-/* Links dezent auf Research/Publications */
-.page--research .page__content a,
-.page--pubs .page__content a { color: var(--brand); }
-.page--research .page__content a:hover,
-.page--pubs .page__content a:hover { text-decoration: underline; }
-
-/* Mobile Tweaks Research/Publications */
+/* Mobile Grid */
 @media (max-width: 700px) {
   .research-wrapper, .pubs-wrapper { padding: 0 1rem 2rem; }
-  .page--research h2, .page--pubs h2 { font-size: 1.35rem; }
   .research-grid, .pubs-wrapper .research-grid { grid-template-columns: 1fr; }
 }
 
-/* ------------------------------------------
-   Publications – APA7 kompakt mit DOI inline
-   ------------------------------------------ */
+/* ==========================================
+   Publications Listenformat
+   ========================================== */
 .pubs-list { list-style: none; padding-left: 0; margin: 0 0 1.2rem 0; }
 .pub { margin: 0.4rem 0; }
 
-/* ===== Publications: hängender Einzug + Buttons ===== */
-
-/* Grund-Reset für Listen */
-.page--pubs .pubs-list {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-  list-style: none !important;
-  text-align: left !important;
-}
-
-/* Jedes Listenelement ohne extra Einzug */
-.page--pubs .pubs-list li {
-  margin: 0.4rem 0 !important;
-  padding-left: 0 !important;
-  text-indent: 0 !important;
-}
-
-/* Hängender Einzug nur für Zitate */
+/* Hängender Einzug für Zitate */
 .page--pubs .cite {
-  display: block !important;
-  padding-left: 1.3rem !important;
-  text-indent: -1.3rem !important;
-  line-height: 1.6 !important;
-  text-align: left !important;
-}
-
-/* Actions-Bereich unter Zitat */
-.page--pubs .pubs-list .actions {
-  display: inline-flex !important;
-  flex-wrap: wrap !important;
-  gap: 0.4rem !important;
-  margin-left: 1.3rem !important;  /* bündig mit zweiter Zeile */
-  margin-top: 0.3rem !important;
-}
-
-/* Buttons in Actions – greift auch ohne btn-Klassen */
-.page--pubs .pubs-list .actions a {
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  display: inline-block !important;
-  text-decoration: none !important;
-  line-height: 1.2 !important;
-  padding: 0.25rem 0.55rem !important;
-  font-size: 0.85rem !important;
-  border-radius: 6px !important;
-  font-weight: 500 !important;
-  white-space: nowrap !important;
-  cursor: pointer !important;
-  font-family: inherit !important;
-  border: 1px solid #b9d7ef !important;
-  background: #d9e9f7 !important;
-  color: #064d77 !important;
-}
-.page--pubs .pubs-list .actions a:hover {
-  background: #b9d7ef !important;
-}
-
-/* ------------------------------------------
-   Breiten-Fix: Research/Publ.-Grids
-   ------------------------------------------ */
-/* === Einheitliche Seiten-Gutter für Research/Publications === */
-.page--research .research-wrapper,
-.page--pubs .pubs-wrapper { padding: 0 1.25rem 2rem; } /* symmetrisch wie Startseite */
-.page--research .research-grid,
-.page--pubs .research-grid { padding: 0; } /* kein Extra-Padding in der Grid */
-
-/* Kleinere H2 + Card-Typo (dezenter) */
-.page--pubs .page__content h2,
-.page--research .page__content h2 { 
-  font-size: 1.28rem; 
-  line-height: 1.35; 
-  margin: 0 0 0.4rem; 
-}
-.page--pubs .research-card h3,
-.page--research .research-card h3 { font-size: 1rem; }
-.page--pubs .research-card p,
-.page--research .research-card p { font-size: 0.95rem; color: var(--ink-3); }
-
-/* Download-Buttons dezenter */
-.page--pubs .pubs-list .actions a {
-  font-size: 0.8rem !important;
-  padding: 0.22rem 0.5rem !important;
-  border-radius: 6px !important;
-}
-
-/* Hängender Einzug für Talks/Poster */
-.page--pubs .pubs-list--tight li {
   display: block;
   padding-left: 1.3rem;
   text-indent: -1.3rem;
-  line-height: 1.55;
-  margin: 0.35rem 0;
-}
-.page--pubs .pub-year { font-size: 1.05rem; font-weight: 700; margin: 1.1rem 0 0.4rem; }
-
-/* Falls nötig: Grid sauber mittig halten */
-.page--research .research-grid,
-.page--pubs .research-grid { margin-left: auto; margin-right: auto; }
-
-/* Überschriften in Research & Publications kleiner (direkt am Wrapper) */
-.pubs-wrapper h2,
-.research-wrapper h2 {
-  font-size: 1.20rem;      /* ggf. 1.16rem, sag Bescheid */
-  line-height: 1.35;
-  margin: 0 0 0.45rem;
+  line-height: 1.6;
 }
 
-/* Karten-Typo dezenter */
-.pubs-wrapper .research-card h3,
-.research-wrapper .research-card h3 { font-size: 1.0rem; }
-.pubs-wrapper .research-card p,
-.research-wrapper .research-card p { font-size: 0.95rem; color: var(--ink-3); }
-
-/* Download-Button klein & neutral – greift NUR in Publications */
+/* Download-Buttons klein */
 .pubs-wrapper .pubs-list .actions a,
 .pubs-wrapper .dl-btn {
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  display: inline-block !important;
-  text-decoration: none !important;
-  line-height: 1.2 !important;
-  padding: 0.22rem 0.50rem !important;
-  font-size: 0.80rem !important;
-  border-radius: 6px !important;
-  font-weight: 500 !important;
-  white-space: nowrap !important;
-  cursor: pointer !important;
-  border: 1px solid #b9d7ef !important;
-  background: #d9e9f7 !important;
-  color: #064d77 !important;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.2;
+  padding: 0.22rem 0.50rem;
+  font-size: 0.80rem;
+  border-radius: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #b9d7ef;
+  background: #d9e9f7;
+  color: #064d77;
 }
 .pubs-wrapper .pubs-list .actions a:hover,
-.pubs-wrapper .dl-btn:hover { background: #b9d7ef !important; }
+.pubs-wrapper .dl-btn:hover {
+  background: #b9d7ef;
+}
 
-/* Talks & Posters – zuerst Liste neutralisieren, dann hängender Einzug */
+/* Talks & Posters */
 .page--pubs .pubs-list--tight {
   list-style: none;
   margin-left: 0;
@@ -338,77 +203,13 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 .page--pubs .pubs-list--tight li {
   display: block;
-  padding-left: 1.3rem;  /* Einzug */
-  text-indent: -1.3rem;  /* hängend */
+  padding-left: 1.3rem;
+  text-indent: -1.3rem;
   line-height: 1.55;
   margin: 0.35rem 0;
 }
-
-/* Sicherheit: Grid mittig und symmetrische Gutter (wie Startseite) */
-.page--research .research-wrapper,
-.page--pubs .pubs-wrapper { padding: 0 1.25rem 2rem; }
-.page--research .research-grid,
-.page--pubs .research-grid { margin-left: auto; margin-right: auto; padding: 0; }
-
-/* ===== HARD OVERRIDES: pubs + research ===== */
-
-/* Grids bündig + mittig wie Startseite */
-body.page--research .research-wrapper,
-body.page--pubs .pubs-wrapper { padding: 0 1.25rem 2rem !important; }
-body.page--research .research-grid,
-body.page--pubs .research-grid { margin-left: auto !important; margin-right: auto !important; padding: 0 !important; }
-
-/* Kleinere H2 auf beiden Seiten */
-body.page--pubs .page__content h2,
-body.page--research .page__content h2 { 
-  font-size: 1.28rem !important;
-  line-height: 1.35 !important;
-  margin: 0 0 0.45rem !important;
+.page--pubs .pub-year {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.1rem 0 0.4rem;
 }
-
-/* Karten-Typo dezenter */
-body.page--pubs .research-card h3,
-body.page--research .research-card h3 { font-size: 1rem !important; margin: 0 0 0.25rem !important; }
-body.page--pubs .research-card p,
-body.page--research .research-card p { font-size: 0.95rem !important; color: var(--ink-3) !important; }
-
-/* Download-Buttons deutlich kleiner (greift für btn, btn-ghost und nackte <a>) */
-body.page--pubs .pubs-list .actions a,
-body.page--pubs .pubs-list .actions a.btn,
-body.page--pubs .pubs-list .actions a.btn-ghost {
-  font-size: 0.8rem !important;
-  line-height: 1.2 !important;
-  padding: 0.22rem 0.5rem !important;
-  border-radius: 6px !important;
-}
-
-/* Hängender Einzug für Talks & Poster – inkl. UL-Reset gegen Theme-Defaults */
-body.page--pubs .pubs-list--tight { 
-  margin-left: 0 !important; 
-  padding-left: 0 !important; 
-  list-style: none !important; 
-}
-body.page--pubs .pubs-list--tight li {
-  display: block !important;
-  margin: 0.35rem 0 !important;
-  padding-left: 1.3rem !important;
-  text-indent: -1.3rem !important;
-  line-height: 1.55 !important;
-}
-
-/* Überschrift der Unterlisten (Talks/Posters) dezenter */
-body.page--pubs .pub-year { 
-  font-size: 1.05rem !important; 
-  font-weight: 700 !important; 
-  margin: 1.1rem 0 0.4rem !important; 
-}
-
-/* Einheitliche H2-Größe für alle Seiten */
-.page__content h2,
-.page--research h2,
-.page--pubs h2 {
-  font-size: 1.28rem !important;
-  line-height: 1.35 !important;
-  margin: 0 0 0.4rem !important;
-}
-
