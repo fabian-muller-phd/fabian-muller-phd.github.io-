@@ -336,21 +336,19 @@ body {
 }
 
 /* ==========================================
-   Contact (Option A – Typo-Chips, linksbündig wie Publications)
+   Contact – Option A: Typo-Chips, linksbündig
    ========================================== */
-
-/* Äußerer Container – volle Breite wie andere Seiten */
 .page--contact .contact-section {
-  max-width: var(--site-max); /* gleiche Gesamtbreite */
+  max-width: var(--site-max);    /* volle Seitenbreite wie pubs-wrapper */
   margin: 2rem auto;
   padding: 0 1.25rem;
+  text-align: left;              /* überschreibt Splash-Zentrierung */
 }
 
-/* Innerer Container – begrenzt Textbreite + linksbündig */
 .page--contact .contact-intro {
-  max-width: var(--text-max); /* gleiche Textbreite wie .pubs-intro */
-  margin: 0;                  /* entfernt auto-Zentrierung */
-  text-align: left;
+  max-width: var(--text-max);    /* begrenzt Textbreite wie pubs-intro */
+  margin-left: 0;                /* linksbündig ausrichten */
+  margin-right: auto;
 }
 
 /* Email-Link */
@@ -363,24 +361,24 @@ body {
   text-decoration: underline;
 }
 
-/* Liste der Chips */
+/* Chips nebeneinander */
 .contact-list {
   margin: 0.6rem 0 0;
   padding: 0;
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap; /* bricht sauber auf Mobile um */
+  flex-wrap: wrap;               /* bricht sauber auf Mobile um */
 }
 .contact-list li {
   list-style: none;
 }
 
-/* Einzelner Chip */
+/* Chip-Stil */
 .contact-chip {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.45rem 0.65rem 0.45rem 0.75rem; /* Platz für Farbstreifen links */
+  padding: 0.45rem 0.65rem 0.45rem 0.75rem;  /* Platz für Farbstreifen links */
   border-radius: 8px;
   text-decoration: none;
   background: #fff;
@@ -401,6 +399,6 @@ body {
   background: var(--brand);
 }
 .contact-chip:hover {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
   transform: translateY(-1px);
 }
