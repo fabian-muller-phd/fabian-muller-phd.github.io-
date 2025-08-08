@@ -296,7 +296,7 @@ body {
    ========================================== */
 
 .teaching-section {
-  max-width: var(--text-max); /* gleiche Breite wie Research & CV */
+  max-width: var(--site-max); /* gleiche Breite wie CV */
   margin: 2rem auto;
   padding: 0 1.25rem;
   line-height: 1.6; /* Basis-Zeilenhöhe */
