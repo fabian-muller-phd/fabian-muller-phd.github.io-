@@ -199,15 +199,15 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 /* ===== Publications: rechter Versatz fixen ===== */
 .page--pubs .pubs-list { margin-left: 0; padding-left: 0; }
 .page--pubs .pubs-list li {
-  padding-left: 0;   /* vorher 1.3rem -> entfernt */
-  text-indent: 0;    /* Sicherheit */
+  padding-left: 0 !important;   
+  text-indent: 0 !important;    
 }
 
-/* Hängender Einzug NUR über .cite */
+/* Hängender Einzug nur über .cite */
 .page--pubs .cite {
   display: block;
-  padding-left: 1.3rem;
-  text-indent: -1.3rem;
+  padding-left: 1.3rem !important;
+  text-indent: -1.3rem !important;
   line-height: 1.6;
   text-align: left;
 }
@@ -216,12 +216,14 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 .page--pubs .pubs-list .actions {
   display: inline-flex;
   gap: 0.4rem;
-  margin-left: 1.3rem;  /* bündig mit der zweiten Zeile der .cite */
+  margin-left: 1.3rem;
   margin-top: 0.3rem;
 }
 
-.page--pubs .pubs-list a.btn-ghost,
-.page--pubs .pubs-list a.btn-link {
+/* Standard-Button-Optik für Minimal Mistakes */
+.page--pubs .pubs-list a.btn,
+.page--pubs .pubs-list a.btn-link,
+.page--pubs .pubs-list a.btn-ghost {
   -webkit-appearance: none !important;
   appearance: none !important;
   display: inline-block;
@@ -232,14 +234,12 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   border-radius: 6px;
   font-weight: 500;
   border: 1px solid transparent;
-  box-shadow: none !important;
-  vertical-align: baseline;
   white-space: nowrap;
   cursor: pointer;
-  background-clip: padding-box;
   font-family: inherit;
 }
 
+/* Blaue Link-Variante */
 .page--pubs .pubs-list a.btn-link {
   border-color: #b9d7ef;
   background: #d9e9f7;
@@ -247,6 +247,7 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 .page--pubs .pubs-list a.btn-link:hover { background: #b9d7ef; }
 
+/* Graue Ghost-Variante */
 .page--pubs .pubs-list a.btn-ghost {
   background: #f2f2f2;
   color: #333;
@@ -254,9 +255,9 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 }
 .page--pubs .pubs-list a.btn-ghost:hover { background: #e0e0e0; }
 
-/* „Talks & Posters“ vs. „Talks“/„Posters“ – h3 kleiner machen */
+/* h3 kleiner als h2 */
 .page--pubs h3.pub-year {
-  font-size: 1.1rem;   /* kleiner als dein h2 (1.5rem) */
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.25;
   color: #374151;
@@ -265,9 +266,10 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
   padding-top: 0.6rem;
 }
 
-/* Falls irgendwo noch zentriert geerbt wurde, hart linksbündig erzwingen */
+/* Erzwinge linksbündig */
 .page--pubs .pubs-wrapper,
 .page--pubs .pubs-list { text-align: left; }
+
 
 /* ------------------------------------------
    Breiten-Fix: Research/Publ.-Grids
