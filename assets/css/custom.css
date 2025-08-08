@@ -256,6 +256,13 @@ body {
   margin: 0 0 1.2rem 0;
 }
 .pub { margin: 0.4rem 0; }
+/* Hängende Einrückung für alle Publikationslisten */
+.pubs-list li {
+  padding-left: 1.3rem;
+  text-indent: -1.3rem;
+  line-height: 1.6;
+}
+
 
 .cite {
   display: block;
