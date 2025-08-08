@@ -146,14 +146,13 @@ class: page--pubs
     <a href="https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf" target="_blank" rel="noopener">https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf</a>
     <br>*equal contribution.</span>
   </li>
-
   </ul>
 
   <!-- Dissertation -->
   <h2 id="thesis">Dissertation</h2>
   <ul class="pubs-list">
   <li class="pub">
-    <span class="cite"><b>Müller, F.</b> (2023). <em>Closing the achievement gap: Learning from working-class students’ acculturation and success in higher education</em> (Doctoral dissertation, Université Paris Cité). HAL theses.
+    <span class="cite"><b>Müller, F.</b> (2023). <em>Closing the achievement gap: Learning from working-class students’ acculturation and success in higher education</em> [Doctoral dissertation, Université Paris Cité]. HAL theses.
     <a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">https://theses.hal.science/tel-04163355</a></span>
   </li>
   </ul>
