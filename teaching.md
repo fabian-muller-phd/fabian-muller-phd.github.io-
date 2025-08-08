@@ -5,7 +5,7 @@ permalink: /teaching/
 classes: page--teaching
 ---
 
-<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
 <section class="teaching-section">
 
