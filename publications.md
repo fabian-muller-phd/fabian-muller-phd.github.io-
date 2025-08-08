@@ -27,20 +27,13 @@ class: page--pubs
     <span class="cite"><b>Müller, F.</b>, Jury, M., & Aelenei, C. (2025, June 18). <em>When accommodations are not enough: A multi-study examination of teacher bias toward students with special educational needs across student gender</em> [Preprint]. PsyArXiv.
     <a href="https://doi.org/10.31234/osf.io/fx7jc_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/fx7jc_v1</a></span>
   <div class="actions">
-    <a class="btn-link" href="https://doi.org/10.31234/osf.io/fx7jc_v1" target="_blank" rel="noopener">Preprint</a>
-    <!-- Platzhalter – später ersetzen, wenn du PDF in GitHub hochlädst -->
-    <a class="btn-ghost" href="/assets/papers/mueller_2025_preprint.pdf" download>Download</a>
+    <a class="btn-ghost" href="/assets/papers/müller_2025_preprint.pdf" download>Download</a>
   </div>
 </li>
 
   <li class="pub">
     <span class="cite">Jury, M., Stanzcak, A., Huron, C., <b>Müller, F.</b>, Aelenei, C., & Sireci, S. (2025, July 11). <em>Perceived fairness of exam accommodations for students with special educational needs</em> [Preprint]. PsyArXiv.
     <a href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">https://doi.org/10.31219/osf.io/fcnz4_v1</a></span>
-  <div class="actions">
-    <a class="btn-link" href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">Preprint</a>
-    <!-- Platzhalter – später ersetzen, wenn du PDF in GitHub hochlädst -->
-    <a class="btn-ghost" href="/assets/papers/jury_2025_preprint.pdf" download>Download</a>
-  </div>
 </li>
 
   <li class="pub">
@@ -58,9 +51,19 @@ class: page--pubs
   <ul class="pubs-list">
 
   <li class="pub">
-    <span class="cite">Melzel, S., Altvater-Mackensen, N., Ganglmayer, K., <b>Müller, F.</b>, Steinmassl, K., Hauf, P., & Paulus, M. (2025). The development of children’s and adults’ use of kinematic cues for visual anticipation and verbal prediction of action. <em>Journal of Experimental Child Psychology, 249</em>, 106064.</span>
-    <div><a href="https://doi.org/10.1016/j.jecp.2024.106064" target="_blank" rel="noopener">https://doi.org/10.1016/j.jecp.2024.106064</a></div>
-  </li>
+  <span class="cite">
+    Melzel, S., Altvater-Mackensen, N., Ganglmayer, K., <b>Müller, F.</b>, Steinmassl, K., Hauf, P., & Paulus, M. (2025). 
+    The development of children’s and adults’ use of kinematic cues for visual anticipation and verbal prediction of action. 
+    <em>Journal of Experimental Child Psychology, 249</em>, 106064 
+    <span class="meta">(SCImago Q1 – Developmental and Educational Psychology)</span>.
+    <a href="https://doi.org/10.1016/j.jecp.2024.106064" target="_blank" rel="noopener">https://doi.org/10.1016/j.jecp.2024.106064</a>
+  </span>
+  <div class="actions">
+    <a class="btn-ghost" href="/assets/papers/melzel_2025_jecp.pdf" download>Download</a>
+  </div>
+</li>
+
+
 
   <!-- weitere Artikel hier im gleichen Muster -->
 
