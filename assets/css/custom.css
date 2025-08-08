@@ -196,80 +196,62 @@ body { font-size: var(--base-font); line-height: 1.6; color: var(--ink-2); }
 .pubs-list { list-style: none; padding-left: 0; margin: 0 0 1.2rem 0; }
 .pub { margin: 0.4rem 0; }
 
-/* ===== Publications: rechter Versatz fixen ===== */
-.page--pubs .pubs-list { margin-left: 0; padding-left: 0; }
-.page--pubs .pubs-list li {
-  padding-left: 0 !important;   
-  text-indent: 0 !important;    
+/* ===== Publications: hängender Einzug + Buttons ===== */
+
+/* Grund-Reset für Listen */
+.page--pubs .pubs-list {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  list-style: none !important;
+  text-align: left !important;
 }
 
-/* Hängender Einzug nur über .cite */
+/* Jedes Listenelement ohne extra Einzug */
+.page--pubs .pubs-list li {
+  margin: 0.4rem 0 !important;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+/* Hängender Einzug nur für Zitate */
 .page--pubs .cite {
-  display: block;
+  display: block !important;
   padding-left: 1.3rem !important;
   text-indent: -1.3rem !important;
-  line-height: 1.6;
-  text-align: left;
+  line-height: 1.6 !important;
+  text-align: left !important;
 }
 
-/* Buttons unter dem Zitat sauber darstellen */
+/* Actions-Bereich unter Zitat */
 .page--pubs .pubs-list .actions {
-  display: inline-flex;
-  gap: 0.4rem;
-  margin-left: 1.3rem;
-  margin-top: 0.3rem;
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.4rem !important;
+  margin-left: 1.3rem !important;  /* bündig mit zweiter Zeile */
+  margin-top: 0.3rem !important;
 }
 
-/* Standard-Button-Optik für Minimal Mistakes */
-.page--pubs .pubs-list a.btn,
-.page--pubs .pubs-list a.btn-link,
-.page--pubs .pubs-list a.btn-ghost {
+/* Buttons in Actions – greift auch ohne btn-Klassen */
+.page--pubs .pubs-list .actions a {
   -webkit-appearance: none !important;
   appearance: none !important;
-  display: inline-block;
-  text-decoration: none;
-  line-height: 1.2;
-  padding: 0.25rem 0.55rem;
-  font-size: 0.85rem;
-  border-radius: 6px;
-  font-weight: 500;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  cursor: pointer;
-  font-family: inherit;
+  display: inline-block !important;
+  text-decoration: none !important;
+  line-height: 1.2 !important;
+  padding: 0.25rem 0.55rem !important;
+  font-size: 0.85rem !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
+  border: 1px solid #b9d7ef !important;
+  background: #d9e9f7 !important;
+  color: #064d77 !important;
 }
-
-/* Blaue Link-Variante */
-.page--pubs .pubs-list a.btn-link {
-  border-color: #b9d7ef;
-  background: #d9e9f7;
-  color: #064d77;
+.page--pubs .pubs-list .actions a:hover {
+  background: #b9d7ef !important;
 }
-.page--pubs .pubs-list a.btn-link:hover { background: #b9d7ef; }
-
-/* Graue Ghost-Variante */
-.page--pubs .pubs-list a.btn-ghost {
-  background: #f2f2f2;
-  color: #333;
-  border-color: #ccc;
-}
-.page--pubs .pubs-list a.btn-ghost:hover { background: #e0e0e0; }
-
-/* h3 kleiner als h2 */
-.page--pubs h3.pub-year {
-  font-size: 1.1rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: #374151;
-  margin: 1.1rem 0 0.4rem;
-  border-top: 1px solid var(--line);
-  padding-top: 0.6rem;
-}
-
-/* Erzwinge linksbündig */
-.page--pubs .pubs-wrapper,
-.page--pubs .pubs-list { text-align: left; }
-
 
 /* ------------------------------------------
    Breiten-Fix: Research/Publ.-Grids
