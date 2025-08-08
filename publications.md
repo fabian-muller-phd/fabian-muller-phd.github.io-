@@ -89,7 +89,7 @@ class: page--pubs
 
   <li class="pub">
     <span class="cite">
-      Strohmaier, A.R., Schiepe-Tiska, A., Chang, Y.-P., Müller, F., Lin, F.-L., & Reiss, K.R. (2020). 
+      Strohmaier, A.R., Schiepe-Tiska, A., Chang, Y.-P., <b>Müller, F.</b>, Lin, F.-L., & Reiss, K.R. (2020). 
       Comparing eye movements during mathematical word problem solving in Chinese and German. 
       <em>ZDM Mathematics Education, 52</em>, 45–58.
       <a href="https://doi.org/10.1007/s11858-019-01080-6" target="_blank" rel="noopener">https://doi.org/10.1007/s11858-019-01080-6</a>
@@ -98,7 +98,7 @@ class: page--pubs
 
   <li class="pub">
     <span class="cite">
-      Schuwerk, T., Schurz, M., Müller, F., Rupprecht, R., & Sommer, M. (2017). 
+      Schuwerk, T., Schurz, M., <b>Müller, F.</b>, Rupprecht, R., & Sommer, M. (2017). 
       The rTPJ’s overarching cognitive function in networks for attention and Theory of Mind. 
       <em>Social Cognitive and Affective Neuroscience, 12</em>(1), 157–168. 
       <a href="https://doi.org/10.1093/scan/nsw163" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsw163</a>
