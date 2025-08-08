@@ -1,3 +1,13 @@
+---
+layout: splash
+title: "CV"
+permalink: /cv/
+classes: page--cv
+---
+
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+
 <section class="cv-section">
   <h2>Professional Experience</h2>
 
