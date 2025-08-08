@@ -271,16 +271,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 .page--contact .splash .page__inner-wrap { padding: 0 !important; }
 
-/* Wrapper IDENTISCH zu .homepage-wrapper */
 .page--contact .contact-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
-  max-width: var(--site-max);
-  margin-left: auto;
+  max-width: 1000px;   /* exakt wie Startseite */
+  margin-left: 0;      /* linksbündig wie Startseite */
   margin-right: auto;
-  padding: 1rem; /* exakt wie Startseite */
+  padding: 1rem;
 }
 
 /* Bildspalte IDENTISCH zu .homepage-photo */
