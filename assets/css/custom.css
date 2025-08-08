@@ -451,3 +451,10 @@ button:focus-visible {
   outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
+
+/* DOIs und lange Links umbrechen, damit kein Horizontal-Scroll entsteht */
+.pubs-wrapper a {
+  overflow-wrap: anywhere;  /* bricht den Link an jeder Stelle */
+  word-break: break-word;   /* bricht notfalls mitten im Wort */
+}
+
