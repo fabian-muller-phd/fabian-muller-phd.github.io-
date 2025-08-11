@@ -19,9 +19,9 @@
   --muted: #6f777d;
   --line: #eee;
 
-  /* Einheitliche Foto-Spalten + Mobile-Bildbreite */
+  /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
   --photo-col: 445px;     /* Desktop-Spalte */
-  --photo-col-sm: 280px;  /* Tablet-Spalte (falls gebraucht) */
+  --photo-col-sm: 280px;  /* Tablet-Spalte */
   --photo-mobile: 320px;  /* Fixbreite am Phone */
 }
 
@@ -62,48 +62,41 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.2px;
 }
 
-/* Tastaturfokus sichtbar (A11y) */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid --brand;
-  outline-offset: 2px;
-}
-
 /* ==========================================
-   Startseite – Bild links, Text daneben/unten
+   Startseite
    ========================================== */
 .homepage-wrapper {
-  display: block;                  /* Normales Blocklayout */
-  overflow: hidden;                /* clearfix-Effekt */
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
   max-width: var(--site-max);
-  margin: 2rem auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
 }
 
-.homepage-photo {
-  float: left;                     /* Bild links */
-  width: var(--photo-col);
-  margin-right: 2rem;
-  margin-bottom: 1rem;             /* Abstand, wenn Text unten weiterläuft */
-}
-
+.homepage-photo { flex: 0 0 var(--photo-col); }
 .homepage-photo img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .homepage-text {
+  flex: 1;
   font-size: 16px;
   line-height: 1.6;
   max-width: var(--text-max);
-  color: var(--ink-2);
-  overflow: hidden;                /* verhindert Text-Umfließen & sorgt für Blockfluss */
+  display: flex;
+  flex-direction: column;
 }
 
+
+
 /* ==========================================
-   Footer – komplett schwarz, zentriert, schlicht
+   Footer
    ========================================== */
 .page__footer,
 .page__footer footer,
@@ -214,12 +207,6 @@ button:focus-visible {
   margin: 1.1rem 0 0.4rem;
 }
 
-/* Lange Links sicher umbrechen */
-.pubs-wrapper a {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
 /* ==========================================
    CV
    ========================================== */
@@ -276,7 +263,7 @@ button:focus-visible {
 .teaching-section li { margin-bottom: 0.4rem; }
 
 /* ==========================================
-   Contact – identisch zur Startseite (Bild links)
+   Contact – exakt wie Startseite (Foto links)
    ========================================== */
 
 /* Splash-/Theme-Zentrierung sicher deaktivieren */
@@ -286,35 +273,30 @@ button:focus-visible {
 
 .page--contact .splash .page__inner-wrap { padding: 0 !important; }
 
-/* Wrapper wie Startseite – float-basiert */
 .page--contact .contact-wrapper {
-  display: block;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
   margin-top: 2rem;
-  max-width: 1000px;      /* gleiche Arbeitsbreite wie Home */
-  margin-left: 0;
+  max-width: 1000px;   /* exakt wie Startseite */
+  margin-left: 0;      /* linksbündig wie Startseite */
   margin-right: auto;
   padding: 1rem;
 }
 
-/* Bildspalte identisch zur Home-Foto-Spalte */
-.page--contact .contact-photo {
-  float: left;
-  width: var(--photo-col);
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-}
+/* Bildspalte IDENTISCH zu .homepage-photo */
+.page--contact .contact-photo { flex: 0 0 445px; }
 .page--contact .contact-photo img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Textspalte */
+/* Textspalte IDENTISCH zu .homepage-text */
 .page--contact .contact-panel {
+  flex: 1;
   max-width: var(--text-max);
-  overflow: hidden;     /* sauberer Blockfluss neben/unter dem Bild */
 }
 .page--contact .contact-panel h2 {
   font-size: 1.1rem;
@@ -323,7 +305,7 @@ button:focus-visible {
   font-weight: 700;
 }
 
-/* Links/Chips */
+/* Links/Chips (unverändert) */
 .page--contact .email-link { font-weight: 600; color: var(--brand); text-decoration: none; }
 .page--contact .email-link:hover { text-decoration: underline; }
 .page--contact .contact-list { margin: .6rem 0 0; padding: 0; display: flex; gap: .5rem; flex-wrap: wrap; }
@@ -341,31 +323,37 @@ button:focus-visible {
 }
 .page--contact .contact-chip:hover { box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px); }
 
-/* ==========================================
-   Responsive
-   ========================================== */
-
-/* Tablet/Phone im Hochformat: Bild oben, Text darunter */
-@media (max-width: 900px) and (orientation: portrait) {
-  /* Home */
-  .homepage-photo {
-    float: none;
-    width: min(var(--photo-mobile), 90vw);
-    margin: 0 auto 1rem;
-    display: block;
+/* Breakpoints 1:1 wie Startseite -> gleiche Bildgröße auf Phone */
+@media (max-width: 900px) {
+  .page--contact .contact-photo { flex: 0 0 280px; }
+}
+@media (max-width: 600px) {
+  .page--contact .contact-wrapper {
+    flex-direction: column; align-items: center; gap: 1rem;
   }
-  .homepage-text { max-width: 95vw; }
-
-  /* Contact */
   .page--contact .contact-photo {
-    float: none;
-    width: min(var(--photo-mobile), 90vw);
-    margin: 0 auto 1rem;
+    flex: none; max-width: 90vw; margin-bottom: 1rem;
+  }
+  .page--contact .contact-photo img {
+    max-width: 320px; /* exakt wie .homepage-photo img */
+    aspect-ratio: auto;
   }
   .page--contact .contact-panel { max-width: 95vw; }
 }
 
-/* Mobile – bis 700px (Portrait & kleine Landscape) */
+/* ==========================================
+   Responsive (Tablet & Mobile)
+   ========================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .homepage-photo,
+  .page--contact .contact-photo {
+    flex-basis: var(--photo-col-sm);
+  }
+}
+
+/* Mobile – bis 700px */
 @media (max-width: 700px) {
   /* Wrapper für Research & Publications angleichen */
   .research-wrapper,
@@ -383,14 +371,14 @@ button:focus-visible {
     padding-right: 0;
   }
 
-  /* Karten */
+  /* Karten in Research & Publications */
   .research-card,
   .pubs-wrapper .research-grid > *,
   .pubs-wrapper .pub-card {
     box-sizing: border-box;
     max-width: 100%;
     padding: .9rem 1rem;
-    overflow-wrap: anywhere;
+    overflow-wrap: anywhere;   /* lange Worte umbrechen */
     word-break: break-word;
   }
 
@@ -409,14 +397,83 @@ button:focus-visible {
     max-width: 100%;
   }
 
+  /* Sicherheit: kein horizontales Scrollen */
+  body { overflow-x: hidden; }
+}
+
+/* Mobile Portrait & sehr kleine Geräte – bis 600px */
+@media (max-width: 600px) {
+  /* Home & Contact: gleicher Stack + Bildgröße */
+  .homepage-wrapper,
+  .page--contact .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .homepage-photo,
+  .page--contact .contact-photo {
+    flex: none;
+    max-width: 90vw;
+    margin-bottom: 1rem;
+  }
+
+  .homepage-photo img,
+  .page--contact .contact-photo img {
+    width: min(var(--photo-mobile), 90vw);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .homepage-text,
+  .page--contact .contact-panel {
+    max-width: 95vw;
+    text-align: left;
+  }
+
+  /* CV: Years über Text */
+  .cv-entry { flex-direction: column; gap: .2rem; }
+  .cv-years { flex: none; }
+  .cv-details { overflow-wrap: anywhere; }
+
   /* Lesbarkeit & Touch-Flächen */
   body { font-size: 17px; line-height: 1.7; }
   .page__content h2 { margin-bottom: .5rem; }
   .contact-chip { padding: .5rem .7rem; }
 }
 
-/* Tablet Quer & kleine Laptops: optional etwas kleinere Bildspalte */
-@media (max-width: 1100px) and (min-width: 901px) {
-  .homepage-photo,
-  .page--contact .contact-photo { width: var(--photo-col-sm); }
+/* Tastaturfokus sichtbar (A11y) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* DOIs und lange Links umbrechen, damit kein Horizontal-Scroll entsteht */
+.pubs-wrapper a {
+  overflow-wrap: anywhere;  /* bricht den Link an jeder Stelle */
+  word-break: break-word;   /* bricht notfalls mitten im Wort */
+}
+
+/* --- Last-Resort: Contact linksbündig wie Startseite (nur Desktop) --- */
+@media (min-width: 1000px) {
+  .page--contact .splash .page__content,
+  .page--contact .splash .page__inner-wrap,
+  .page--contact .page__content {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .page--contact .contact-wrapper {
+    max-width: 1000px !important;   /* gleiche Arbeitsbreite wie Home */
+    margin-left: 0 !important;       /* linksbündig */
+    margin-right: auto !important;
+    padding: 1rem !important;
+  }
 }
