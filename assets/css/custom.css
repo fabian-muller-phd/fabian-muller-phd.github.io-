@@ -63,35 +63,65 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ==========================================
-   Startseite
+   Startseite – Bild links, letzter Absatz volle Breite
    ========================================== */
-.homepage-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-top: 2rem;
-  max-width: var(--site-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+@media (min-width: 1000px) {
+  .homepage-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: var(--site-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    flex-wrap: wrap; /* erlaubt Umbruch für letzten Absatz */
+  }
+
+  .homepage-photo {
+    flex: 0 0 var(--photo-col);
+  }
+
+  .homepage-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .homepage-text {
+    flex: 1;
+    max-width: var(--text-max);
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Letzter Absatz auf volle Breite unter Bild */
+  .homepage-text p:last-of-type {
+    flex-basis: 100%;
+    margin-top: 1rem;
+  }
 }
 
-.homepage-photo { flex: 0 0 var(--photo-col); }
-.homepage-photo img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
+/* Mobile & Tablet unverändert */
+@media (max-width: 999px) {
+  .homepage-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .homepage-photo { flex: none; max-width: 90vw; }
+  .homepage-text {
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.homepage-text {
-  flex: 1;
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: var(--text-max);
-  display: flex;
-  flex-direction: column;
-}
 
 /* ==========================================
    Footer
