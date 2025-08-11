@@ -9,7 +9,7 @@ classes: page--contact
 
 <div class="contact-wrapper">
   <div class="contact-photo">
-    <img src="/assets/images/Fabian_Muller.jpg" alt="Portrait of Fabian Müller">
+    <img src="/assets/images/Fabian_Muller_2.jpg" alt="Portrait of Fabian Müller">
   </div>
 
   <div class="contact-panel">
