@@ -67,8 +67,7 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================== */
 .homepage-wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* erlaubt Umbruch bei Platzmangel */
+  flex-wrap: wrap; /* <-- NEU: erlaubt Umbruch unter das Bild */
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
@@ -78,10 +77,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 1rem;
 }
 
-.homepage-photo {
-  flex: 0 0 var(--photo-col);
-}
-
+.homepage-photo { flex: 0 0 var(--photo-col); }
 .homepage-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -98,24 +94,14 @@ img { max-width: 100%; height: auto; display: block; }
   flex-direction: column;
 }
 
+
+
 /* Abstand zwischen Absätzen nur auf der Startseite anpassen */
 .homepage-text p {
   margin-bottom: 0.6em; /* kleinerer Abstand */
 }
 
-/* Nur im Hochformat auf mobilen Geräten: Bild oben, Text darunter */
-@media screen and (orientation: portrait) and (max-width: 1024px) {
-  .homepage-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-  .homepage-photo,
-  .homepage-text {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
+
 
 
 /* ==========================================
