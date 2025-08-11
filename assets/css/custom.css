@@ -63,9 +63,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ==========================================
-   Startseite – Bild links, letzter Absatz volle Breite
+   Startseite – Bild links, letzter Absatz volle Breite nur auf großem Desktop
    ========================================== */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .homepage-wrapper {
     display: flex;
     align-items: flex-start;
@@ -74,7 +74,7 @@ img { max-width: 100%; height: auto; display: block; }
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-    flex-wrap: wrap; /* erlaubt Umbruch für letzten Absatz */
+    flex-wrap: wrap; /* erlaubt nur auf großem Desktop das Umbrechen */
   }
 
   .homepage-photo {
@@ -97,15 +97,34 @@ img { max-width: 100%; height: auto; display: block; }
     flex-direction: column;
   }
 
-  /* Letzter Absatz auf volle Breite unter Bild */
+  /* Letzter Absatz unter Bild nur auf großem Desktop */
   .homepage-text p:last-of-type {
     flex-basis: 100%;
     margin-top: 1rem;
   }
 }
 
-/* Mobile & Tablet unverändert */
-@media (max-width: 999px) {
+/* Tablet & Handy quer – Bild links, Text rechts */
+@media (min-width: 700px) and (max-width: 1199px) {
+  .homepage-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: var(--site-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }
+  .homepage-photo { flex: 0 0 var(--photo-col-sm); }
+  .homepage-text {
+    flex: 1;
+    max-width: var(--text-max);
+  }
+}
+
+/* Handy hochkant – alles gestapelt */
+@media (max-width: 699px) {
   .homepage-wrapper {
     display: flex;
     flex-direction: column;
@@ -117,10 +136,9 @@ img { max-width: 100%; height: auto; display: block; }
   .homepage-photo { flex: none; max-width: 90vw; }
   .homepage-text {
     max-width: 95vw;
-    display: flex;
-    flex-direction: column;
   }
 }
+
 
 
 /* ==========================================
