@@ -7,7 +7,7 @@
 
 :root {
   --site-max: 1280px;
-  --text-max: 830px;
+   --text-max: 1000px;   /* vorher 830px */
   --base-font: 16px;
 
   --brand: #0a4c86;
