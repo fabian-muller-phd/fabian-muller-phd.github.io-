@@ -6,8 +6,8 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1500px;   /* genug Gesamtbreite ohne zu breit zu wirken */
-  --text-max: 1180px;   /* längere Textzeilen, gleicht Höhe an */
+  --site-max: 1480px;   /* genug Gesamtbreite ohne zu breit zu wirken */
+  --text-max: 1150px;   /* längere Textzeilen, gleicht Höhe an */
   --base-font: 16px;
 
   --brand: #0a4c86;
