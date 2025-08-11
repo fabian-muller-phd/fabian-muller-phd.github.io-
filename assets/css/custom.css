@@ -6,7 +6,7 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1550px;   /* genug Gesamtbreite ohne zu breit zu wirken */
+  --site-max: 1500px;   /* genug Gesamtbreite ohne zu breit zu wirken */
   --text-max: 1180px;   /* längere Textzeilen, gleicht Höhe an */
   --base-font: 16px;
 
