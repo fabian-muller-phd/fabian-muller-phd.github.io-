@@ -484,16 +484,17 @@ button:focus-visible {
 
 /* ==========================================
    Phone Landscape: Bild links, Text umfließt und läuft darunter weiter
+   Robust für iOS (Breite ODER geringe Höhe + Touch)
    ========================================== */
-@media (max-width: 900px) and (orientation: landscape) {
-  /* Wrapper nicht mehr als Flex */
-  .homepage-wrapper { display: block; }
+@media ( (max-width: 920px) and (orientation: landscape) ) ,
+       ( (max-height: 450px) and (hover: none) and (pointer: coarse) ) {
 
-  /* Foto "floaten" */
+  /* Home */
+  .homepage-wrapper { display: block !important; } /* Flex aus */
   .homepage-photo {
     float: left;
-    width: var(--photo-col-sm);   /* z.B. 280px */
-    margin: 0 1rem .6rem 0;       /* Abstand rechts/unten */
+    width: var(--photo-col-sm);
+    margin: 0 1rem .6rem 0;
   }
   .homepage-photo img {
     width: 100%;
@@ -502,24 +503,14 @@ button:focus-visible {
     object-fit: cover;
     border-radius: 8px;
   }
+  .homepage-wrapper::after { content: ""; display: table; clear: both; }
 
-  /* Clearfix: sorgt dafür, dass der Wrapper die Floats umschließt */
-  .homepage-wrapper::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  /* Gleiche Logik für die Contact-Seite */
-  .page--contact .contact-wrapper { display: block; }
+  /* Contact */
+  .page--contact .contact-wrapper { display: block !important; }
   .page--contact .contact-photo {
     float: left;
     width: var(--photo-col-sm);
     margin: 0 1rem .6rem 0;
   }
-  .page--contact .contact-wrapper::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  .page--contact .contact-wrapper::after { content: ""; display: table; clear: both; }
 }
