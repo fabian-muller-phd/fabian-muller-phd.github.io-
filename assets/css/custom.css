@@ -482,35 +482,31 @@ button:focus-visible {
   }
 }
 
-/* ==========================================
-   Phone Landscape: Bild links, Text umfließt und läuft darunter weiter
-   Robust für iOS (Breite ODER geringe Höhe + Touch)
-   ========================================== */
-@media ( (max-width: 920px) and (orientation: landscape) ) ,
-       ( (max-height: 450px) and (hover: none) and (pointer: coarse) ) {
+/* Querformat (Smartphone & Tablet): Bild links, Text daneben */
+@media (orientation: landscape) and (max-width: 1100px) {
+  .homepage-wrapper,
+  .page--contact .contact-wrapper { display: block; }
 
-  /* Home */
-  .homepage-wrapper { display: block !important; } /* Flex aus */
-  .homepage-photo {
+  .homepage-photo,
+  .page--contact .contact-photo {
     float: left;
     width: var(--photo-col-sm);
     margin: 0 1rem .6rem 0;
   }
-  .homepage-photo img {
+
+  .homepage-photo img,
+  .page--contact .contact-photo img {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
   }
-  .homepage-wrapper::after { content: ""; display: table; clear: both; }
 
-  /* Contact */
-  .page--contact .contact-wrapper { display: block !important; }
-  .page--contact .contact-photo {
-    float: left;
-    width: var(--photo-col-sm);
-    margin: 0 1rem .6rem 0;
+  .homepage-wrapper::after,
+  .page--contact .contact-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  .page--contact .contact-wrapper::after { content: ""; display: table; clear: both; }
 }
