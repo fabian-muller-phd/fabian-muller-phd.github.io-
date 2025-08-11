@@ -487,39 +487,22 @@ button:focus-visible {
   }
 }
 
-/* Querformat (Smartphone & Tablet): Bild links, Text rechts – mit Flex */
 @media (orientation: landscape) and (max-width: 1100px) {
-  .homepage-wrapper,
-  .page--contact .contact-wrapper {
+  .homepage-wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .homepage-photo,
-  .page--contact .contact-photo {
-    flex: 0 0 var(--photo-col-sm);
-    margin: 0; /* kein float, kein margin-hack */
-  }
-
-  .homepage-text,
-  .page--contact .contact-panel {
-    flex: 1 1 auto;
-    min-width: 0; /* verhindert Überlaufen langer Wörter/Links */
-  }
-}
-
-@media (orientation: landscape) and (max-width: 1100px) {
-  .homepage-wrapper {
-    display: block; /* statt flex */
-  }
   .homepage-photo {
-    float: left;
-    width: var(--photo-col-sm);
-    margin: 0 1rem 1rem 0;
+    flex: 0 0 var(--photo-col-sm);
+    margin: 0;
   }
+
   .homepage-text {
-    overflow: hidden; /* sorgt für sauberen Textfluss */
+    flex: 1;
+    min-width: 0;
   }
 }
