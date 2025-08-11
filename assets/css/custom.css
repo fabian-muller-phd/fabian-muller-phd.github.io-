@@ -6,8 +6,8 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1600px;
-   --text-max: 1250px;
+  --site-max: 1580px;
+   --text-max: 1200px;
   --base-font: 16px;
 
   --brand: #0a4c86;
@@ -20,8 +20,8 @@
   --line: #eee;
 
   /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
-  --photo-col: 445px;     /* Desktop-Spalte */
-  --photo-col-sm: 280px;  /* Tablet-Spalte */
+  --photo-col: 420px;     /* Desktop-Spalte */
+  --photo-col-sm: 270px;  /* Tablet-Spalte */
   --photo-mobile: 320px;  /* Fixbreite am Phone */
 }
 
