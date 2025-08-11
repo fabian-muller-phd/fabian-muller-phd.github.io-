@@ -63,35 +63,55 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ==========================================
-   Startseite
+   Startseite – Bild links, Text daneben + unten
    ========================================== */
 .homepage-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-top: 2rem;
+  /* Block-Formatting-Context erzeugen, damit der Float sauber „gehalten“ wird */
+  display: flow-root;              /* modern; alternativ: overflow: hidden; */
   max-width: var(--site-max);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto;
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 var(--photo-col); }
+.homepage-photo {
+  float: left;                     /* Bild links, Text fließt daneben/unterhalb */
+  width: var(--photo-col);
+  margin: 0 2rem 1rem 0;           /* rechts + unten Abstand fürs Umfließen */
+}
+
 .homepage-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
+  display: block;
 }
 
 .homepage-text {
-  flex: 1;
+  /* KEIN flex-Container mehr, sonst blockiert es den Fluss */
   font-size: 16px;
   line-height: 1.6;
-  max-width: var(--text-max);
-  display: flex;
-  flex-direction: column;
+  color: var(--ink-2);
+  /* wichtig: keine enge Max-Breite, damit der Teil unter dem Bild volle Breite nutzen kann */
+  max-width: none;
 }
+
+/* ==========================================
+   Responsive: Phone/Tablet HOCHFORMAT
+   (nur hier stapeln: Bild oben, Text darunter)
+   ========================================== */
+@media (max-width: 900px) and (orientation: portrait) {
+  .homepage-photo {
+    float: none;                              /* Float aus */
+    width: min(var(--photo-mobile), 90vw);    /* handliche Breite */
+    margin: 0 auto 1rem;                      /* zentriert, Abstand unten */
+    display: block;
+  }
+  .homepage-text {
+    max-width: 95vw;                          /* angenehme Lesebreite */
+  }
+}
+
 
 
 
