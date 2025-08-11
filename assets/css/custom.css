@@ -6,8 +6,8 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1400px;
-   --text-max: 1100px;
+  --site-max: 1500px;
+   --text-max: 1150px;
   --base-font: 16px;
 
   --brand: #0a4c86;
