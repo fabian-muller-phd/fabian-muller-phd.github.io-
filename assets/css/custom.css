@@ -6,7 +6,7 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1720px;
+  --site-max: 1800px;
    --text-max: 1300px;
   --base-font: 16px;
 
