@@ -67,30 +67,32 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================== */
 .homepage-wrapper {
   display: flex;
+  flex-wrap: wrap; /* <-- NEU: erlaubt Umbruch unter das Bild */
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
-  max-width: var(--site-max);
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 var(--photo-col); }
+.homepage-photo {
+  flex: 0 0 440px;
+  max-width: 100%;
+}
+
 .homepage-photo img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
 }
 
 .homepage-text {
-  flex: 1;
+  flex: 1 1 300px; /* <-- NEU: erlaubt mitzufließen, wenn kein Platz */
   font-size: 16px;
   line-height: 1.6;
-  max-width: var(--text-max);
-  display: flex;
-  flex-direction: column;
+  max-width: 800px;
 }
 
 /* Abstand zwischen Absätzen nur auf der Startseite anpassen */
