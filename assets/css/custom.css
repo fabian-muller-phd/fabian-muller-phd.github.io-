@@ -490,29 +490,19 @@ button:focus-visible {
 
 @media (orientation: landscape) and (max-width: 1100px) {
   .homepage-wrapper {
-    display: grid;
-    grid-template-columns: var(--photo-col-sm) 1fr;
-    grid-auto-rows: auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
   }
 
   .homepage-photo {
-    grid-column: 1;
-    grid-row: 1;
+    flex: 0 0 var(--photo-col-sm);
+    margin-bottom: 0;
   }
 
   .homepage-text {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .homepage-text::after {
-    content: "";
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    display: block;
-    height: 1px;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
