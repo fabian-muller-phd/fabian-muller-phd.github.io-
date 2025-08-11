@@ -67,37 +67,54 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================== */
 .homepage-wrapper {
   display: flex;
-  flex-wrap: wrap; /* <-- NEU: erlaubt Umbruch unter das Bild */
+  flex-direction: row;
+  flex-wrap: wrap; /* erlaubt Umbruch bei Platzmangel */
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
-  max-width: 1000px;
+  max-width: var(--site-max);
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
 }
 
 .homepage-photo {
-  flex: 0 0 440px;
-  max-width: 100%;
+  flex: 0 0 var(--photo-col);
 }
 
 .homepage-photo img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 8px;
 }
 
 .homepage-text {
-  flex: 1 1 300px; /* <-- NEU: erlaubt mitzufließen, wenn kein Platz */
+  flex: 1;
   font-size: 16px;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: var(--text-max);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Abstand zwischen Absätzen nur auf der Startseite anpassen */
 .homepage-text p {
   margin-bottom: 0.6em; /* kleinerer Abstand */
+}
+
+/* Nur im Hochformat auf mobilen Geräten: Bild oben, Text darunter */
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+  .homepage-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .homepage-photo,
+  .homepage-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 
