@@ -6,8 +6,8 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1350px;   /* genug Gesamtbreite ohne zu breit zu wirken */
-  --text-max: 1100px;   /* längere Textzeilen, gleicht Höhe an */
+  --site-max: 1350px;   
+  --text-max: 1100px;   
   --base-font: 16px;
 
   --brand: #0a4c86;
@@ -19,10 +19,9 @@
   --muted: #6f777d;
   --line: #eee;
 
-  /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
-  --photo-col: 445px;     /* Desktop-Spalte */
-  --photo-col-sm: 280px;  /* Tablet-Spalte */
-  --photo-mobile: 320px;  /* Fixbreite am Phone */
+  --photo-col: 445px;     
+  --photo-col-sm: 280px;  
+  --photo-mobile: 320px;  
 }
 
 /* ==========================================
@@ -33,10 +32,8 @@
 .archive,
 .splash .page__content {
   max-width: var(--site-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 body {
@@ -53,19 +50,19 @@ img { max-width: 100%; height: auto; display: block; }
 .page__content a:hover { text-decoration: underline; }
 :target { scroll-margin-top: 80px; }
 
-/* Headlines */
 .page__content h2 {
-  font-size: 1.1rem !important;
-  line-height: 1.35 !important;
-  margin: 0 0 0.4rem !important;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  margin: 0 0 0.4rem;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
 
 /* ==========================================
-   Startseite
+   Startseite & Contact – Gemeinsames Layout
    ========================================== */
-.homepage-wrapper {
+.homepage-wrapper,
+.page--contact .contact-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -76,220 +73,12 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 1rem;
 }
 
-.homepage-photo { flex: 0 0 var(--photo-col); }
-.homepage-photo img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
+.homepage-photo,
+.page--contact .contact-photo {
+  flex: 0 0 var(--photo-col);
 }
 
-.homepage-text {
-  flex: 1;
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: var(--text-max);
-  display: flex;
-  flex-direction: column;
-}
-
-/* Abstand zwischen Absätzen nur auf der Startseite anpassen */
-.homepage-text p {
-  margin-bottom: 0.6em; /* kleinerer Abstand */
-}
-
-
-/* ==========================================
-   Footer
-   ========================================== */
-.page__footer,
-.page__footer footer,
-.footer {
-  background: #111 !important;
-  color: #6f777d !important;
-  border: none !important;
-}
-.mein-footer-rechts {
-  display: block;
-  text-align: center;
-  font-size: 0.6em;
-  color: #6f777d;
-  font-weight: 400;
-  opacity: 0.92;
-  padding: 8px 0;
-}
-.page__footer-copyright,
-.page__footer .powered-by,
-.page__footer-follow { display: none !important; }
-
-/* ==========================================
-   Research & Publications Wrapper + Typo
-   ========================================== */
-.research-wrapper,
-.pubs-wrapper {
-  max-width: var(--site-max);
-  margin: 2rem auto;
-  padding: 0 1.25rem 2rem;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.research-intro,
-.pubs-intro {
-  max-width: var(--text-max);
-  color: var(--ink-2);
-  margin-bottom: 1.5rem;
-}
-.research-section { max-width: var(--text-max); margin: 2rem 0 2.5rem; }
-
-/* Karten-Layout */
-.research-grid,
-.pubs-wrapper .research-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 2rem auto;
-  max-width: var(--site-max);
-}
-.research-card {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
-  background: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.research-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-2px); }
-.research-card h3 { font-size: 1rem; margin: 0 0 0.25rem; }
-.research-card p { font-size: 0.95rem; color: var(--ink-3); margin: 0.25rem 0 0; }
-
-/* ==========================================
-   Publications Listenformat
-   ========================================== */
-.pubs-list { list-style: none; padding-left: 0; margin: 0 0 1.2rem 0; }
-.pub { margin: 0.4rem 0; }
-
-/* hängender Einzug für Zitate */
-.page--pubs .cite {
-  display: block;
-  padding-left: 1.3rem;
-  text-indent: -1.3rem;
-  line-height: 1.6;
-}
-
-/* Download-Buttons kompakt */
-.pubs-wrapper .pubs-list .actions a,
-.pubs-wrapper .dl-btn {
-  -webkit-appearance: none;
-  appearance: none;
-  display: inline-block;
-  text-decoration: none;
-  line-height: 1.2;
-  padding: 0.18rem 0.40rem;
-  font-size: 0.75rem;
-  border-radius: 4px;
-  font-weight: 500;
-  white-space: nowrap;
-  cursor: pointer;
-  border: 1px solid #b9d7ef;
-  background: #d9e9f7;
-  color: #064d77;
-}
-.pubs-wrapper .pubs-list .actions a:hover,
-.pubs-wrapper .dl-btn:hover { background: #b9d7ef; }
-
-/* Talks & Posters */
-.page--pubs .pubs-list--tight { list-style: none; margin-left: 0; padding-left: 0; }
-.page--pubs .pubs-list--tight li {
-  display: block;
-  padding-left: 1.3rem;
-  text-indent: -1.3rem;
-  line-height: 1.55;
-  margin: 0.35rem 0;
-}
-.page--pubs .pub-year {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin: 1.1rem 0 0.4rem;
-}
-
-/* ==========================================
-   CV
-   ========================================== */
-.cv-section {
-  max-width: var(--site-max);
-  margin: 2rem auto;
-  padding: 0 1.25rem;
-}
-.cv-section h2 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 2rem 0 0.6rem;
-}
-.cv-entry { display: flex; gap: 1rem; margin-bottom: 1rem; }
-.cv-years { flex: 0 0 130px; font-weight: 600; color: var(--muted); }
-.cv-details { flex: 1; }
-.cv-details a { color: var(--brand); }
-.cv-details a:hover { text-decoration: underline; }
-.cv-section ul { margin: 0 0 1rem 1rem; padding: 0; }
-.cv-section li { margin-bottom: 0.4rem; }
-.cv-section .dl-btn {
-  display: inline-block;
-  font-size: 0.75rem;
-  padding: 0.18rem 0.4rem;
-  border-radius: 4px;
-  background: #d9e9f7;
-  border: 1px solid #b9d7ef;
-  color: #064d77;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 1rem;
-}
-.cv-section .dl-btn:hover { background: #b9d7ef; }
-
-/* ==========================================
-   Teaching
-   ========================================== */
-.teaching-section {
-  max-width: var(--site-max);
-  margin: 2rem auto;
-  padding: 0 1.25rem;
-  line-height: 1.6;
-}
-.teaching-section h2 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 2rem 0 0.6rem;
-}
-.teaching-entry { margin-bottom: 1.5rem; }
-.teaching-years { font-weight: 600; color: var(--muted); margin-bottom: 0.4rem; }
-.teaching-section a { color: var(--brand); }
-.teaching-section a:hover { text-decoration: underline; }
-.teaching-section ul { margin: 0 0 1rem 1rem; padding: 0; }
-.teaching-section li { margin-bottom: 0.4rem; }
-
-/* ==========================================
-   Contact – exakt wie Startseite (Foto links)
-   ========================================== */
-
-/* Splash-/Theme-Zentrierung sicher deaktivieren */
-.page--contact .splash .page__content,
-.page--contact .page__content,
-.page--contact .initial-content { text-align: left !important; }
-
-.page--contact .splash .page__inner-wrap { padding: 0 !important; }
-
-.page--contact .contact-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-top: 2rem;
-  max-width: 1000px;   /* exakt wie Startseite */
-  margin-left: 0;      /* linksbündig wie Startseite */
-  margin-right: auto;
-  padding: 1rem;
-}
-
-/* Bildspalte IDENTISCH zu .homepage-photo */
-.page--contact .contact-photo { flex: 0 0 445px; }
+.homepage-photo img,
 .page--contact .contact-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -297,56 +86,18 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 8px;
 }
 
-/* Textspalte IDENTISCH zu .homepage-text */
+.homepage-text,
 .page--contact .contact-panel {
   flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
   max-width: var(--text-max);
 }
-.page--contact .contact-panel h2 {
-  font-size: 1.1rem;
-  line-height: 1.35;
-  margin: 0 0 .6rem;
-  font-weight: 700;
-}
 
-/* Links/Chips (unverändert) */
-.page--contact .email-link { font-weight: 600; color: var(--brand); text-decoration: none; }
-.page--contact .email-link:hover { text-decoration: underline; }
-.page--contact .contact-list { margin: .6rem 0 0; padding: 0; display: flex; gap: .5rem; flex-wrap: wrap; }
-.page--contact .contact-list li { list-style: none; }
-.page--contact .contact-chip {
-  display: inline-flex; align-items: center; gap: .4rem;
-  padding: .45rem .65rem .45rem .75rem;
-  border-radius: 8px; text-decoration: none; background: #fff;
-  border: 1px solid var(--line); color: var(--ink-2); font-weight: 500;
-  position: relative; white-space: nowrap;
-}
-.page--contact .contact-chip::before {
-  content: ""; width: 3px; height: 100%; border-radius: 8px 0 0 8px;
-  position: absolute; left: 0; top: 0; background: var(--brand);
-}
-.page--contact .contact-chip:hover { box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px); }
-
-/* Breakpoints 1:1 wie Startseite -> gleiche Bildgröße auf Phone */
-@media (max-width: 900px) {
-  .page--contact .contact-photo { flex: 0 0 280px; }
-}
-@media (max-width: 600px) {
-  .page--contact .contact-wrapper {
-    flex-direction: column; align-items: center; gap: 1rem;
-  }
-  .page--contact .contact-photo {
-    flex: none; max-width: 90vw; margin-bottom: 1rem;
-  }
-  .page--contact .contact-photo img {
-    max-width: 320px; /* exakt wie .homepage-photo img */
-    aspect-ratio: auto;
-  }
-  .page--contact .contact-panel { max-width: 95vw; }
-}
+.homepage-text p { margin-bottom: 0.6em; }
 
 /* ==========================================
-   Responsive (Tablet & Mobile)
+   Responsive Layout
    ========================================== */
 
 /* Tablet */
@@ -357,57 +108,8 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 
-/* Mobile – bis 700px */
-@media (max-width: 700px) {
-  /* Wrapper für Research & Publications angleichen */
-  .research-wrapper,
-  .pubs-wrapper {
-    padding: 0 1rem 2rem;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* Einspaltige Grids */
-  .research-grid,
-  .pubs-wrapper .research-grid {
-    grid-template-columns: 1fr;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Karten in Research & Publications */
-  .research-card,
-  .pubs-wrapper .research-grid > *,
-  .pubs-wrapper .pub-card {
-    box-sizing: border-box;
-    max-width: 100%;
-    padding: .9rem 1rem;
-    overflow-wrap: anywhere;   /* lange Worte umbrechen */
-    word-break: break-word;
-  }
-
-  /* Lange Listen / Texte in Publications */
-  .pubs-wrapper .page__content {
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
-
-  /* Tabellen oder Listen innerhalb halten */
-  .pubs-wrapper table,
-  .pubs-wrapper ul,
-  .pubs-wrapper ol {
-    max-width: 100%;
-  }
-
-  /* Sicherheit: kein horizontales Scrollen */
-  body { overflow-x: hidden; }
-}
-
-/* Mobile Portrait & sehr kleine Geräte – bis 600px */
-@media (max-width: 600px) {
-  /* Home & Contact: gleicher Stack + Bildgröße */
+/* Mobile Portrait – Bild über Text */
+@media (max-width: 600px) and (orientation: portrait) {
   .homepage-wrapper,
   .page--contact .contact-wrapper {
     flex-direction: column;
@@ -426,11 +128,6 @@ img { max-width: 100%; height: auto; display: block; }
   .page--contact .contact-photo img {
     width: min(var(--photo-mobile), 90vw);
     height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 0 auto;
-    max-width: 100%;
   }
 
   .homepage-text,
@@ -438,69 +135,20 @@ img { max-width: 100%; height: auto; display: block; }
     max-width: 95vw;
     text-align: left;
   }
-
-  /* CV: Years über Text */
-  .cv-entry { flex-direction: column; gap: .2rem; }
-  .cv-years { flex: none; }
-  .cv-details { overflow-wrap: anywhere; }
-
-  /* Lesbarkeit & Touch-Flächen */
-  body { font-size: 17px; line-height: 1.7; }
-  .page__content h2 { margin-bottom: .5rem; }
-  .contact-chip { padding: .5rem .7rem; }
 }
 
-/* Tastaturfokus sichtbar (A11y) */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-
-/* DOIs und lange Links umbrechen, damit kein Horizontal-Scroll entsteht */
-.pubs-wrapper a {
-  overflow-wrap: anywhere;  /* bricht den Link an jeder Stelle */
-  word-break: break-word;   /* bricht notfalls mitten im Wort */
-}
-
-/* --- Last-Resort: Contact linksbündig wie Startseite (nur Desktop) --- */
-@media (min-width: 1000px) {
-  .page--contact .splash .page__content,
-  .page--contact .splash .page__inner-wrap,
-  .page--contact .page__content {
-    max-width: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    text-align: left !important;
-  }
-
-  .page--contact .contact-wrapper {
-    max-width: 1000px !important;   /* gleiche Arbeitsbreite wie Home */
-    margin-left: 0 !important;       /* linksbündig */
-    margin-right: auto !important;
-    padding: 1rem !important;
-  }
-}
-
-/* Querformat (Smartphone & Tablet): Bild links, Text daneben */
+/* Landscape – Bild links */
 @media (orientation: landscape) and (max-width: 1100px) {
   .homepage-wrapper,
-  .page--contact .contact-wrapper { display: block; }
+  .page--contact .contact-wrapper {
+    display: block;
+  }
 
   .homepage-photo,
   .page--contact .contact-photo {
     float: left;
     width: var(--photo-col-sm);
     margin: 0 1rem .6rem 0;
-  }
-
-  .homepage-photo img,
-  .page--contact .contact-photo img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 8px;
   }
 
   .homepage-wrapper::after,
