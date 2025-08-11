@@ -93,7 +93,10 @@ img { max-width: 100%; height: auto; display: block; }
   flex-direction: column;
 }
 
-
+/* Abstand zwischen Absätzen nur auf der Startseite anpassen */
+.homepage-text p {
+  margin-bottom: 0.6em; /* kleinerer Abstand */
+}
 
 
 /* ==========================================
