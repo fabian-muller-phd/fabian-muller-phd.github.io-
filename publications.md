@@ -169,24 +169,96 @@ classes: page--pubs
   </ul>
 
   <!-- Talks & Posters -->
-  <h2 id="talks">Talks & Posters</h2>
+<h2 id="talks">Talks & Posters</h2>
 
-  <h3 class="pub-year">Talks</h3>
-  <ul class="pubs-list pubs-list--tight">
-    <li>Jury, M., <b>Müller, F.</b>, & Aelenei, C. (submitted). <em>Perceived academic success of students with special educational needs: Interaction with students’ gender</em>. EARLI, Graz, Austria.</li>
-    <li><b>Müller, F.</b>, Goudeau, S., Aelenei, C., & Sanitioso, R. B. (2023, June). <em>Acculturation in higher education institutions: How high-performing working-class students reduce cultural mismatch at university</em>. EASP, Kraków, Poland.</li>
-    <li><b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July). <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>. EASP-SPSSI, London, UK.</li>
-    <li><b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July). <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>. CIPS, Bordeaux, France.</li>
-    <li>Tobias, S., Ganglmayer, K., <b>Müller, F.</b>, Hauf, P., & Paulus, M. (2019, September). <em>The development of children’s use of kinematic cues for action prediction: An assessment of explicit and implicit processing</em>. DGPs, Leipzig, Germany.</li>
-    <li>Denk, A.*, <b>Müller, F.*</b>, & Sälzer, C. (2017, December). <em>Hand in Hand – Social and emotional skills for tolerant and non-discriminative societies (a whole school approach)</em>. Education and Refugees: Research Meets Practice, Berlin, Germany. <br>*equal contribution.</li>
-    <li>Strohmaier, A. R., Schiepe-Tiska, A., <b>Müller, F.</b>, & Reiss, K. M. (2017, March). <em>Über den Zusammenhang zwischen mathematikbezogener Ängstlichkeit und Blickbewegungen beim Lesen von Mathematikaufgaben in unterschiedlichen situationellen Kontexten</em> [On the relationship between mathematics-related anxiety and eye movements while reading math problems in different situational contexts]. GEBF, Heidelberg, Germany.</li>
-  </ul>
+<h3 class="pub-year">Talks</h3>
+<ul class="pubs-list">
+  <li class="pub">
+    <span class="cite">
+      Jury, M., <b>Müller, F.</b>, & Aelenei, C. (submitted).
+      <em>Perceived academic success of students with special educational needs: Interaction with students’ gender</em>.
+      EARLI, Graz, Austria.
+    </span>
+  </li>
 
-  <h3 class="pub-year">Posters</h3>
-  <ul class="pubs-list pubs-list--tight">
-    <li><b>Müller, F.</b>, Denk, A., & Sälzer, C. (2018, June). <em>HAND IN HAND – Making schools ready to fight discrimination against minorities</em>. ICAP, Montréal, Canada. <a href="https://doi.org/10.17605/OSF.IO/CKV2E" target="_blank" rel="noopener">https://doi.org/10.17605/OSF.IO/CKV2E</a></li>
-    <li><b>Müller, F.</b>, Schiepe-Tiska, A., & Strohmaier, A. R. (2017, Apr.). <em>EyeQuest – Cross-cultural comparison of eye movements and self-reports</em>. NCME, San Antonio (TX), USA. <a href="https://doi.org/10.13140/RG.2.2.15675.98087" target="_blank" rel="noopener">https://doi.org/10.13140/RG.2.2.15675.98087</a></li>
-    <li>Hauf, P., <b>Müller, F.</b>, Aldaqre, I., & Paulus, M. (2015, June). <em>Are kinematic cues used to predict action goals? A developmental study</em>. JPS, Toronto, Canada.</li>
-  </ul>
+  <li class="pub">
+    <span class="cite">
+      <b>Müller, F.</b>, Goudeau, S., Aelenei, C., & Sanitioso, R. B. (2023, June).
+      <em>Acculturation in higher education institutions: How high-performing working-class students reduce cultural mismatch at university</em>.
+      EASP, Kraków, Poland.
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      <b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July).
+      <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>.
+      EASP-SPSSI, London, UK.
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      <b>Müller, F.</b>, Goudeau, S., & Sanitioso, R. B. (2022, July).
+      <em>Working-class students and distance learning during the COVID-19 pandemic: Digital divide, cultural mismatch, and psychological barriers</em>.
+      CIPS, Bordeaux, France.
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      Tobias, S., Ganglmayer, K., <b>Müller, F.</b>, Hauf, P., & Paulus, M. (2019, September).
+      <em>The development of children’s use of kinematic cues for action prediction: An assessment of explicit and implicit processing</em>.
+      DGPs, Leipzig, Germany.
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      Denk, A.*, <b>Müller, F.*</b>, & Sälzer, C. (2017, December).
+      <em>Hand in Hand – Social and emotional skills for tolerant and non-discriminative societies (a whole school approach)</em>.
+      Education and Refugees: Research Meets Practice, Berlin, Germany. *equal contribution.
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      Strohmaier, A. R., Schiepe-Tiska, A., <b>Müller, F.</b>, & Reiss, K. M. (2017, March).
+      <em>Über den Zusammenhang zwischen mathematikbezogener Ängstlichkeit und Blickbewegungen beim Lesen von Mathematikaufgaben in unterschiedlichen situationellen Kontexten</em>
+      [On the relationship between mathematics-related anxiety and eye movements while reading math problems in different situational contexts].
+      GEBF, Heidelberg, Germany.
+    </span>
+  </li>
+</ul>
+
+<h3 class="pub-year">Posters</h3>
+<ul class="pubs-list">
+  <li class="pub">
+    <span class="cite">
+      <b>Müller, F.</b>, Denk, A., & Sälzer, C. (2018, June).
+      <em>HAND IN HAND – Making schools ready to fight discrimination against minorities</em>.
+      ICAP, Montréal, Canada.
+      <a href="https://doi.org/10.17605/OSF.IO/CKV2E" target="_blank" rel="noopener">https://doi.org/10.17605/OSF.IO/CKV2E</a>
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      <b>Müller, F.</b>, Schiepe-Tiska, A., & Strohmaier, A. R. (2017, April).
+      <em>EyeQuest – Cross-cultural comparison of eye movements and self-reports</em>.
+      NCME, San Antonio (TX), USA.
+      <a href="https://doi.org/10.13140/RG.2.2.15675.98087" target="_blank" rel="noopener">https://doi.org/10.13140/RG.2.2.15675.98087</a>
+    </span>
+  </li>
+
+  <li class="pub">
+    <span class="cite">
+      Hauf, P., <b>Müller, F.</b>, Aldaqre, I., & Paulus, M. (2015, June).
+      <em>Are kinematic cues used to predict action goals? A developmental study</em>.
+      JPS, Toronto, Canada.
+    </span>
+  </li>
+</ul>
+
 
 </div>
