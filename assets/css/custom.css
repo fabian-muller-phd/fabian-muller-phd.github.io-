@@ -603,34 +603,51 @@ button:focus-visible {
 }
 
 
-/* === Grid-Hero (links Titel/Name, rechts Tags+CTA) === */
-.hero-grid {
-  max-width: var(--site-max);
-  margin: 1.25rem auto 0;
-  padding: 0 clamp(16px,3vw,24px);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: clamp(16px, 2.5vw, 32px);
-  align-items: end;
+/* ===== HERO-BAND: rechtsbündig, dezente Fläche ===== */
+:root {
+  --hero-bg: #f7f7f7;       /* Alternative warm: #faf7f2 */
 }
-.hero-grid__left { text-align: left; }
-.hero-grid__right { text-align: right; }
-/* Typo */
+
+.hero-band {
+  background: var(--hero-bg);
+  border-radius: 12px;
+  margin: 1.25rem auto 0;
+}
+
+.hero-band__inner {
+  max-width: var(--site-max);
+  margin: 0 auto;
+  padding: clamp(20px, 5vw, 48px) clamp(16px, 3vw, 24px);
+  text-align: right;        /* alles rechtsbündig */
+}
+
+/* Typo wie gehabt */
 .hero-title {
-  margin: 0 0 .25rem;
-  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  margin: 0 0 .3rem;
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
   line-height: 1.2;
   font-weight: 800;
   color: var(--ink-1);
 }
-.hero-sub { margin: 0 0 .5rem; font-weight: 700; color: var(--ink-2); }
+.hero-sub {
+  margin: 0 0 .6rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
 
 /* Tags: NUR farbige Schrift, keine Buttons */
-.hero-tags { list-style: none; margin: .25rem 0 .9rem; padding: 0; display: flex; gap: .75rem; flex-wrap: wrap; }
+.hero-tags {
+  list-style: none;
+  margin: .3rem 0 .9rem;
+  padding: 0;
+  display: inline-flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
 .hero-tags.plain li { color: var(--brand); font-weight: 600; }
 .hero-tags.plain li:not(:last-child)::after { content: "·"; margin-left: .75rem; color: var(--muted); }
 
-/* CTA-Button */
+/* CTA (dein „guter“ Button) */
 .cta {
   -webkit-appearance: none;
   appearance: none;
@@ -647,13 +664,9 @@ button:focus-visible {
 }
 .cta:hover { background: #b9d7ef; }
 
-/* Responsive */
+/* Responsive – auf klein zentrieren */
 @media (max-width: 900px) {
-  .hero-split {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .hero-split__content { text-align: center; }
+  .hero-band__inner { text-align: center; }
 }
 
 
