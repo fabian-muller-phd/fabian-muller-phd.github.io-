@@ -1011,3 +1011,58 @@ button:focus-visible {
 /* Contact: enger an den Inhalt anschließen */
 .page--contact .hero-band { margin-bottom: .5rem; }
 .page--contact .contact-wrapper { margin-top: .5rem; }
+
+/* Publications: kompakte CTA-Style Download-Buttons */
+.page--pubs .pubs-list .actions {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  margin-top: .25rem;
+}
+
+.page--pubs .pubs-list .actions .dl-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+
+  /* compact wie gewünscht */
+  font-size: .75rem;
+  line-height: 1.2;
+  padding: .22rem .55rem .22rem .7rem;
+  border-radius: 6px;
+
+  /* wie .cta */
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  font-weight: 500;
+}
+
+/* farbiger Balken links – wie .cta */
+.page--pubs .pubs-list .actions .dl-btn::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0; top: 0;
+  border-radius: 6px 0 0 6px;
+  background: var(--brand);
+}
+
+/* Hover wie .cta, aber dezent */
+.page--pubs .pubs-list .actions .dl-btn:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  transform: translateY(-1px);
+}
+
+/* Fokus sichtbar (falls globaler Fokus mal überschrieben wird) */
+.page--pubs .pubs-list .actions .dl-btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
