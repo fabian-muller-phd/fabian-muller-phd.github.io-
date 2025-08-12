@@ -1540,18 +1540,16 @@ button:focus-visible {
   }
 }
 
-/* TEACHING – Polishes */
-
-/* 1) "Course Language" Zeile: klein, grau, nicht kursiv */
-.page--teaching .teaching-entry em {
-  font-style: normal;
-  color: var(--muted);
-  font-size: .92rem;
-  display: block;
-  margin-top: .15rem;
+/* Read-Buttons: linker Balken in Orange */
+.page--pubs .pub .actions .dl-btn--read::before,
+.page--pubs .pubs-list .actions .dl-btn--read::before {
+  background: var(--brand-orange); /* #e46a2c */
 }
 
-/* 2) Kursliste klarer trennen + angenehme Vertikalabstände */
+
+/* TEACHING – Polishes */
+
+/* Kursliste klarer trennen + angenehme Vertikalabstände */
 .page--teaching .teaching-entry ul { 
   list-style: disc;
   padding-left: 1.1rem;
