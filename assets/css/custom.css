@@ -764,7 +764,7 @@ button:focus-visible {
 
 /* Color variants (your palette) */
 .feature-icon.orange { background: #e46a2c; }
-.feature-icon.blue   { background: #083963; }
+.feature-icon.blue { background: var(--brand); }
 .feature-icon.green  { background: #2ba89c; }
 
 /* Responsive: only 1 column on small phones (portrait) */
