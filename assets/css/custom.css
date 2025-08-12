@@ -6,23 +6,35 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1220px;    /* Gesamtbreite Desktop kleiner */
-  --text-max: 830px;   /* vorher 760px */
-  --base-font: 16px;
+  /* ===== Layout / Typo ===== */
+  --site-max: 1220px;   /* max. Seitenbreite */
+  --text-max: 830px;    /* max. Textbreite */
+  --base-font: 16px;    /* Grundschriftgröße */
 
-  --brand: #0a4c86;
-  --brand-dark: #083963;
+  /* ===== Brand-Palette (einmalig zentral) ===== */
+  --brand-blue:   #0a4c86; /* Primärblau (Hero-Tags, Links) */
+  --brand-navy:   #083963; /* dunkleres Blau (optional für Akzente) */
+  --brand-orange: #e46a2c; /* Features: Data/Equity etc. */
+  --brand-green:  #2ba89c; /* Features: Quant */
 
+  /* Öffentliche Aliase (für bestehende Stellen im CSS) */
+  --brand:      var(--brand-blue); /* Hauptmarke */
+  --brand-dark: var(--brand-navy);
+
+  /* ===== Neutrals / UI ===== */
   --ink-1: #111;
   --ink-2: #222;
   --ink-3: #333;
   --muted: #6f777d;
-  --line: #eee;
+  --line:  #eee;
 
-  /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
-  --photo-col: 450px;     /* Desktop-Spalte */
-  --photo-col-sm: 280px;  /* Tablet-Spalte */
-  --photo-mobile: 320px;  /* Fixbreite am Phone */
+  /* Hero-Hintergrund */
+  --hero-bg: #f7f7f7;
+
+  /* ===== Mediengrößen Home/Contact ===== */
+  --photo-col:     450px; /* Desktop-Bildspalte */
+  --photo-col-sm:  280px; /* Tablet-Bildspalte */
+  --photo-mobile:  320px; /* Bildbreite Phone */
 }
 
 /* ==========================================
