@@ -11,7 +11,7 @@ classes: page--cv
 <section class="hero-band hero--cv">
   <div class="hero-band__inner">
     <h1 class="hero-title">Curriculum Vitae</h1>
-    <p class="hero-sub">Experience, education, collaborations & funding</p>
+    <p class="hero-sub">Experience, education, collaborations, and funding</p>
     <p><a class="cta" href="/assets/CV_Fabian_Mueller.pdf" download>Download Detailed CV</a></p>
   </div>
 </section>
