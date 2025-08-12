@@ -7,7 +7,7 @@
 
 :root {
   --site-max: 1240px;    /* Gesamtbreite Desktop kleiner */
-  --text-max: 840px;   /* vorher 760px */
+  --text-max: 880px;   /* vorher 760px */
   --base-font: 16px;
 
   --brand: #0a4c86;
