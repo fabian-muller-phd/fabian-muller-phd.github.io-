@@ -1539,3 +1539,6 @@ button:focus-visible {
     gap: .4rem;
   }
 }
+
+.page--pubs .pub .actions .dl-btn--download::after { content:" ⬇︎"; }
+.page--pubs .pub .actions .dl-btn--read::after     { content:" ↗"; }
