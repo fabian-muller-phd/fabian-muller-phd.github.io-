@@ -565,3 +565,7 @@ button:focus-visible {
   .page--contact .contact-photo img { aspect-ratio: auto; }
   .page--contact .contact-panel { display: block; max-width: none; }
 }
+
+.page--contact .contact-panel {
+  max-width: none;   /* volle Breite nutzen */
+}
