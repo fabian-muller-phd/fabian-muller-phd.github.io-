@@ -919,9 +919,8 @@ button:focus-visible {
   margin: .15rem 0 0;
 }
 
-/* Link-Stil wie bei Publications */
-.page--research .research-card h3 a {
-  text-decoration: none;
-  color: var(--ink-1);
+/* Hero-Sub in Blau nur auf Publications & Research */
+.hero--pubs .hero-sub,
+.hero--research .hero-sub {
+  color: var(--brand); /* = dein #0a4c86 */
 }
-.page--research .research-card h3 a:hover { text-decoration: underline; }
