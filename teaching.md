@@ -29,22 +29,22 @@ classes: page--teaching
       <li>
         <strong>English for Psychologists – Introduction to Psychological Research (Bachelor Year 1)</strong><br>
         Introduces research methodology with a focus on experimental, survey, and observational designs. Develops students’ academic writing and critical reading skills for empirical research.<br>
-        <em>Course Language: English</em>
+        Course Language: English
       </li>
       <li>
         <strong>English for Psychologists – Advanced Research Analysis (Bachelor Year 2)</strong><br>
         Strengthens analytical skills for evaluating psychological research using frameworks such as QALMRI. Focuses on synthesizing scientific findings and presenting them effectively.<br>
-        <em>Course Language: English</em>
+        Course Language: English
       </li>
       <li>
         <strong>English for Psychologists – Research Project Development (Bachelor Year 3)</strong><br>
         Guides students through the development of research proposals, emphasizing scientific method, effective communication, and collaborative project work.<br>
-        <em>Course Language: English</em>
+        Course Language: English
       </li>
       <li>
         <strong>Social Psychology (Bachelor Year 3)</strong><br>
         Covers topics such as emotion, self-perception, and stereotype inhibition through interactive discussions and applied exercises.<br>
-        <em>Course Language: French</em>
+        Course Language: French
       </li>
     </ul>
   </div>
@@ -55,7 +55,7 @@ classes: page--teaching
       <li>
         <strong>Methods of Empirical Educational Science (Master Year 1)</strong><br>
         Introduced study design, data collection methods, and statistical techniques for educational research. Developed students’ ability to critically evaluate empirical studies.<br>
-        <em>Course Language: German</em>
+        Course Language: German
       </li>
     </ul>
   </div>
