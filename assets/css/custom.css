@@ -1540,12 +1540,6 @@ button:focus-visible {
   }
 }
 
-/* Read-Buttons: linker Balken in Orange */
-.page--pubs .pub .actions .dl-btn--read::before,
-.page--pubs .pubs-list .actions .dl-btn--read::before {
-  background: var(--brand-orange); /* #e46a2c */
-}
-
 
 /* TEACHING – Polishes */
 
@@ -1567,4 +1561,13 @@ button:focus-visible {
   color: var(--muted);
   letter-spacing: .2px;
   margin: 1.2rem 0 .35rem;
+}
+
+/* Course language in Brand-Blau */
+.teaching-section .course-lang {
+  display: block;
+  color: var(--brand);    /* dein Blau */
+  font-weight: 600;       /* leicht betont */
+  font-style: normal;     /* nicht kursiv */
+  margin-top: .15rem;
 }
