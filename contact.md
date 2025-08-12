@@ -7,6 +7,14 @@ classes: page--contact
 
 <link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
+<!-- HERO (Contact) -->
+<section class="hero-band hero--contact">
+  <div class="hero-band__inner">
+    <h1 class="hero-title">Contact</h1>
+    <p class="hero-sub">Email and social media</p>
+  </div>
+</section>
+
 <div class="contact-wrapper">
   <div class="contact-photo">
     <img src="/assets/images/Fabian_Muller_2.jpg" alt="Portrait of Fabian Müller">
