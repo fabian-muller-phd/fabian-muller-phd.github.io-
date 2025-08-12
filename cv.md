@@ -7,6 +7,15 @@ classes: page--cv
 
 <link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
+<!-- HERO (CV) -->
+<section class="hero-band hero--cv">
+  <div class="hero-band__inner">
+    <h1 class="hero-title">Curriculum Vitae</h1>
+    <p class="hero-sub">Experience, education, collaborations & funding</p>
+    <p><a class="cta" href="/assets/CV_Fabian_Mueller.pdf" download>Download CV (PDF)</a></p>
+  </div>
+</section>
+
 
 <section class="cv-section">
   <h2>Professional Experience</h2>
@@ -78,5 +87,5 @@ classes: page--cv
     <li><strong>BayFrance Grant – <em>ImplEyCit</em> Project</strong> (2020 – 2022) — Franco-Bavarian collaboration on eye movement and survey response processes (€4,525).</li>
   </ul>
 
-  <a href="/assets/CV_Fabian_Mueller.pdf" class="dl-btn" download>Download Detailed CV</a>
+
 </section>
