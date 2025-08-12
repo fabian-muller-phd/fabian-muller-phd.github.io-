@@ -195,27 +195,6 @@ img { max-width: 100%; height: auto; display: block; }
   line-height: 1.6;
 }
 
-/* Download-Buttons kompakt */
-.pubs-wrapper .pubs-list .actions a,
-.pubs-wrapper .dl-btn {
-  -webkit-appearance: none;
-  appearance: none;
-  display: inline-block;
-  text-decoration: none;
-  line-height: 1.2;
-  padding: 0.18rem 0.40rem;
-  font-size: 0.75rem;
-  border-radius: 4px;
-  font-weight: 500;
-  white-space: nowrap;
-  cursor: pointer;
-  border: 1px solid #b9d7ef;
-  background: #d9e9f7;
-  color: #064d77;
-}
-.pubs-wrapper .pubs-list .actions a:hover,
-.pubs-wrapper .dl-btn:hover { background: #b9d7ef; }
-
 /* Talks & Posters */
 .page--pubs .pubs-list--tight { list-style: none; margin-left: 0; padding-left: 0; }
 .page--pubs .pubs-list--tight li {
@@ -1539,5 +1518,24 @@ button:focus-visible {
     flex-wrap: wrap;
     gap: .4rem;
     margin-top: .3rem;
+  }
+}
+
+
+/* Phone PORTRAIT: Buttons unter dem Zitat, nebeneinander */
+@media (max-width: 700px) and (orientation: portrait) {
+  .page--pubs .pub,
+  .page--pubs .pubs-list--tight li { 
+    display: block !important;
+  }
+  .page--pubs .pub .actions,
+  .page--pubs .pubs-list--tight li .actions {
+    width: auto !important;
+    justify-self: start !important;
+    margin-top: .35rem !important;
+    display: flex !important;
+    flex-direction: row;              /* nebeneinander */
+    flex-wrap: wrap;
+    gap: .4rem;
   }
 }
