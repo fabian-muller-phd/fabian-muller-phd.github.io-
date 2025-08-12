@@ -15,7 +15,7 @@ classes: page--legal
   </div>
 </section>
 
-<div class="legal-wrapper">
+<section class="legal-wrapper" markdown="1">
 
 ### 1) Éditeur / Owner
 **Fabian Müller** — Paris, France  
@@ -39,32 +39,30 @@ Des **journaux techniques** (adresse IP, date/heure, URL) peuvent être génér�
 Pour toute demande liée à vos droits, contactez : **fabian.muller.phd[at]icloud.com**.
 
 This site collects no personal data and sets **no cookies** other than strictly necessary technical ones.  
-No analytics or tracking. The hosting provider **may create server logs** (IP, timestamp, URL) for security/operations, kept for a limited period under its responsibility. Contact the email above for any privacy request.
+No analytics or tracking. The hosting provider **may create server logs** (IP, timestamp, URL) for security/operations.
 
 ---
 
 ### 4) Propriété intellectuelle / Intellectual property
 Sauf indication contraire, les textes et images publiés sur ce site sont la propriété de l’éditeur.  
-Unless otherwise stated, text and images on this website are the owner’s original work.  
-Les logos et marques de tiers restent la propriété de leurs détenteurs.
+Unless otherwise stated, text and images are the owner’s original work.
 
 ---
 
 ### 5) Liens externes / External links
-Des liens vers des sites tiers peuvent être proposés. Leur contenu relève de la seule responsabilité de leurs éditeurs.  
-External links are provided for convenience; their content remains under the sole responsibility of their respective publishers.
+Les contenus des sites tiers liés restent sous la responsabilité de leurs éditeurs.  
+External links are provided for convenience; their content is the responsibility of their publishers.
 
 ---
 
 ### 6) Droit applicable / Governing law
-Tout litige relatif à ce site est soumis au **droit français** et à la compétence des juridictions françaises.  
-Any dispute shall be governed by **French law**.
+Ce site est régi par le **droit français**.  
+This site is governed by **French law**.
 
 ---
 
 ### 7) Droits d’auteur / Copyright
 © {{ site.time | date: "%Y" }} Fabian Müller. All rights reserved, unless otherwise stated.
 
-<p class="legal-updated">Last updated / Dernière mise à jour : {{ site.time | date: "%Y-%m-%d" }}</p>
-</div>
-
+_Last updated / Dernière mise à jour : {{ site.time | date: "%Y-%m-%d" }}_
+</section>
