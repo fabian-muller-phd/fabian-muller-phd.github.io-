@@ -13,23 +13,23 @@ classes: page--research
   <div class="research-grid">
     <div class="research-card">
       <h3><a href="#methods">Methods</a></h3>
-      <p>Quantitative designs, longitudinal models, SEM, R pipelines.</p>
+      <p>Quantitative designs, longitudinal models, SEM, R pipelines</p>
     </div>
     <div class="research-card">
-      <h3><a href="#social-class">Social class</a></h3>
-      <p>Educational trajectories, cultural (mis)match, resilience profiles.</p>
+      <h3><a href="#social-class">Social Class</a></h3>
+      <p>Educational trajectories, cultural (mis)match, resilience profiles</p>
     </div>
     <div class="research-card">
       <h3><a href="#sen">SEN</a></h3>
-      <p>Bias in teacher judgments, fairness, accommodations.</p>
+      <p>Bias in teacher judgments, fairness, accommodations</p>
     </div>
     <div class="research-card">
       <h3><a href="#assessment">Assessment</a></h3>
-      <p>Large-scale assessments, comparability, psychometrics.</p>
+      <p>Large-scale assessments, comparability, psychometrics</p>
     </div>
     <div class="research-card">
       <h3><a href="#lgbtiq">LGBTIQ+</a></h3>
-      <p>Inclusive education & policy, evidence for practice.</p>
+      <p>Inclusive education & policy, evidence for practice</p>
     </div>
   </div>
 
@@ -40,7 +40,7 @@ classes: page--research
   </div>
 
   <div class="research-section" id="social-class">
-    <h2>Social class</h2>
+    <h2>Social Class</h2>
     <p>Ein kurzer Abschnitt über soziale Herkunft…</p>
   </div>
 
