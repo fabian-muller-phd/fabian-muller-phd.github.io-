@@ -1446,3 +1446,98 @@ button:focus-visible {
 
 /* Optional: kleine Unterscheidung (anders brauchst du nix) */
 /* .page--pubs .pub .actions .dl-btn--read::before { background: #6f777d; } */
+
+/* Einheitliche Breite für die rechte Button-Spalte */
+.page--pubs { --pub-actions-w: 112px; }
+
+/* Listen: durchgängiger vertikaler Rhythmus */
+.page--pubs .pubs-list,
+.page--pubs .pubs-list--tight {
+  display: grid;
+  gap: .9rem;
+  margin: .6rem 0 1.4rem;
+}
+
+/* Grundstil je Eintrag – erstmal KEIN Grid (volle Breite für den Text) */
+.page--pubs .pub,
+.page--pubs .pubs-list--tight li {
+  position: relative;
+  padding: .35rem 0 .45rem 1rem;  /* Platz für linke Brand-Leiste */
+  border-top: 1px solid var(--line);
+}
+
+/* Linke Brand-Leiste */
+.page--pubs .pub::before,
+.page--pubs .pubs-list--tight li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: .35rem; bottom: .45rem;
+  width: 3px; border-radius: 2px;
+  background: var(--brand);
+  opacity: .6;
+}
+.page--pubs .pubs-list > .pub:first-child,
+.page--pubs .pubs-list--tight > li:first-child { border-top: 0; }
+.page--pubs .pubs-list > .pub:first-child::before,
+.page--pubs .pubs-list--tight > li:first-child::before { top: 0; }
+
+/* Nur WENN Actions existieren → zweispaltiges Layout mit fester Aktionsbreite */
+.page--pubs .pub:has(.actions),
+.page--pubs .pubs-list--tight li:has(.actions) {
+  display: grid;
+  grid-template-columns: 1fr var(--pub-actions-w);
+  align-items: start;
+  gap: .5rem .8rem;
+}
+
+/* Zitat-/Textblock */
+.page--pubs .pub .cite { margin: 0; color: var(--ink-2); line-height: 1.55; }
+
+/* Rechte Aktionsspalte (gleich breit überall) */
+.page--pubs .pub .actions,
+.page--pubs .pubs-list--tight li .actions {
+  grid-column: 2;
+  width: var(--pub-actions-w);
+  justify-self: end;             /* klebt rechts */
+  display: flex;
+  flex-direction: column;        /* Download über Read */
+  gap: .35rem;
+}
+
+/* Mini-CTA-Buttons (Download & Read teilen sich die Klasse) */
+.page--pubs .pub .actions .dl-btn {
+  -webkit-appearance: none; appearance: none;
+  display: inline-flex; align-items: center; position: relative;
+  font-size: .75rem; line-height: 1.1; font-weight: 500;
+  padding: .22rem .55rem .22rem .72rem;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  text-decoration: none; white-space: nowrap;
+}
+.page--pubs .pub .actions .dl-btn::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 3px; border-radius: 8px 0 0 8px; background: var(--brand);
+}
+.page--pubs .pub .actions .dl-btn:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  transform: translateY(-1px);
+}
+
+/* Mobile: auf eine Spalte; Buttons neben­einander */
+@media (max-width: 700px) {
+  .page--pubs .pub:has(.actions),
+  .page--pubs .pubs-list--tight li:has(.actions) {
+    grid-template-columns: 1fr;
+  }
+  .page--pubs .pub .actions,
+  .page--pubs .pubs-list--tight li .actions {
+    width: auto;
+    justify-self: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-top: .3rem;
+  }
+}
