@@ -871,3 +871,19 @@ button:focus-visible {
 .page--pubs .pubs-wrapper > .research-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
+
+.page--pubs .card-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);      /* Iconfarbe (dein Blau) */
+  margin-right: .4rem;
+}
+.page--pubs .card-icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  fill: currentColor;       /* SVG nimmt die Farbe aus .card-icon */
+}
