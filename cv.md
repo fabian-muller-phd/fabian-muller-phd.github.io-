@@ -84,7 +84,7 @@ classes: page--cv
   <h2>Selected Funding</h2>
   <ul>
     <li><strong>Doctoral Fellowship</strong>, Université Paris Cité (2019 – 2023) — Competitive 3-year fellowship supporting PhD research on educational inequalities.</li>
-    <li><strong>BayFrance Grant – <em>ImplEyCit</em> Project</strong> (2020 – 2022) — Franco-Bavarian collaboration on eye movement and survey response processes (€4,525).</li>
+    <li><strong>BayFrance Grant – ImplEyCit Project</strong> (2020 – 2022) — Franco-Bavarian collaboration on eye movement and survey response processes (€4,525).</li>
   </ul>
 
 
