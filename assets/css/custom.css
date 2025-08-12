@@ -603,26 +603,18 @@ button:focus-visible {
 }
 
 
-/* === Split-Hero (Foto links, Inhalt rechts) === */
-.hero-split {
+/* === Grid-Hero (links Titel/Name, rechts Tags+CTA) === */
+.hero-grid {
   max-width: var(--site-max);
   margin: 1.25rem auto 0;
-  padding: clamp(16px,3vw,24px);
+  padding: 0 clamp(16px,3vw,24px);
   display: grid;
-  grid-template-columns: minmax(260px, 420px) 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: clamp(16px, 2.5vw, 32px);
-  align-items: center;
-  background: #f7f7f7;   /* dezente Fläche */
-  border-radius: 12px;
+  align-items: end;
 }
-.hero-split__media img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.hero-split__content { text-align: left; }
-
+.hero-grid__left { text-align: left; }
+.hero-grid__right { text-align: right; }
 /* Typo */
 .hero-title {
   margin: 0 0 .25rem;
@@ -638,18 +630,22 @@ button:focus-visible {
 .hero-tags.plain li { color: var(--brand); font-weight: 600; }
 .hero-tags.plain li:not(:last-child)::after { content: "·"; margin-left: .75rem; color: var(--muted); }
 
-/* CTA (dein „guter“ Button) */
+/* CTA-Button */
 .cta {
+  -webkit-appearance: none;
+  appearance: none;
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
   border-radius: 999px;
-  padding: .55rem 1rem;
-  background: var(--brand);
-  color: #fff;
+  padding: .5rem .9rem;
+  border: 1px solid #b9d7ef;
+  background: #d9e9f7;
+  color: #064d77;
   font-size: .95rem;
+  line-height: 1;
 }
-.cta:hover { background: var(--brand-dark); }
+.cta:hover { background: #b9d7ef; }
 
 /* Responsive */
 @media (max-width: 900px) {
