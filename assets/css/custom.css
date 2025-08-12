@@ -944,3 +944,34 @@ button:focus-visible {
   font-weight: 500;
   font-size: 0.98rem;
 }
+
+/* 1) Subpage-Heros unten kompakter */
+.hero--pubs .hero-band__inner,
+.hero--research .hero-band__inner,
+.hero--teaching .hero-band__inner {
+  padding-block: clamp(14px, 3vw, 28px); /* top & bottom statt bis 48px */
+}
+
+/* 2) Doppelte Abstände vermeiden: nächster Block nach Hero enger */
+.hero-band + .pubs-wrapper,
+.hero-band + .research-wrapper,
+.hero-band + .teaching-intro,
+.hero-band + .teaching-section {
+  margin-top: .75rem; /* statt 2rem */
+}
+
+/* Teaching: auch den Intro-Absatz etwas enger & begrenzen */
+.teaching-intro {
+  max-width: var(--text-max);
+  margin: .75rem auto 1.25rem;
+}
+
+/* Optional: auf Phone etwas mehr Luft, damit es nicht gequetscht wirkt */
+@media (max-width: 700px) {
+  .hero-band + .pubs-wrapper,
+  .hero-band + .research-wrapper,
+  .hero-band + .teaching-intro,
+  .hero-band + .teaching-section {
+    margin-top: 1rem;
+  }
+}
