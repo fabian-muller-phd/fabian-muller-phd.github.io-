@@ -1571,3 +1571,12 @@ button:focus-visible {
   font-style: normal;     /* nicht kursiv */
   margin-top: .15rem;
 }
+
+/* Eigener Name in den Publikationen blau einfärben */
+.page--pubs .pub .cite b,
+.page--pubs .pub .cite strong,
+.page--pubs .pubs-list--tight b,
+.page--pubs .pubs-list--tight strong {
+  color: var(--brand);   /* dein Blau #0a4c86 */
+  font-weight: 700;      /* bleibt fett */
+}
