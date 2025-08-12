@@ -98,7 +98,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Abstand zwischen Absätzen nur auf der Startseite anpassen */
 .homepage-text p {
-  margin-bottom: 0.55em; /* kleinerer Abstand */
+  margin-bottom: 0.5em; /* kleinerer Abstand */
 }
 
 
