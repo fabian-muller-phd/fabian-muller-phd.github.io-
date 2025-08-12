@@ -1425,3 +1425,8 @@ button:focus-visible {
   .page--pubs .pubs-list--tight li { grid-template-columns: 1fr; }
   .page--pubs .pubs-list--tight li .actions { grid-column: 1; margin-top: .3rem; }
 }
+
+/* Talks & Posters: eine Spalte erzwingen, damit <b>/<em>-Inline-Elemente nicht zerrissen werden */
+.page--pubs .pubs-list--tight li {
+  grid-template-columns: 1fr !important;
+}
