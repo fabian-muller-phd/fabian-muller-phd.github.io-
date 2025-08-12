@@ -20,7 +20,7 @@
   --line: #eee;
 
   /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
-  --photo-col: 450px;     /* Desktop-Spalte */
+  --photo-col: 460px;     /* Desktop-Spalte */
   --photo-col-sm: 280px;  /* Tablet-Spalte */
   --photo-mobile: 320px;  /* Fixbreite am Phone */
 }
