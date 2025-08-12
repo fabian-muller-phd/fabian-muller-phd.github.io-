@@ -48,24 +48,6 @@ body {
 }
 
 
-/* Header schwarz + Text weiß */
-.masthead {
-  background-color: #000 !important;
-  color: #fff !important;
-  border: none !important;
-}
-
-/* Links im Header weiß */
-.masthead a {
-  color: #fff !important;
-  text-decoration: none;
-}
-
-/* Hover-Effekt in Markenfarbe */
-.masthead a:hover {
-  color: var(--brand) !important;
-}
-
 img { max-width: 100%; height: auto; display: block; }
 
 .page__content a { color: var(--brand); }
