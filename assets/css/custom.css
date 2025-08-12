@@ -604,9 +604,9 @@ button:focus-visible {
 }
 
 
-/* ===== HERO-BAND: linksbündig, warm, mit innerem Schatten ===== */
+/* ===== HERO-BAND (links, grau, mit innerem Schatten) ===== */
 :root {
-  --hero-bg: #f7f7f7; /* Grau */
+  --hero-bg: #f7f7f7; /* Hintergrund der Hero-Box */
 }
 
 .hero-band {
@@ -620,26 +620,28 @@ button:focus-visible {
   max-width: var(--site-max);
   margin: 0 auto;
   padding: clamp(20px, 5vw, 48px) clamp(16px, 3vw, 24px);
-  text-align: left; /* jetzt linksbündig */
+  text-align: left; /* immer linksbündig */
 }
 
+/* ===== Typografie ===== */
 .hero-title {
-  font-size: clamp(1.4rem, 2.5vw, 1.8rem); /* vorher war es größer */
+  /* kleiner als vorher + darf umbrechen (läuft nicht mehr über) */
+  font-size: clamp(1.35rem, 2.1vw, 1.9rem);
   line-height: 1.2;
   font-weight: 800;
   color: var(--ink-1);
+  white-space: normal;  /* niemals nowrap erzwingen */
 }
 
 .hero-sub {
   margin: 0 0 .6rem;
   font-weight: 700;
   color: var(--ink-2);
-  font-size: clamp(1rem, 1.6vw, 1.25rem); /* vorher war's kleiner */
+  font-size: clamp(1.06rem, 1.6vw, 1.3rem); /* etwas größer als vorher */
   line-height: 1.3;
 }
 
-
-/* Tags: nur farbige Schrift */
+/* Tags: nur farbige Schrift, kein Button-Look */
 .hero-tags {
   list-style: none;
   margin: .3rem 0 .9rem;
@@ -647,15 +649,12 @@ button:focus-visible {
   display: flex;
   gap: .75rem;
   flex-wrap: wrap;
+  font-size: clamp(.9rem, 1.2vw, 1rem);
 }
 .hero-tags.plain li { color: var(--brand); font-weight: 600; }
-.hero-tags.plain li:not(:last-child)::after {
-  content: "·";
-  margin-left: .75rem;
-  color: var(--muted);
-}
+.hero-tags.plain li:not(:last-child)::after { content: "·"; margin-left: .75rem; color: var(--muted); }
 
-/* CTA */
+/* CTA kompakter */
 .cta {
   -webkit-appearance: none;
   appearance: none;
@@ -663,76 +662,27 @@ button:focus-visible {
   font-weight: 600;
   text-decoration: none;
   border-radius: 999px;
-  padding: .5rem .9rem;
+  padding: .45rem .8rem;
   border: 1px solid #b9d7ef;
   background: #d9e9f7;
   color: #064d77;
-  font-size: .95rem;
+  font-size: .9rem;
   line-height: 1;
 }
 .cta:hover { background: #b9d7ef; }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .hero-band__inner { text-align: center; }
-}
-
-
-
-/* ===== FEATURES unter dem Text ===== */
-.features {
-  max-width: var(--site-max);
-  margin: 1.5rem auto 0;
-  padding: 0 clamp(16px,3vw,24px);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-.feature-card {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
-  background: #fff;
-  text-align: center;
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-.feature-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.06); }
-.feature-icon { font-size: 1.6rem; line-height: 1; margin-bottom: .35rem; }
-.feature-card h3 { margin: .25rem 0 .25rem; font-size: 1rem; font-weight: 700; }
-.feature-card p { margin: 0; font-size: .95rem; color: var(--ink-3); }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .features { grid-template-columns: 1fr; }
-  .hero { padding-bottom: .5rem; }
-}
-
-/* Desktop (breit): eine Zeile erzwingen, etwas größer */
-@media (min-width: 1100px) {
-  .hero-title {
-    white-space: nowrap;
-    font-size: clamp(1.6rem, 2.3vw, 2.2rem); /* feinjustiert */
-    line-height: 1.2;
-  }
-}
-
-/* Tablet (iPad Portrait/Landscape): normal umbrechen + moderat kleiner */
+/* ===== Responsive Tweaks ===== */
+/* Tablet (701–1099px): moderat kleiner, links bleibt links */
 @media (max-width: 1099px) and (min-width: 701px) {
-  .hero-title {
-    white-space: normal;              /* darf umbrechen */
-    font-size: clamp(1.4rem, 3.2vw, 1.9rem);
-    line-height: 1.25;
-  }
+  .hero-title { font-size: clamp(1.28rem, 2.6vw, 1.7rem); line-height: 1.22; }
+  .hero-sub   { font-size: clamp(1rem, 1.7vw, 1.2rem); }
 }
 
-/* Phone: kleiner + zentriert (du hattest das schon für den Block) */
+/* Phone (<=700px): kleiner, weiterhin linksbündig */
 @media (max-width: 700px) {
-  .hero-band__inner { text-align: center; } /* belassen, wenn gewünscht */
-  .hero-title {
-    white-space: normal;              /* umbruch erlaubt */
-    font-size: clamp(1.25rem, 6vw, 1.6rem);
-    line-height: 1.28;
-  }
-  .hero-tags { gap: .5rem; }
-  .hero-tags.plain li:not(:last-child)::after { margin-left: .5rem; }
+  .hero-title { font-size: clamp(1.2rem, 5.2vw, 1.5rem); line-height: 1.25; }
+  .hero-sub   { font-size: clamp(.98rem, 3.6vw, 1.1rem); }
+  .hero-tags  { gap: .5rem; font-size: .9rem; }
+  /* Falls du Phone PORTRAIT lieber zentriert willst, optional:
+     .hero-band__inner { text-align: center; } */
 }
