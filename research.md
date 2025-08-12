@@ -7,6 +7,14 @@ classes: page--research
 
 <link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
+<!-- HERO (Research) – identisch zu Publications, ohne grauen Hintergrund -->
+<section class="hero-band hero--research">
+  <div class="hero-band__inner">
+    <h1 class="hero-title">Research & Policy</h1>
+    <p class="hero-sub">From data to action: studying inequality, inclusion, and policy</p>
+  </div>
+</section>
+
 <div class="research-wrapper">
 
   <!-- Quick overview cards -->
