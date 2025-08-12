@@ -11,7 +11,7 @@ classes: page--pubs
 
   <!-- Top cards -->
   <div class="research-grid">
-    <div class="research-card"><h3><a href="#wip">Work in Progress</a></h3><p>Preprints & in-progress manuscripts.</p></div>
+    <div class="research-card"><h3><a href="#wip">Coming Soon</a></h3><p>Preprints & in-progress manuscripts.</p></div>
     <div class="research-card"><h3><a href="#journals">Journal Articles</a></h3><p>Peer-reviewed publications.</p></div>
     <div class="research-card"><h3><a href="#chapters">Book Chapters</a></h3><p>Chapters & handbooks.</p></div>
     <div class="research-card"><h3><a href="#policy">Policy & Practice</a></h3><p>Guides & applied outputs.</p></div>
@@ -19,8 +19,8 @@ classes: page--pubs
     <div class="research-card"><h3><a href="#talks">Talks & Posters</a></h3><p>Conference contributions.</p></div>
   </div>
 
-  <!-- Work in Progress -->
-  <h2 id="wip">Work in Progress</h2>
+  <!-- Coming Soon -->
+  <h2 id="wip">Coming Soon</h2>
   <ul class="pubs-list">
 
   <li class="pub">
