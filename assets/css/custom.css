@@ -703,3 +703,75 @@ button:focus-visible {
   /* Falls du Phone PORTRAIT lieber zentriert willst, optional:
      .hero-band__inner { text-align: center; } */
 }
+
+
+/* Features layout */
+.features {
+  max-width: var(--site-max);
+  margin: 2rem auto 3rem;
+  padding: 0 clamp(16px, 3vw, 24px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 32px);
+}
+
+.feature-card {
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 18px 22px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.02);
+}
+
+.feature-card h3 {
+  margin: 0.75rem 0 0.35rem;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--ink-1);
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--ink-3);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* Hexagon icon */
+.feature-icon.hex {
+  width: 72px;
+  height: 72px;
+  background: #e46a2c; /* default */
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.feature-icon.hex svg {
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+/* Color variants (match your palette) */
+.feature-icon.orange { background: #e46a2c; }
+.feature-icon.blue   { background: #083963; }
+.feature-icon.green  { background: #2ba89c; }
+
+/* Hover lift (subtle) */
+.feature-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  transform: translateY(-2px);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .features { grid-template-columns: 1fr; }
+}
