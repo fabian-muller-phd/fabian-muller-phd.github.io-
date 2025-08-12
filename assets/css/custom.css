@@ -1372,3 +1372,56 @@ button:focus-visible {
   padding-top: .6rem;
   border-top: 1px solid var(--line);
 }
+
+/* === FIX: Talks & Posters im gleichen Rail-Layout wie die restlichen Pubs === */
+.page--pubs .pubs-list--tight {
+  list-style: none;
+  padding-left: 0;
+  margin: .6rem 0 1.4rem;
+  display: grid;
+  gap: .9rem;
+}
+
+.page--pubs .pubs-list--tight li {
+  /* altes Hanging-Indent neutralisieren */
+  text-indent: 0 !important;
+  margin: 0 !important;
+
+  /* gleiche Optik wie .pub */
+  position: relative;
+  display: grid !important;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: .5rem .8rem;
+  padding: .35rem 0 .45rem 1rem !important; /* Platz für linke Leiste */
+  border-top: 1px solid var(--line);
+}
+
+.page--pubs .pubs-list--tight li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .35rem;
+  bottom: .45rem;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--brand);
+  opacity: .6;
+}
+
+.page--pubs .pubs-list--tight > li:first-child { border-top: 0; }
+.page--pubs .pubs-list--tight > li:first-child::before { top: 0; }
+
+/* Falls es Actions/Buttons gäbe, rechts ausrichten – sonst egal */
+.page--pubs .pubs-list--tight li .actions { 
+  grid-column: 2; 
+  align-self: start; 
+  display: flex; 
+  gap: .4rem; 
+  flex-wrap: wrap; 
+}
+
+@media (max-width: 700px) {
+  .page--pubs .pubs-list--tight li { grid-template-columns: 1fr; }
+  .page--pubs .pubs-list--tight li .actions { grid-column: 1; margin-top: .3rem; }
+}
