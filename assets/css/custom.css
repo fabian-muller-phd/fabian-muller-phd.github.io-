@@ -603,12 +603,12 @@ button:focus-visible {
 }
 
 
-/* ===== HERO (Top-Band) ===== */
+/* ===== HERO rechtsbündig ===== */
 .hero {
   max-width: var(--site-max);
   margin: 1.5rem auto 0;
   padding: 1.25rem clamp(16px,3vw,24px) 0;
-  text-align: center;
+  text-align: right;
 }
 .hero-title {
   margin: 0 0 .25rem;
@@ -624,6 +624,8 @@ button:focus-visible {
   font-weight: 700;
   color: var(--ink-2);
 }
+
+/* Tags flach & farbig */
 .hero-tags {
   list-style: none;
   margin: .25rem 0 .9rem;
@@ -634,29 +636,26 @@ button:focus-visible {
 }
 .hero-tags li {
   font-size: .85rem;
-  color: var(--muted);
-  border: 1px solid var(--line);
+  color: #fff;
+  background: var(--brand);
   border-radius: 999px;
   padding: .35rem .6rem;
-  background: #fff;
+  font-weight: 500;
 }
 
-/* CTA-Button */
+/* CTA-Button bleibt */
 .cta {
-  -webkit-appearance: none;
-  appearance: none;
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
   border-radius: 999px;
   padding: .5rem .9rem;
-  border: 1px solid #b9d7ef;
-  background: #d9e9f7;
-  color: #064d77;
+  background: var(--brand);
+  color: #fff;
   font-size: .95rem;
   line-height: 1;
 }
-.cta:hover { background: #b9d7ef; }
+.cta:hover { background: var(--brand-dark); }
 
 /* ===== FEATURES unter dem Text ===== */
 .features {
