@@ -889,3 +889,39 @@ button:focus-visible {
 }
 
 
+/* === Research: 3/2/1 Grid wie Publications === */
+.page--research .research-wrapper > .research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .page--research .research-wrapper > .research-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .page--research .research-wrapper > .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Karten optisch wie bei Publications */
+.page--research .research-wrapper > .research-grid .research-card {
+  padding: .9rem 1rem;
+}
+.page--research .research-wrapper > .research-grid .research-card h3 {
+  margin: 0 0 .25rem;
+}
+.page--research .research-wrapper > .research-grid .research-card p {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: .15rem 0 0;
+}
+
+/* Link-Stil wie bei Publications */
+.page--research .research-card h3 a {
+  text-decoration: none;
+  color: var(--ink-1);
+}
+.page--research .research-card h3 a:hover { text-decoration: underline; }
