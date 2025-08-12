@@ -887,3 +887,43 @@ button:focus-visible {
   display: block;
   fill: currentColor;       /* SVG nimmt die Farbe aus .card-icon */
 }
+
+/* === Publications: Kartentext kleiner + eingerückt unter den Titel (Icon-Breite) === */
+.page--pubs {
+  --pub-icon: 22px;     /* muss zu deiner .card-icon Größe passen */
+  --pub-gap:  .4rem;    /* Abstand zwischen Icon und Titel */
+}
+
+/* Untertitel kleiner + Einzug = Iconbreite + Abstand */
+.page--pubs .pubs-wrapper > .research-grid .research-card p {
+  font-size: 0.92rem;                         /* vorher ~1.0rem */
+  line-height: 1.45;
+  margin: .2rem 0 0;
+  padding-left: calc(var(--pub-icon) + var(--pub-gap));
+}
+
+/* Titel-Link bleibt in einer Linie mit dem Icon */
+.page--pubs .research-card h3 a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pub-gap);
+  text-decoration: none;
+  color: var(--ink-1);
+}
+.page--pubs .research-card h3 a:hover { text-decoration: underline; }
+
+/* Icon-Größe/Farbe koppeln an Variablen */
+.page--pubs .card-icon {
+  width: var(--pub-icon);
+  height: var(--pub-icon);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+}
+.page--pubs .card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentColor;
+}
