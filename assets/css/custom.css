@@ -975,3 +975,32 @@ button:focus-visible {
     margin-top: 1rem;
   }
 }
+
+/* CV-Hero: clean, wie andere Unterseiten */
+.hero--cv {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 0;
+}
+.hero--cv .hero-band__inner {
+  padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
+}
+
+/* Sub in Blau (wie bei Research/Publs/Teaching) */
+.page--cv .hero-sub { color: var(--brand); }
+
+/* Abstand nach dem Hero reduzieren (wie bei den anderen Seiten) */
+.hero-band + .cv-section { margin-top: .75rem; }
+@media (max-width: 700px) {
+  .hero-band + .cv-section { margin-top: 1rem; }
+}
+
+/* Falls du bereits die kompaktere Hero-Padding-Regel hast:
+   ergänze einfach .hero--cv in die Liste */
+.hero--pubs .hero-band__inner,
+.hero--research .hero-band__inner,
+.hero--teaching .hero-band__inner,
+.hero--cv .hero-band__inner {
+  padding-block: clamp(14px, 3vw, 28px);
+}
