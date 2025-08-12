@@ -656,20 +656,37 @@ button:focus-visible {
 
 /* CTA kompakter */
 .cta {
-  -webkit-appearance: none;
-  appearance: none;
-  display: inline-block;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .75rem;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 999px;
-  padding: 0.35rem 0.65rem;
-  border: 1px solid #b9d7ef;
-  background: #d9e9f7;
-  color: #064d77;
-  font-size: .75rem;
-  line-height: 1;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+  font-size: 0.85rem; /* smaller text */
 }
-.cta:hover { background: #b9d7ef; }
+
+/* Add the colored bar on the left */
+.cta::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--brand);
+}
+
+.cta:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  transform: translateY(-1px);
+}
 
 /* ===== Responsive Tweaks ===== */
 /* Tablet (701–1099px): moderat kleiner, links bleibt links */
