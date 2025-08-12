@@ -7,13 +7,23 @@ classes: page--teaching
 
 <link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
-<section class="teaching-section">
+<!-- HERO (Teaching) -->
+<section class="hero-band hero--teaching">
+  <div class="hero-band__inner">
+    <h1 class="hero-title">Teaching Overview</h1>
+    <p class="hero-sub">Courses in research methods, quantitative analysis, and evidence-based practice</p>
+  </div>
+</section>
 
-  <h2>Teaching Overview</h2>
-  <p>
-    I teach undergraduate and graduate courses in psychology and education, with a strong emphasis on research methodology, critical analysis, and the practical application of evidence-based approaches.
-    My teaching integrates collaborative learning, academic writing, and quantitative research skills to prepare students for both academic and professional contexts.
-  </p>
+<!-- kurzer Intro-Absatz unter dem Hero -->
+<p class="teaching-intro">
+  I teach undergraduate and graduate courses in psychology and education, with a strong emphasis on research methodology,
+  critical analysis, and the practical application of evidence-based approaches. My teaching integrates collaborative
+  learning, academic writing, and quantitative research skills to prepare students for both academic and professional contexts.
+</p>
+
+
+<section class="teaching-section">
 
   <h2>Courses Taught</h2>
 
