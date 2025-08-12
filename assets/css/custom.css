@@ -798,17 +798,27 @@ button:focus-visible {
 /* .feature-icon.hex svg { stroke-width: 36; } */
 
 
-/* Sticky Header (Minimal Mistakes: .masthead) */
-.masthead {
+/* === Sticky Header (robust für Minimal Mistakes) === */
+
+/* 1) Für alle möglichen Header-Container sticky aktivieren */
+.masthead,
+.site-header,
+.masthead__inner-wrap {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   background: rgba(255,255,255,0.95);
   border-bottom: 1px solid var(--line);
-  /* iOS Notch-Safe-Area */
-  padding-top: env(safe-area-inset-top);
-  backdrop-filter: saturate(180%) blur(8px); /* optional, weicher Look */
+  backdrop-filter: saturate(180%) blur(8px);
 }
 
-/* damit Anker (z.B. #section) nicht hinter dem Header verschwinden */
-:target { scroll-margin-top: var(--header-h); }
+/* 2) Sicherheitsnetz: Verhindere, dass ein Vorfahr sticky killt */
+.layout--splash,
+.initial-content,
+.page,
+.page-wrap,
+.wrapper {
+  overflow: visible !important;   /* falls Theme irgendwo overflow versteckt */
+  transform: none !important;     /* transform auf Eltern killt sticky in einigen Browsern */
+}
