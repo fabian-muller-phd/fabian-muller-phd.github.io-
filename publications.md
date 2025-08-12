@@ -262,3 +262,42 @@ classes: page--pubs
 
 
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Durch alle Publikations-Items gehen
+  document.querySelectorAll('.page--pubs .pub').forEach(li => {
+    // Quelle für Text/Links (normalerweise .cite, fallback li)
+    const cite = li.querySelector('.cite') || li;
+
+    // Ersten externen Link suchen (http/https, kein mailto)
+    const link = cite.querySelector('a[href^="http"]');
+    if (!link) return; // nichts zu tun
+
+    // Actions-Container rechts sicherstellen
+    let actions = li.querySelector('.actions');
+    if (!actions) {
+      actions = document.createElement('div');
+      actions.className = 'actions';
+      li.appendChild(actions);
+    }
+
+    // Doppelte Read-Buttons vermeiden
+    if (actions.querySelector('.dl-btn--read')) return;
+
+    // Wenn du "Read" nur dann zeigen willst, WENN KEIN Download vorhanden ist, ent-kommentiere:
+    // if (actions.querySelector('.dl-btn') && !actions.querySelector('.dl-btn--read')) return;
+
+    // Read-Button erzeugen
+    const readBtn = document.createElement('a');
+    readBtn.className = 'dl-btn dl-btn--read';
+    readBtn.href = link.href;
+    readBtn.target = '_blank';
+    readBtn.rel = 'noopener';
+    readBtn.textContent = 'Read';
+
+    // Unter die evtl. vorhandenen Download-Buttons setzen
+    actions.appendChild(readBtn);
+  });
+});
+</script>
