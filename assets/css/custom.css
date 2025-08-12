@@ -873,3 +873,17 @@ button:focus-visible {
 }
 
 
+/* === Hero auf der Research-Seite: ohne grauen Hintergrund === */
+.hero--research {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 0;
+}
+.hero--research .hero-band__inner {
+  padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
+}
+@media (min-width: 701px) {
+  .page--research .hero-title { letter-spacing: 0.1px; }
+  .page--research .hero-sub   { margin-top: .2rem; }
+}
