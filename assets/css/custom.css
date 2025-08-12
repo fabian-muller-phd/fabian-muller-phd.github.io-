@@ -35,6 +35,8 @@
   --photo-col:     450px; /* Desktop-Bildspalte */
   --photo-col-sm:  280px; /* Tablet-Bildspalte */
   --photo-mobile:  320px; /* Bildbreite Phone */
+
+  --header-h: 64px; /* ungefähre Höhe vom Masthead/Nav */
 }
 
 /* ==========================================
@@ -794,3 +796,19 @@ button:focus-visible {
 
 /* (Optional) if strokes look too thin at your size, bump slightly: */
 /* .feature-icon.hex svg { stroke-width: 36; } */
+
+
+/* Sticky Header (Minimal Mistakes: .masthead) */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid var(--line);
+  /* iOS Notch-Safe-Area */
+  padding-top: env(safe-area-inset-top);
+  backdrop-filter: saturate(180%) blur(8px); /* optional, weicher Look */
+}
+
+/* damit Anker (z.B. #section) nicht hinter dem Header verschwinden */
+:target { scroll-margin-top: var(--header-h); }
