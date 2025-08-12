@@ -7,6 +7,15 @@ classes: page--pubs
 
 <link rel="stylesheet" href="/assets/css/custom.css?v=20250808">
 
+<!-- HERO (Publications) – gleiche Struktur wie Startseite, aber ohne Hintergrund -->
+<section class="hero-band hero--pubs">
+  <div class="hero-band__inner">
+    <h1 class="hero-title">Publications & Outputs</h1>
+    <p class="hero-sub">Peer-reviewed research, policy briefs, and public engagement</p>
+  </div>
+</section>
+
+
 <div class="pubs-wrapper">
 
   <!-- Top cards -->
