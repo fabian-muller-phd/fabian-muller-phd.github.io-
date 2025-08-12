@@ -822,3 +822,24 @@ button:focus-visible {
   overflow: visible !important;   /* falls Theme irgendwo overflow versteckt */
   transform: none !important;     /* transform auf Eltern killt sticky in einigen Browsern */
 }
+
+
+/* === Hero auf der Publications-Seite: ohne grauen Hintergrund === */
+.page--pubs .hero-band {
+  background: transparent;   /* kein Grau */
+  box-shadow: none;          /* keine innere Linie */
+  border-radius: 0;
+  margin-top: 0;
+}
+
+/* Dezenter, seriöser Akzent links – kannst du weglassen, wenn du’s ultra-clean willst */
+.page--pubs .hero-band__inner {
+  padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
+  border-left: 4px solid var(--brand);   /* nutzt dein Blau */
+}
+
+/* Optional: minimal enger als Startseite */
+@media (min-width: 701px) {
+  .page--pubs .hero-title { letter-spacing: 0.1px; }
+  .page--pubs .hero-sub   { margin-top: .2rem; }
+}
