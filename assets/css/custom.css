@@ -1540,3 +1540,33 @@ button:focus-visible {
   }
 }
 
+/* TEACHING – Polishes */
+
+/* 1) "Course Language" Zeile: klein, grau, nicht kursiv */
+.page--teaching .teaching-entry em {
+  font-style: normal;
+  color: var(--muted);
+  font-size: .92rem;
+  display: block;
+  margin-top: .15rem;
+}
+
+/* 2) Kursliste klarer trennen + angenehme Vertikalabstände */
+.page--teaching .teaching-entry ul { 
+  list-style: disc;
+  padding-left: 1.1rem;
+  margin: .4rem 0 0;
+}
+.page--teaching .teaching-entry li {
+  padding: .35rem 0 .6rem;
+  border-bottom: 1px solid var(--line);
+}
+.page--teaching .teaching-entry li:last-child { border-bottom: 0; }
+
+/* Institutionszeile etwas typografischer */
+.page--teaching .teaching-years {
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: .2px;
+  margin: 1.2rem 0 .35rem;
+}
