@@ -757,27 +757,23 @@ button:focus-visible {
   line-height: 1.45;
 }
 
-/* Hexagon icon */
 .feature-icon.hex {
   width: 72px;
   height: 72px;
-  background: #e46a2c; /* default; overridden by color classes below */
+  background: var(--brand-orange); /* default; wird von Farbklassen überschrieben */
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-inline: auto;
 }
-.feature-icon.hex svg {
-  width: 42px;
-  height: 42px;
-  display: block;
-}
+
 
 /* Color variants (your palette) */
-.feature-icon.orange { background: #e46a2c; }
-.feature-icon.blue { background: var(--brand); }
-.feature-icon.green  { background: #2ba89c; }
+.feature-icon.orange { background: var(--brand-orange); }
+.feature-icon.blue   { background: var(--brand); }        /* = --brand-blue */
+.feature-icon.green  { background: var(--brand-green); }
+
 
 /* Responsive: only 1 column on small phones (portrait) */
 @media (max-width: 600px) {
