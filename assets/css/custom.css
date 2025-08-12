@@ -976,50 +976,38 @@ button:focus-visible {
   }
 }
 
-/* CV-Hero: clean, wie andere Unterseiten */
-.hero--cv {
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  margin-top: 0;
-}
-.hero--cv .hero-band__inner {
-  padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
-}
-
-/* Sub in Blau (wie bei Research/Publs/Teaching) */
-.page--cv .hero-sub { color: var(--brand); }
-
-/* Abstand nach dem Hero reduzieren (wie bei den anderen Seiten) */
-.hero-band + .cv-section { margin-top: .75rem; }
-@media (max-width: 700px) {
-  .hero-band + .cv-section { margin-top: 1rem; }
-}
-
-/* Falls du bereits die kompaktere Hero-Padding-Regel hast:
-   ergänze einfach .hero--cv in die Liste */
-.hero--pubs .hero-band__inner,
-.hero--research .hero-band__inner,
-.hero--teaching .hero-band__inner,
-.hero--cv .hero-band__inner {
-  padding-block: clamp(14px, 3vw, 28px);
-}
-
-
-/* === Hero on Contact page (clean like Research/Pubs) === */
+/* CV- & Contact-Hero: clean wie andere Unterseiten */
+.hero--cv,
 .hero--contact {
   background: transparent;
   box-shadow: none;
   border-radius: 0;
   margin-top: 0;
 }
-.hero--contact .hero-band__inner {
-  padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
+
+/* Sub in Blau (wie bei den anderen Unterseiten) */
+.page--cv .hero-sub,
+.page--contact .hero-sub {
+  color: var(--brand);
 }
 
-/* Make the Contact hero sub blue like the others */
-.page--contact .hero-sub { color: var(--brand); }
+/* Kompaktes Hero-Padding für ALLE Unterseiten vereinheitlichen */
+.hero--pubs .hero-band__inner,
+.hero--research .hero-band__inner,
+.hero--teaching .hero-band__inner,
+.hero--cv .hero-band__inner,
+.hero--contact .hero-band__inner {
+  /* inline lassen wir wie global, block machen wir kompakter */
+  padding-inline: clamp(16px, 3vw, 24px);
+  padding-block: clamp(14px, 3vw, 28px);
+}
 
-/* Tighten space between hero and the contact content */
+/* Abstand nach dem Hero – CV wie die anderen Seiten */
+.hero-band + .cv-section { margin-top: .75rem; }
+@media (max-width: 700px) {
+  .hero-band + .cv-section { margin-top: 1rem; }
+}
+
+/* Contact: enger an den Inhalt anschließen */
 .page--contact .hero-band { margin-bottom: .5rem; }
-.page--contact .contact-wrapper { margin-top: 0.5rem; }
+.page--contact .contact-wrapper { margin-top: .5rem; }
