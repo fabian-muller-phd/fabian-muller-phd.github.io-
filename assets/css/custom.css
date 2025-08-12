@@ -771,3 +771,18 @@ button:focus-visible {
 @media (max-width: 600px) {
   .features { grid-template-columns: 1fr; }
 }
+
+/* Make stroke-based icons white inside the hex */
+.feature-icon.hex svg {
+  width: 42px;
+  height: 42px;
+  color: #fff;               /* <-- drives stroke="currentColor" */
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 32;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* (Optional) if strokes look too thin at your size, bump slightly: */
+/* .feature-icon.hex svg { stroke-width: 36; } */
