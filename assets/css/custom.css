@@ -924,3 +924,16 @@ button:focus-visible {
 .hero--research .hero-sub {
   color: var(--brand); /* = dein #0a4c86 */
 }
+
+/* Teaching: Hero wie Publications/Research (ohne grauen BG) */
+.hero--teaching { background: transparent; box-shadow: none; border-radius: 0; margin-top: 0; }
+.hero--teaching .hero-band__inner { padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px); }
+/* Subline in Brand-Blau */
+.hero--teaching .hero-sub { color: var(--brand); }
+
+/* Intro-Absatz unter dem Hero */
+.page--teaching .teaching-intro {
+  max-width: var(--text-max);
+  margin: .5rem auto 1.25rem;
+  color: var(--ink-2);
+}
