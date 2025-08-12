@@ -835,7 +835,6 @@ button:focus-visible {
 /* Dezenter, seriöser Akzent links – kannst du weglassen, wenn du’s ultra-clean willst */
 .page--pubs .hero-band__inner {
   padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
-  border-left: 4px solid var(--brand);   /* nutzt dein Blau */
 }
 
 /* Optional: minimal enger als Startseite */
