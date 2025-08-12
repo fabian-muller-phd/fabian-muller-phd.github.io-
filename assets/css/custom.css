@@ -6,8 +6,8 @@
 *::after { box-sizing: border-box; }
 
 :root {
-  --site-max: 1280px;    /* Gesamtbreite Desktop kleiner */
-  --text-max: 880px;   /* vorher 760px */
+  --site-max: 1220px;    /* Gesamtbreite Desktop kleiner */
+  --text-max: 850px;   /* vorher 760px */
   --base-font: 16px;
 
   --brand: #0a4c86;
