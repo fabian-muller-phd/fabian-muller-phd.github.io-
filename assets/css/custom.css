@@ -602,3 +602,87 @@ button:focus-visible {
   }
 }
 
+
+/* ===== HERO (Top-Band) ===== */
+.hero {
+  max-width: var(--site-max);
+  margin: 1.5rem auto 0;
+  padding: 1.25rem clamp(16px,3vw,24px) 0;
+  text-align: center;
+}
+.hero-title {
+  margin: 0 0 .25rem;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: var(--ink-1);
+}
+.hero-sub {
+  margin: 0 0 .5rem;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.hero-tags {
+  list-style: none;
+  margin: .25rem 0 .9rem;
+  padding: 0;
+  display: inline-flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.hero-tags li {
+  font-size: .85rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .35rem .6rem;
+  background: #fff;
+}
+
+/* CTA-Button */
+.cta {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: .5rem .9rem;
+  border: 1px solid #b9d7ef;
+  background: #d9e9f7;
+  color: #064d77;
+  font-size: .95rem;
+  line-height: 1;
+}
+.cta:hover { background: #b9d7ef; }
+
+/* ===== FEATURES unter dem Text ===== */
+.features {
+  max-width: var(--site-max);
+  margin: 1.5rem auto 0;
+  padding: 0 clamp(16px,3vw,24px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.feature-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  text-align: center;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.feature-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+.feature-icon { font-size: 1.6rem; line-height: 1; margin-bottom: .35rem; }
+.feature-card h3 { margin: .25rem 0 .25rem; font-size: 1rem; font-weight: 700; }
+.feature-card p { margin: 0; font-size: .95rem; color: var(--ink-3); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features { grid-template-columns: 1fr; }
+  .hero { padding-bottom: .5rem; }
+}
+
