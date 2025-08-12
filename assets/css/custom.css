@@ -1004,3 +1004,22 @@ button:focus-visible {
 .hero--cv .hero-band__inner {
   padding-block: clamp(14px, 3vw, 28px);
 }
+
+
+/* === Hero on Contact page (clean like Research/Pubs) === */
+.hero--contact {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 0;
+}
+.hero--contact .hero-band__inner {
+  padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px);
+}
+
+/* Make the Contact hero sub blue like the others */
+.page--contact .hero-sub { color: var(--brand); }
+
+/* Tighten space between hero and the contact content */
+.page--contact .hero-band { margin-bottom: .5rem; }
+.page--contact .contact-wrapper { margin-top: 0.5rem; }
