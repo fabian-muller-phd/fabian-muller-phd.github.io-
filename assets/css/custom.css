@@ -20,7 +20,7 @@
   --line: #eee;
 
   /* Einheitliche Foto-Spalten und Mobile-Bildbreite (Home & Contact) */
-  --photo-col: 400px;     /* Desktop-Spalte */
+  --photo-col: 445px;     /* Desktop-Spalte */
   --photo-col-sm: 280px;  /* Tablet-Spalte */
   --photo-mobile: 320px;  /* Fixbreite am Phone */
 }
@@ -295,7 +295,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 
 /* Bildspalte IDENTISCH zu .homepage-photo */
-.page--contact .contact-photo { flex: 0 0 445px; }
+.page--contact .contact-photo { flex: 0 0 var(--photo-col); }
 .page--contact .contact-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
