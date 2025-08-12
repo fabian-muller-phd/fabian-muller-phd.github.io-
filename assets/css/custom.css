@@ -1580,3 +1580,19 @@ button:focus-visible {
   color: var(--brand);   /* dein Blau #0a4c86 */
   font-weight: 700;      /* bleibt fett */
 }
+
+/* === Legal Notice (Mentions légales) === */
+.hero--legal { background: transparent; box-shadow: none; border-radius: 0; margin-top: 0; }
+.hero--legal .hero-band__inner { padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 24px); }
+.page--legal .hero-sub { color: var(--brand); }
+
+.legal-wrapper {
+  max-width: var(--text-max);
+  margin: .75rem auto 2rem;
+  padding: 0 clamp(16px, 3vw, 24px);
+  line-height: 1.65;
+}
+.page--legal h3 { margin: 1.2rem 0 .5rem; font-size: 1.05rem; font-weight: 800; }
+.page--legal hr { border: 0; border-top: 1px solid var(--line); margin: .8rem 0 1rem; }
+.page--legal a { color: var(--brand); word-break: break-word; }
+.hero-band + .legal-wrapper { margin-top: .75rem; }
