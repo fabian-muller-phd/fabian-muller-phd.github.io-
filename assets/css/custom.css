@@ -567,5 +567,38 @@ button:focus-visible {
 }
 
 .page--contact .contact-panel {
+
+   
   max-width: none;   /* volle Breite nutzen */
 }
+
+/* iPad PORTRAIT: Bild links floaten, Text fließt rechts & danach darunter */
+@media (orientation: portrait) and (min-width: 601px) and (max-width: 1024px) {
+  .homepage-wrapper {
+    display: flow-root;      /* eigener BFC: enthält den Float */
+    max-width: var(--site-max);
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 0;                  /* evtl. altes gap neutralisieren */
+  }
+
+  .homepage-photo {
+    float: left;
+    width: 320px;            /* angenehme Breite für iPad Portrait */
+    margin: 0 1rem 1rem 0;   /* Abstand zum Text */
+  }
+
+  .homepage-photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;      /* kein starres 1:1 im Float-Layout */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .homepage-text {
+    display: block;          /* Flex von oben überschreiben */
+    max-width: none;         /* Text darf rechts & darunter laufen */
+  }
+}
+
