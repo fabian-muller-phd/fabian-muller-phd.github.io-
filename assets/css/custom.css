@@ -1066,3 +1066,72 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+/* --- Publications: Lesbarkeit & Rhythmus --- */
+.page--pubs .pubs-list { 
+  display: grid; 
+  gap: .85rem;                 /* konsistenter vertikaler Rhythmus */
+  margin: .6rem 0 1.4rem;
+}
+
+.page--pubs .pub { 
+  padding: .55rem .75rem .6rem; 
+  border-radius: 10px; 
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,.02);
+}
+
+.page--pubs .pub:hover { 
+  box-shadow: 0 3px 12px rgba(0,0,0,.06);
+  transform: translateY(-1px);
+}
+
+/* Zitatblock angenehmer lesen */
+.page--pubs .cite { 
+  display: block; 
+  color: var(--ink-2); 
+  line-height: 1.55; 
+}
+
+/* DOI als Chip (automatisch via URL-Attribut) */
+.page--pubs .cite a[href*="doi.org"] {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: .16rem .45rem;
+  border-radius: 999px;
+  margin-left: .35rem;
+  color: var(--brand);
+}
+.page--pubs .cite a[href*="doi.org"]::after {
+  content: "↗";
+  font-size: .9em;
+  opacity: .8;
+}
+.page--pubs .cite a[href*="doi.org"]:hover { 
+  box-shadow: 0 2px 8px rgba(0,0,0,.06); 
+}
+
+/* Download-CTA (kompakt) – schon vorgeschlagen; falls noch nicht drin: */
+.page--pubs .pubs-list .actions {
+  display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .4rem;
+}
+.page--pubs .pubs-list .actions .dl-btn {
+  -webkit-appearance: none; appearance: none;
+  display: inline-flex; align-items: center; position: relative;
+  font-size: .75rem; line-height: 1.2; font-weight: 500;
+  padding: .22rem .55rem .22rem .7rem; border-radius: 8px;
+  background: #fff; border: 1px solid var(--line); color: var(--ink-2);
+  text-decoration: none; white-space: nowrap;
+}
+.page--pubs .pubs-list .actions .dl-btn::before {
+  content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 3px;
+  border-radius: 8px 0 0 8px; background: var(--brand);
+}
+.page--pubs .pubs-list .actions .dl-btn:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,.06); transform: translateY(-1px);
+}
