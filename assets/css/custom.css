@@ -705,32 +705,39 @@ button:focus-visible {
 }
 
 
-/* Features layout */
+/* === FEATURES (3 hex icons) — FINAL === */
+
+/* Layout: always 3-up; only drop to 1-up on small phones (≤600px) */
 .features {
   max-width: var(--site-max);
   margin: 2rem auto 3rem;
   padding: 0 clamp(16px, 3vw, 24px);
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns by default */
   gap: clamp(16px, 2.5vw, 32px);
 }
 
+/* Card container with NO button feel */
 .feature-card {
   text-align: center;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 20px 18px 22px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.02);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 18px 14px 8px;
+  box-shadow: none;
+  transition: none;
 }
 
+/* No hover effects at all */
+.feature-card:hover { box-shadow: none; transform: none; }
+
+/* Title + text inside each card */
 .feature-card h3 {
   margin: 0.75rem 0 0.35rem;
   font-weight: 800;
   font-size: 1.05rem;
   color: var(--ink-1);
 }
-
 .feature-card p {
   margin: 0;
   color: var(--ink-3);
@@ -742,36 +749,25 @@ button:focus-visible {
 .feature-icon.hex {
   width: 72px;
   height: 72px;
-  background: #e46a2c; /* default */
+  background: #e46a2c; /* default; overridden by color classes below */
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-inline: auto;
 }
-
 .feature-icon.hex svg {
   width: 42px;
   height: 42px;
   display: block;
 }
 
-/* Color variants (match your palette) */
+/* Color variants (your palette) */
 .feature-icon.orange { background: #e46a2c; }
 .feature-icon.blue   { background: #083963; }
 .feature-icon.green  { background: #2ba89c; }
 
-/* Hover lift (subtle) */
-.feature-card:hover {
-  box-shadow: 0 6px 18px rgba(0,0,0,.06);
-  transform: translateY(-2px);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+/* Responsive: only 1 column on small phones (portrait) */
 @media (max-width: 600px) {
   .features { grid-template-columns: 1fr; }
 }
