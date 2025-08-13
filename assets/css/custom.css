@@ -1689,3 +1689,19 @@ button:focus-visible {
 .page--contact .contact-panel hr { display: none !important; }
 .page--contact .header-link { display: none !important; }
 .page--contact .contact-panel h2 + * { border-top: 0 !important; }
+
+/* CONTACT: nie Linien unter H2 */
+.page--contact h2 { 
+  border-top: 0 !important; 
+  padding-top: 0 !important; 
+}
+
+/* falls irgendein Element nach dem H2 die Linie trägt */
+.page--contact h2 + * { 
+  border-top: 0 !important; 
+}
+
+/* evtl. vorhandene <hr> verstecken */
+.page--contact hr { 
+  display: none !important; 
+}
