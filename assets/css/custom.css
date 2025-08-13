@@ -1782,3 +1782,16 @@ button:focus-visible {
 .page--research .list-label { margin: .6rem 0 0; font-weight: 700; }
 .page--research .list-tight { margin: 0 0 .6rem 1.1rem; } /* top=0 -> kein Gap */
 
+
+/* === Research: erster Abschnitt nach den Cards OHNE Divider === */
+.page--research .research-grid + .research-section {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Fallback: falls der Wrapper direkt mit einer Section beginnt */
+.page--research .research-wrapper > .research-section:first-child {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
