@@ -1663,6 +1663,25 @@ button:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+/* Optional: beim ersten Abschnitt die Linie weglassen */
+.page--cv .cv-section h2:first-of-type { 
+  border-top: 0; 
+  padding-top: 0; 
+}
+
+.page--research .research-wrapper .research-section:first-of-type h2 {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.page--teaching .teaching-section h2:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+
+
+
 /* Contact: keine H2-Trenner */
 .page--contact .contact-panel h2 {
   border-top: 0 !important;
