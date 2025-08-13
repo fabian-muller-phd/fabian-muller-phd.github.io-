@@ -24,7 +24,7 @@ classes: page--pubs
     <div class="research-card"><h3><a href="#journals">Journal Articles</a></h3><p>Peer-reviewed publications</p></div>
     <div class="research-card"><h3><a href="#chapters">Book Chapters</a></h3><p>Chapters & handbooks</p></div>
     <div class="research-card"><h3><a href="#policy">Policy & Practice</a></h3><p>Guides & applied outputs</p></div>
-    <div class="research-card"><h3><a href="#thesis">Dissertation</a></h3><p>HAL repository</p></div>
+    <div class="research-card"><h3><a href="#thesis">Dissertation</a></h3><p>PhD thesis – open access</p></div>
     <div class="research-card"><h3><a href="#talks">Talks & Posters</a></h3><p>Conference contributions</p></div>
   </div>
 
