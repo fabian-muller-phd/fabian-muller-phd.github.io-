@@ -25,19 +25,19 @@ classes: page--research
     </div>
     <div class="research-card">
       <h3><a href="#social-class">Social Class</a></h3>
-      <p>Educational trajectories, cultural (mis)match, resilience profiles</p>
+      <p>Educational trajectories, cultural fit, resilience profiles</p>
     </div>
     <div class="research-card">
       <h3><a href="#sen">SEN</a></h3>
-      <p>Bias in teacher judgments, fairness, accommodations</p>
+      <p>Teacher bias, fairness, exam accommodations</p>
     </div>
     <div class="research-card">
       <h3><a href="#assessment">Assessment</a></h3>
-      <p>Large-scale assessments, comparability, psychometrics</p>
+      <p>SEI measurement, large-scale assessments, comparability</p>
     </div>
     <div class="research-card">
       <h3><a href="#lgbtiq">LGBTIQ+</a></h3>
-      <p>Inclusive education & policy, evidence for practice</p>
+      <p>Inclusive workplaces, policy guidance, evidence for practice</p>
     </div>
   </div>
 
