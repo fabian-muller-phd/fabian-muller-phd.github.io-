@@ -1705,3 +1705,33 @@ button:focus-visible {
 .page--contact hr { 
   display: none !important; 
 }
+/* ===============================
+   CONTACT: alle Divider-Linien weg
+   =============================== */
+
+/* Keine Linien an Überschriften auf Contact */
+.page--contact :is(h1,h2,h3,h4,h5,h6) {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Und auch nicht am ersten Block NACH der Überschrift */
+.page--contact :is(h1,h2,h3,h4,h5,h6) + * {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Falls ein Theme Pseudo-Elemente nutzt */
+.page--contact :is(h1,h2,h3,h4,h5,h6)::before,
+.page--contact :is(h1,h2,h3,h4,h5,h6)::after {
+  content: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+/* Klassische <hr> auch ausblenden */
+.page--contact hr { display: none !important; }
+
