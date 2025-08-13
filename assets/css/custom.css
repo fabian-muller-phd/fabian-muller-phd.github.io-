@@ -1615,3 +1615,8 @@ button:focus-visible {
 /* Legal hero uses text column width so edges align */
 .hero--legal .hero-band__inner { max-width: var(--text-max); }
 
+/* Nur auf /mentions-legales/ Header/ Footer neutral halten */
+.page--legal .masthead a { color: var(--ink-2) !important; }
+.page--legal .masthead a:hover { color: var(--brand) !important; } /* nur Hover blau */
+.page--legal .mein-footer-rechts a[href*="/mentions-legales/"] { color: var(--muted) !important; }
+.page--legal .mein-footer-rechts a[href*="/mentions-legales/"]:hover { color: var(--brand) !important; }
