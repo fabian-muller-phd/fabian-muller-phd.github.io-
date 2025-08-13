@@ -1724,11 +1724,3 @@ button:focus-visible {
   border-top: 0 !important;
   padding-top: 0 !important;
 }
-
-/* Home/Splash: Subline (Name) etwas größer, aber kleiner als Title */
-.layout--splash .hero-sub,
-.splash .hero-sub {
-  font-size: clamp(1.12rem, 1.7vw, 1.4rem);  /* < 1.9rem Title-Max */
-  line-height: 1.25;
-}
-
