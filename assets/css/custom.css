@@ -1693,3 +1693,22 @@ button:focus-visible {
 
 /* Optional: Anker-Icon neben H2 ausblenden, bleibt cleaner */
 .page--contact .header-link { display: none !important; }
+
+
+/* CONTACT: alle Trenner/Lines unter H2 entfernen */
+.page--contact .contact-panel h2,
+.page--contact .contact-panel h2::before,
+.page--contact .contact-panel h2::after {
+  border: 0 !important;
+  box-shadow: none !important;
+  content: none !important;
+  padding-top: 0 !important;
+}
+
+/* Falls der Strich als border-top am Folge-Element hängt */
+.page--contact .contact-panel h2 + * {
+  border-top: 0 !important;
+}
+
+/* Eventuelle <hr> auf der Seite verstecken */
+.page--contact hr { display: none !important; }
