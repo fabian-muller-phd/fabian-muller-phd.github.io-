@@ -1663,3 +1663,14 @@ button:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+/* Contact: keine H2-Trenner */
+.page--contact .contact-panel h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Falls irgendwo <hr> steht, ausblenden */
+.page--contact .contact-panel hr { display: none; }
+
+/* Optional: Anker-Icon neben H2 ausblenden, bleibt cleaner */
+.page--contact .header-link { display: none !important; }
