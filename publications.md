@@ -217,7 +217,7 @@ classes: page--pubs
     <span class="cite">
       Denk, A.*, <b>Müller, F.*</b>, & Sälzer, C. (2017, December).
       <em>Hand in Hand – Social and emotional skills for tolerant and non-discriminative societies (a whole school approach)</em>.
-      Education and Refugees: Research Meets Practice, Berlin, Germany. *equal contribution.
+      Education and Refugees: Research Meets Practice, Berlin, Germany. <br>*equal contribution.
     </span>
   </li>
 
