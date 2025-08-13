@@ -1611,3 +1611,7 @@ button:focus-visible {
 
 /* Abstand nach dem Hero */
 .hero-band + .legal-wrapper { margin-top: .75rem; }
+
+/* Legal hero uses text column width so edges align */
+.hero--legal .hero-band__inner { max-width: var(--text-max); }
+
