@@ -1735,3 +1735,23 @@ button:focus-visible {
 /* Klassische <hr> auch ausblenden */
 .page--contact hr { display: none !important; }
 
+
+/* Research: Divider an den Abschnitt, nicht ans h2 */
+.page--research .research-section {
+  border-top: 1px solid var(--line);
+  padding-top: .6rem;
+}
+
+/* h2 selbst bekommt KEINE Linie */
+.page--research .research-section > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Optional: falls du die allererste Section OHNE Linie willst, entkommentieren
+.page--research .research-section:first-of-type {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+*/
+
