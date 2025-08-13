@@ -1615,8 +1615,18 @@ button:focus-visible {
 /* Legal hero uses text column width so edges align */
 .hero--legal .hero-band__inner { max-width: var(--text-max); }
 
-/* Nur auf /mentions-legales/ Header/ Footer neutral halten */
-.page--legal .masthead a { color: var(--ink-2) !important; }
-.page--legal .masthead a:hover { color: var(--brand) !important; } /* nur Hover blau */
-.page--legal .mein-footer-rechts a[href*="/mentions-legales/"] { color: var(--muted) !important; }
-.page--legal .mein-footer-rechts a[href*="/mentions-legales/"]:hover { color: var(--brand) !important; }
+/* Legal: Header-Links exakt wie auf allen anderen Seiten (keine Sonderfarbe) */
+.page--legal .masthead a,
+.page--legal .masthead a:visited,
+.page--legal .masthead a:hover {
+  color: inherit !important;          /* nimm die Standardfarbe vom Theme */
+  text-decoration: inherit !important;
+}
+
+/* Legal: Footer-Link NICHT blau beim Hover – immer das Footer-Grau */
+.page--legal .mein-footer-rechts a[href*="/mentions-legales/"],
+.page--legal .mein-footer-rechts a[href*="/mentions-legales/"]:hover,
+.page--legal .mein-footer-rechts a[href*="/mentions-legales/"]:focus {
+  color: var(--muted) !important;     /* = #6f777d, wie dein Footer-Text */
+  text-decoration: none;
+}
