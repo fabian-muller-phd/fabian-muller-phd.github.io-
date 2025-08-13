@@ -1639,3 +1639,7 @@ button:focus-visible {
   color: var(--muted) !important;
   text-decoration: underline;       /* optional: nur Unterstreichung */
 }
+
+/* Legal so breit wie die anderen Unterseiten */
+.legal-wrapper { max-width: var(--site-max); }
+.hero--legal .hero-band__inner { max-width: var(--site-max); } /* oder Regel ganz löschen */
