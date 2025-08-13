@@ -1755,3 +1755,15 @@ button:focus-visible {
 }
 */
 
+/* Research: Abschnitte nicht auf 830px begrenzen */
+.page--research .research-section {
+  max-width: 100%;                 /* füllt die Wrapper-Breite */
+  border-top: 1px solid var(--line);
+  padding-top: .6rem;
+}
+
+/* h2 selbst ohne Linie (wir setzen sie am Container) */
+.page--research .research-section > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
