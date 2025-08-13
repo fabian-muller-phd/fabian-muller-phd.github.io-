@@ -1643,3 +1643,23 @@ button:focus-visible {
 /* Legal so breit wie die anderen Unterseiten */
 .legal-wrapper { max-width: var(--site-max); }
 .hero--legal .hero-band__inner { max-width: var(--site-max); } /* oder Regel ganz löschen */
+
+
+
+/* === Section-Divider für CV & Research === */
+
+/* Linie oberhalb jedes Abschnittstitels */
+.page--cv .cv-section h2,
+.page--research .research-section h2 {
+  margin: 1.4rem 0 .4rem;     /* Abstand wie bei Publications */
+  padding-top: .6rem;         /* Platz für die Linie */
+  border-top: 1px solid var(--line);
+}
+
+/* === Section-Divider für Teaching === */
+.page--teaching .teaching-section h2 {
+  margin: 1.4rem 0 .4rem;     /* wie bei CV/Research/Publications */
+  padding-top: .6rem;
+  border-top: 1px solid var(--line);
+}
+
