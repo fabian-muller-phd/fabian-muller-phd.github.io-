@@ -44,40 +44,121 @@ classes: page--research
   <!-- Detailed sections -->
   <div class="research-section" id="methods">
     <h2>Methods</h2>
-    <p>I take a flexible, problem-driven approach: I start with the question and choose, or learn, the methods that will answer it best. My work draws on national administrative education data (DEPP), international assessments such as PISA, multi-university surveys, and preregistered experiments with students and teachers.</p>
-    <p>I use a range of quantitative approaches, including randomized behavioral experiments, quasi-experimental designs (such as difference-in-differences), longitudinal growth and multilevel models, structural equation modeling (SEM), and systematic literature reviews. All analyses are conducted in R with fully reproducible pipelines.</p>
-    <p>Open science is a core value: I preregister studies, share materials, code, and, where possible, data, and use transparent reporting so results can be scrutinized, replicated, and applied.</p>
-    <p><strong>Why it matters.</strong> For me, methods are not an end in themselves. They’re tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
+    <p>I take a flexible, problem-driven approach: I start with the question and choose, or learn, the methods that will answer it best. My work draws on national administrative education data, international assessments, and preregistered experiments.</p>
+
+    <h3>What I work with</h3>
+    <ul>
+      <li>DEPP administrative education data</li>
+      <li>International assessments such as PISA</li>
+      <li>Multi-university surveys</li>
+      <li>Preregistered experiments with students and teachers</li>
+    </ul>
+
+    <h3>How I analyze</h3>
+    <ul>
+      <li>Randomized behavioral experiments</li>
+      <li>Quasi-experimental designs (e.g., difference-in-differences)</li>
+      <li>Longitudinal growth and multilevel models</li>
+      <li>Structural equation modeling (SEM)</li>
+      <li>Systematic literature reviews</li>
+      <li>All analyses in R with fully reproducible pipelines</li>
+    </ul>
+
+    <h3>Open science</h3>
+    <ul>
+      <li>Preregistration</li>
+      <li>Sharing materials, code, and, where possible, data</li>
+      <li>Transparent reporting so results can be scrutinized, replicated, and applied</li>
+    </ul>
+
+    <p><strong>Why it matters.</strong> Methods are tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
   </div>
 
   <div class="research-section" id="social-class">
     <h2>Social Class</h2>
-    <p>I study how social class shapes students’ paths through school and university. In <a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">work</a> across France and Germany, I show that success isn’t only about ability; it’s also about fit between how students are used to relating to others and the unwritten rules of academic life. Many working-class students carry a strong sense of “we” (family, community, mutual support) into settings that tend to reward “I” (self-promotion, individual initiative). Some high-achieving working-class students adjust how they present themselves at home and at university, yet differences in how “in place” students feel can persist even when grades look similar. COVID-19 pushed learning online and raised the need for independence and stable internet. That made the fit gap costlier for <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">working-class students</a>, who participated less and reported higher intentions to drop out.</p>
-    <p>Building on this, my current DEPP project looks earlier in the system. I model learning trajectories in primary school across multiple years and cohorts differently affected by COVID-19 to see when gaps open or close, and for whom. This moves beyond averages to identify profiles of resilience and risk by socioeconomic background and gender.</p>
-    <p><strong>Why it matters.</strong> If we understand how and when inequalities grow, we can design supports that respect different ways of being (not just one “right” student profile), make classroom and admissions practices more inclusive, and target recovery resources where they help most.</p>
+    <p>I study how social class shapes students’ paths through school and university.</p>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li><a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">Work</a> across France and Germany shows success isn’t only about ability; it’s also about fit with the unwritten rules of academic life.</li>
+      <li>Working-class students often bring a strong “we” orientation (family, community, mutual support) into settings that reward “I” (self-promotion, individual initiative). Some high-achieving working-class students adjust how they present themselves at home and at university, yet feeling “in place” can still lag behind similar grades.</li>
+      <li>COVID-19 pushed learning online and raised the need for independence and stable internet. That made the fit gap costlier for <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">working-class students</a>, who participated less and more often considered dropping out.</li>
+    </ul>
+
+    <h3>Current work</h3>
+    <ul>
+      <li>With DEPP administrative data, I model learning trajectories in primary school across multiple years and cohorts with different levels of COVID disruption to see when gaps open or close and for whom.</li>
+      <li>This goes beyond averages to identify profiles of resilience and risk by socioeconomic background and gender.</li>
+    </ul>
+
+    <p><strong>Why it matters.</strong> Understanding how and when inequalities grow helps design supports that respect different ways of being, make classroom and admissions practices more inclusive, and target recovery resources where they help most.</p>
   </div>
 
   <div class="research-section" id="sen">
     <h2>SEN (Special Educational Needs)</h2>
-    <p>When students with SEN receive accommodations, the goal is to level the playing field, but teachers’ perceptions can affect whether that goal is met. In preregistered, <a href="https://doi.org/10.31234/osf.io/fx7jc_v1" target="_blank" rel="noopener">multi-study work</a> with teachers and school leaders in France, I found that students with SEN who performed just as well as their peers were systematically graded lower unless teachers viewed the accommodations as fair. The takeaway is simple: fairness-focused teacher training can reduce bias and support genuinely inclusive assessment.</p>
-    <p><a href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">Complementary work</a> shows that not all accommodations are viewed equally. Extra time and computer use are often judged fair and comparable to standard exams, while oral assistance or exemptions are viewed as less comparable. The gap between “this feels fair” and “this is equivalent” reveals a persistent worry about maintaining ranking systems.</p>
-    <p><strong>Why it matters.</strong> Accommodations advance equity only when they work in practice and are seen as legitimate. By clarifying their purpose, aligning them with assessment criteria, and communicating this clearly to educators, schools can make support work as intended, ensuring fairness without undermining trust in results.</p>
+
+    <p>I study when exam accommodations actually level the playing field, and how teachers’ perceptions shape grading and competence judgments.</p>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>Identical work was graded lower when SEN status was disclosed, unless teachers viewed the accommodation as fair (<a href="https://doi.org/10.31234/osf.io/fx7jc_v1" target="_blank" rel="noopener">multi-study preregistered evidence</a>).</li>
+      <li>Not all accommodations are viewed equally: extra time and computer use are judged more fair and comparable; oral assistance or exemptions are seen as less comparable (<a href="https://doi.org/10.31219/osf.io/fcnz4_v1" target="_blank" rel="noopener">evidence</a>).</li>
+      <li>The gap between “this feels fair” and “this is equivalent” reflects a persistent worry about maintaining ranking.</li>
+      <li>Takeaway: fairness-focused teacher training can reduce bias and support genuinely inclusive assessment.</li>
+    </ul>
+
+    <h3>How I study it</h3>
+    <ul>
+      <li>Preregistered, multi-study designs with teachers and school leaders in France, using realistic grading tasks and clear analysis plans.</li>
+    </ul>
+
+    <p><strong>Why it matters.</strong> Accommodations advance equity only when they work in practice and are seen as legitimate. Clear purpose, aligned rubrics, and transparent communication help ensure fairness without undermining trust in results.</p>
   </div>
 
   <div class="research-section" id="assessment">
     <h2>Assessment</h2>
-    <p>I work on measures that policy can trust. In a <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">systematic review</a> of nearly 14,000 records, we cataloged about <a href="https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf" target="_blank" rel="noopener">150 tools</a> for social, emotional, and intercultural competencies and mapped where current measures work, where they don’t, and why intercultural skills need much stronger coverage.</p>
-    <p>I also work on inclusion in <a href="https://doi.org/10.1007/978-3-658-27608-9_3" target="_blank" rel="noopener">large-scale assessments</a>, focusing on how to include students with special educational needs without sacrificing comparability by separating testability from SEN status and improving sampling and task design.</p>
-    <p>Because self-reports (e.g., questionnaires) can be fragile, I study how people actually answer them. Using <a href="https://doi.org/10.13140/RG.2.2.15675.98087" target="_blank" rel="noopener">eye-tracking</a> in cross-cultural samples from Taiwan and Germany, we found that response processes differ across systems and shift under social-desirability pressure, which sets limits on comparing results across countries.</p>
-    <p><strong>Why it matters.</strong> Policy and practice need measures that are valid, culturally responsive, and seen as legitimate by educators. Triangulating methods beyond surveys and designing inclusive assessments make the data strong enough to guide real decisions about teaching, resources, and equity.</p>
+
+    <p>I work on measures that policy can trust.</p>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>A <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">systematic review</a> of ~14,000 records mapped ~<a href="https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf" target="_blank" rel="noopener">150 tools</a> for social, emotional, and intercultural competencies and showed why intercultural skills need stronger coverage.</li>
+      <li>Inclusion in <a href="https://doi.org/10.1007/978-3-658-27608-9_3" target="_blank" rel="noopener">large-scale assessments</a> improves when we separate testability from SEN status and strengthen sampling and task design.</li>
+      <li><a href="https://doi.org/10.13140/RG.2.2.15675.98087" target="_blank" rel="noopener">Eye-tracking</a> in Taiwan and Germany shows response processes differ and shift under social-desirability pressure, limiting cross-country comparisons based on self-reports.</li>
+    </ul>
+
+    <h3>How I study it</h3>
+    <ul>
+      <li>Systematic reviews and tool mapping</li>
+      <li>Design guidance for inclusion in large-scale assessments</li>
+      <li>Response-process work with eye-tracking in cross-cultural samples</li>
+    </ul>
+
+    <p><strong>Why it matters.</strong> Valid, culturally responsive, and legitimate measures make data strong enough to guide real decisions about teaching, resources, and equity.</p>
   </div>
 
   <div class="research-section" id="lgbtiq">
     <h2>LGBTIQ+</h2>
-    <p>I work on what makes inclusion real: how language, policies, and everyday practices shape whether LGBTIQ+ people can be open at work and thrive. As a scientific consultant with PROUT AT WORK, I authored three hands-on employer guides on <a href="https://www.proutatwork.de/produkt/how-to-3-sprechen-sie-lgbtiq/" target="_blank" rel="noopener">gender-inclusive language</a>, on <a href="https://www.proutatwork.de/produkt/how-to-4-lgbtiq-fuer-einsteigerinnen/" target="_blank" rel="noopener">getting started with LGBTIQ+ at work</a>, and on <a href="https://www.proutatwork.de/produkt/how-to-5-queere-themen/" target="_blank" rel="noopener">coming-out support for employees</a>. They translate research into concrete steps companies can implement now (e.g., inclusive job ads, benefits parity, clear reporting channels).</p>
-    <p>These briefs highlight a simple mechanism: language and policy signal who belongs. Gender-inclusive wording changes what people picture, broadens who applies, and supports performance and commitment, with effects documented across organizational and educational contexts.</p>
-    <p>Beyond this advisory work, I served for several years as the international representative of the German professional association <a href="https://www.vlsp.de/en" target="_blank" rel="noopener">VLSP*</a> in <a href="https://www.apa.org/ipsynet" target="_blank" rel="noopener">IpsyNet</a> (International Psychology Network for Lesbian, Gay, Bisexual, Transgender and Intersex Issues), helping connect national groups and contributing to international policy statements.</p>
-    <p><strong>Why it matters.</strong> Concealment is costly: when people have to hide who they are, health, focus, and productivity suffer. When workplaces make inclusion explicit and credible, satisfaction, retention, and performance improve. The payoff is human and organizational, and it starts with clear, evidence-based practices.</p>
+
+    <p>I study what makes inclusion real: how language, policies, and everyday practices shape whether LGBTIQ+ people can be open at work and thrive.</p>
+
+    <h3>Outputs</h3>
+    <ul>
+      <li>Employer guides for PROUT AT WORK: <a href="https://www.proutatwork.de/produkt/how-to-3-sprechen-sie-lgbtiq/" target="_blank" rel="noopener">gender-inclusive language</a>, <a href="https://www.proutatwork.de/produkt/how-to-4-lgbtiq-fuer-einsteigerinnen/" target="_blank" rel="noopener">getting started with LGBTIQ+ at work</a>, <a href="https://www.proutatwork.de/produkt/how-to-5-queere-themen/" target="_blank" rel="noopener">coming-out support</a>.</li>
+      <li>Each translates research into concrete steps (e.g., inclusive job ads, benefits parity, clear reporting channels).</li>
+    </ul>
+
+    <h3>Mechanism</h3>
+    <ul>
+      <li>Language and policy signal who belongs. Inclusive wording changes what people picture, broadens who applies, and supports performance and commitment across contexts.</li>
+    </ul>
+
+    <h3>Role</h3>
+    <ul>
+      <li>International representative of <a href="https://www.vlsp.de/en" target="_blank" rel="noopener">VLSP*</a> in <a href="https://www.apa.org/ipsynet" target="_blank" rel="noopener">IPsyNet</a>, connecting national groups and contributing to international policy statements.</li>
+    </ul>
+
+    <p><strong>Why it matters.</strong> Concealment is costly. When inclusion is explicit and credible, satisfaction, retention, and performance improve—benefiting people and organizations.</p>
   </div>
 
 </div>
