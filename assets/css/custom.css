@@ -1777,3 +1777,8 @@ button:focus-visible {
   font-weight: 700;
 }
 .page--research .research-section ul { margin: .2rem 0 .6rem 1.1rem; }
+
+/* Compact list label + bullets (Research) */
+.page--research .list-label { margin: .6rem 0 0; font-weight: 700; }
+.page--research .list-tight { margin: 0 0 .6rem 1.1rem; } /* top=0 -> kein Gap */
+
