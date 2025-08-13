@@ -630,7 +630,7 @@ button:focus-visible {
   margin: 0 0 .6rem;
   font-weight: 700;
   color: var(--ink-2);
-  font-size: clamp(1.12rem, 1.7vw, 1.38rem); /* etwas größer als vorher */
+  font-size: clamp(1.12rem, 1.7vw, 1.45rem); /* etwas größer als vorher */
   line-height: 1.3;
 }
 
