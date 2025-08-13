@@ -1715,8 +1715,8 @@ button:focus-visible {
 
 /* ===== First H2: NO top border (place at the very end!) ===== */
 
-/* Research: erstes inhaltliches <h2> nach den Cards */
-.page--research .research-wrapper .research-section:first-of-type > h2 {
+/* Research – erste inhaltliche Überschrift (nach den Cards) ohne Linie */
+.page--research .research-wrapper .research-grid + .research-section > h2 {
   border-top: 0 !important;
   padding-top: 0 !important;
 }
