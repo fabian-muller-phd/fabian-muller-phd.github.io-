@@ -116,7 +116,10 @@ classes: page--pubs
       The rTPJ’s overarching cognitive function in networks for attention and Theory of Mind. 
       <em>Social Cognitive and Affective Neuroscience, 12</em>(1), 157–168. 
       <a href="https://doi.org/10.1093/scan/nsw163" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsw163</a>
-    </span>
+   </span>
+    <div class="actions">
+      <a class="dl-btn" href="/assets/papers/schuwerk_2017_SCAN.pdf" download>Download</a>
+    </div>
   </li>
 </ul>
 
