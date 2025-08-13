@@ -1712,3 +1712,18 @@ button:focus-visible {
 
 /* Eventuelle <hr> auf der Seite verstecken */
 .page--contact hr { display: none !important; }
+
+/* ===== First H2: NO top border (place at the very end!) ===== */
+
+/* Research: erstes inhaltliches <h2> nach den Cards */
+.page--research .research-wrapper .research-section:first-of-type > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Publications: erstes <h2> im Content (fallback + beide Containerfälle) */
+.page--pubs .page__content h2:first-of-type,
+.page--pubs .pubs-wrapper h2:first-of-type {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
