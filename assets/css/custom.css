@@ -1615,18 +1615,27 @@ button:focus-visible {
 /* Legal hero uses text column width so edges align */
 .hero--legal .hero-band__inner { max-width: var(--text-max); }
 
-/* Legal: Header-Links exakt wie auf allen anderen Seiten (keine Sonderfarbe) */
-.page--legal .masthead a,
-.page--legal .masthead a:visited,
-.page--legal .masthead a:hover {
-  color: inherit !important;          /* nimm die Standardfarbe vom Theme */
-  text-decoration: inherit !important;
+/* Mentions légales: Header/ Footer wie auf allen anderen Seiten (muted grau) */
+.page--legal .masthead .site-title,
+.page--legal .masthead .site-title a,
+.page--legal .masthead .site-nav a,
+.page--legal .masthead a {
+  color: var(--muted) !important;   /* = #6f777d */
 }
 
-/* Legal: Footer-Link NICHT blau beim Hover – immer das Footer-Grau */
-.page--legal .mein-footer-rechts a[href*="/mentions-legales/"],
-.page--legal .mein-footer-rechts a[href*="/mentions-legales/"]:hover,
-.page--legal .mein-footer-rechts a[href*="/mentions-legales/"]:focus {
-  color: var(--muted) !important;     /* = #6f777d, wie dein Footer-Text */
+.page--legal .masthead .site-title a:hover,
+.page--legal .masthead .site-nav a:hover,
+.page--legal .masthead a:hover {
+  color: var(--muted) !important;   /* kein Blau auf Hover */
   text-decoration: none;
+}
+
+/* Footer-Link ebenfalls neutral und ohne Farbwechsel */
+.page--legal .mein-footer-rechts a {
+  color: var(--muted) !important;
+  text-decoration: none;
+}
+.page--legal .mein-footer-rechts a:hover {
+  color: var(--muted) !important;
+  text-decoration: underline;       /* optional: nur Unterstreichung */
 }
