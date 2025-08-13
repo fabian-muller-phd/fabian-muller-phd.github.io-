@@ -1767,3 +1767,13 @@ button:focus-visible {
   border-top: 0 !important;
   padding-top: 0 !important;
 }
+
+
+
+/* kleine Subheads in Research-Abschnitten */
+.page--research .research-section h3 {
+  font-size: 1rem;
+  margin: .6rem 0 .2rem;
+  font-weight: 700;
+}
+.page--research .research-section ul { margin: .2rem 0 .6rem 1.1rem; }
