@@ -1646,81 +1646,46 @@ button:focus-visible {
 
 
 
-/* === Section-Divider für CV & Research === */
+/* ===============================
+   Section-Divider (einheitlich)
+   =============================== */
 
-/* Linie oberhalb jedes Abschnittstitels */
+/* Standard-Linie über jedem Abschnittstitel */
 .page--cv .cv-section h2,
-.page--research .research-section h2 {
-  margin: 1.4rem 0 .4rem;     /* Abstand wie bei Publications */
-  padding-top: .6rem;         /* Platz für die Linie */
-  border-top: 1px solid var(--line);
-}
-
-/* === Section-Divider für Teaching === */
-.page--teaching .teaching-section h2 {
-  margin: 1.4rem 0 .4rem;     /* wie bei CV/Research/Publications */
+.page--research .research-section > h2,
+.page--teaching .teaching-section h2,
+.page--pubs .pubs-wrapper h2 {
+  margin: 1.4rem 0 .4rem;
   padding-top: .6rem;
   border-top: 1px solid var(--line);
 }
 
-/* Optional: beim ersten Abschnitt die Linie weglassen */
-.page--cv .cv-section h2:first-of-type { 
-  border-top: 0; 
-  padding-top: 0; 
-}
-
-.page--research .research-wrapper .research-section:first-of-type h2 {
+/* Beim ERSTEN Abschnitt keine Linie */
+.page--cv .cv-section h2:first-of-type,
+.page--teaching .teaching-section h2:first-of-type,
+.page--pubs .pubs-wrapper h2:first-of-type {
   border-top: 0;
   padding-top: 0;
 }
 
-.page--teaching .teaching-section h2:first-of-type {
+/* Research: wenn oben die Card-Grid steht, dann
+   NUR die erste Section danach ohne Linie */
+.page--research .research-grid + .research-section > h2 {
   border-top: 0;
   padding-top: 0;
 }
 
-
-
-
-/* Contact: keine H2-Trenner */
-.page--contact .contact-panel h2 {
-  border-top: 0 !important;
-  padding-top: 0 !important;
+/* Research-Fallback: falls KEIN Grid davor steht und die
+   Wrapper direkt mit einer Section beginnt */
+.page--research .research-wrapper > .research-section:first-child > h2 {
+  border-top: 0;
+  padding-top: 0;
 }
 
-/* Falls irgendwo <hr> steht, ausblenden */
-.page--contact .contact-panel hr { display: none; }
-
-/* Optional: Anker-Icon neben H2 ausblenden, bleibt cleaner */
+/* ===============================
+   Contact: nie Trenner anzeigen
+   =============================== */
+.page--contact .contact-panel h2 { border-top: 0 !important; padding-top: 0 !important; }
+.page--contact .contact-panel hr { display: none !important; }
 .page--contact .header-link { display: none !important; }
-
-
-/* CONTACT: alle Trenner/Lines unter H2 entfernen */
-.page--contact .contact-panel h2,
-.page--contact .contact-panel h2::before,
-.page--contact .contact-panel h2::after {
-  border: 0 !important;
-  box-shadow: none !important;
-  content: none !important;
-  padding-top: 0 !important;
-}
-
-/* Falls der Strich als border-top am Folge-Element hängt */
-.page--contact .contact-panel h2 + * {
-  border-top: 0 !important;
-}
-
-/* Eventuelle <hr> auf der Seite verstecken */
-.page--contact hr { display: none !important; }
-
-/* Research – nur das erste H2 (nach den Cards etc.) ohne Trennlinie */
-.page--research .research-wrapper h2:first-of-type {
-  border-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Extra-Fallback: falls ein CMS/Markdown noch einen Wrapper einzieht */
-.page--research .research-wrapper > *:first-child h2 {
-  border-top: 0 !important;
-  padding-top: 0 !important;
-}
+.page--contact .contact-panel h2 + * { border-top: 0 !important; }
