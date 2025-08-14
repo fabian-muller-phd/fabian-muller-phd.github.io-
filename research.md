@@ -48,7 +48,7 @@ classes: page--research
 
   <p class="list-label"><strong>What I work with</strong></p>
   <ul class="list-tight">
-    <li>DEPP administrative education data</li>
+    <li>Administrative education data (French Ministry of Education, DEPP)</li>
     <li>International assessments such as PISA</li>
     <li>Multi-university surveys</li>
     <li>Preregistered experiments with students and teachers</li>
@@ -87,7 +87,7 @@ classes: page--research
 
   <p class="list-label"><strong>Current work</strong></p>
   <ul class="list-tight">
-    <li>With DEPP administrative data, I model learning trajectories in primary school across multiple years and cohorts with different levels of COVID disruption to see when gaps open or close and for whom.</li>
+    <li>With administrative data from the Directorate of Evaluation, Forecasting and Performance (DEPP) at the French Ministry of National Education and Youth, I model learning trajectories in primary school across multiple years and cohorts with different levels of COVID disruption to see when gaps open or close and for whom.</li>
     <li>This goes beyond averages to identify profiles of resilience and risk by socioeconomic background and gender.</li>
   </ul>
 
