@@ -1842,3 +1842,24 @@ button:focus-visible {
   border-top: 0 !important;
   box-shadow: none !important;
 }
+
+/* === Einheitliche H2-Unterlinie auf CV / Pubs / Teaching / Legal === */
+.page--cv .cv-section h2,
+.page--pubs .pubs-wrapper h2,
+.page--teaching .teaching-section h2,
+.page--legal h2 {
+  border-bottom: 1px solid var(--line) !important; /* gleiche Stärke/Farbe wie oben */
+  box-shadow: none !important;                      /* Theme-Schatten aus */
+  background: none !important;
+  padding-bottom: .35rem;
+  margin-bottom: .5rem;
+}
+
+/* Falls das Theme die Linie am Folge-Element setzt → neutralisieren */
+.page--cv .cv-section h2 + *,
+.page--pubs .pubs-wrapper h2 + *,
+.page--teaching .teaching-section h2 + *,
+.page--legal h2 + * {
+  border-top: 0 !important;
+  box-shadow: none !important;
+}
