@@ -71,7 +71,7 @@ classes: page--research
     <li>Transparent reporting so results can be scrutinized, replicated, and applied</li>
   </ul>
 
-  <p><strong>Why it matters.</strong> For me, methods are not an end in themselves. They’re tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
+  <p class="why-it-matters"><strong>Why it matters.</strong> For me, methods are not an end in themselves. They’re tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
 </div>
 
 <div class="research-section" id="social-class">
@@ -91,7 +91,7 @@ classes: page--research
     <li>This goes beyond averages to identify profiles of resilience and risk by socioeconomic background and gender.</li>
   </ul>
 
-  <p><strong>Why it matters.</strong> If we understand how and when inequalities grow, we can design supports that respect different ways of being (not just one “right” student profile), make classroom and admissions practices more inclusive, and target recovery resources where they help most.</p>
+  <p class="why-it-matters"><strong>Why it matters.</strong> If we understand how and when inequalities grow, we can design supports that respect different ways of being (not just one “right” student profile), make classroom and admissions practices more inclusive, and target recovery resources where they help most.</p>
 </div>
 
 <div class="research-section" id="sen">
@@ -112,7 +112,7 @@ classes: page--research
     <li>Preregistered, multi-study designs with teachers and school leaders in France, using realistic grading tasks and clear analysis plans.</li>
   </ul>
 
-  <p><strong>Why it matters.</strong> Accommodations advance equity only when they work in practice and are seen as legitimate. By clarifying their purpose, aligning them with assessment criteria, and communicating this clearly to educators, schools can make support work as intended, ensuring fairness without undermining trust in results.</p>
+  <p class="why-it-matters"><strong>Why it matters.</strong> Accommodations advance equity only when they work in practice and are seen as legitimate. By clarifying their purpose, aligning them with assessment criteria, and communicating this clearly to educators, schools can make support work as intended, ensuring fairness without undermining trust in results.</p>
 </div>
 
 <div class="research-section" id="assessment">
@@ -134,7 +134,7 @@ classes: page--research
     <li>Response-process work with eye-tracking in cross-cultural samples</li>
   </ul>
 
-  <p><strong>Why it matters.</strong> Policy and practice need measures that are valid, culturally responsive, and seen as legitimate by educators. Triangulating methods beyond surveys and designing inclusive assessments make the data strong enough to guide real decisions about teaching, resources, and equity.</p>
+  <p class="why-it-matters"><strong>Why it matters.</strong> Policy and practice need measures that are valid, culturally responsive, and seen as legitimate by educators. Triangulating methods beyond surveys and designing inclusive assessments make the data strong enough to guide real decisions about teaching, resources, and equity.</p>
 </div>
 
 <div class="research-section" id="lgbtiq">
@@ -158,7 +158,7 @@ classes: page--research
     <li>International representative of <a href="https://www.vlsp.de/en" target="_blank" rel="noopener">VLSP*</a> in <a href="https://www.apa.org/ipsynet" target="_blank" rel="noopener">IPsyNet</a>, connecting national groups and contributing to international policy statements.</li>
   </ul>
 
-  <p><strong>Why it matters.</strong> Concealment is costly: when people have to hide who they are, health, focus, and productivity suffer. When workplaces make inclusion explicit and credible, satisfaction, retention, and performance improve. The payoff is human and organizational, and it starts with clear, evidence-based practices.</p>
+  <p class="why-it-matters"><strong>Why it matters.</strong> Concealment is costly: when people have to hide who they are, health, focus, and productivity suffer. When workplaces make inclusion explicit and credible, satisfaction, retention, and performance improve. The payoff is human and organizational, and it starts with clear, evidence-based practices.</p>
 </div>
 
 </div>
