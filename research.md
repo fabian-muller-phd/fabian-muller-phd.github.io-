@@ -82,7 +82,7 @@ classes: page--research
   <ul class="list-tight">
     <li><a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">Work</a> across France and Germany shows success isn’t only about ability; it’s also about fit with the unwritten rules of academic life.</li>
     <li>Working-class students often bring a strong “we” orientation (family, community, mutual support) into settings that reward “I” (self-promotion, individual initiative). Some high-achieving working-class students adjust how they present themselves at home and at university, yet feeling “in place” can still lag behind similar grades.</li>
-    <li>COVID-19 pushed learning online and raised the need for independence and stable internet. That made the fit gap costlier for <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">working-class students</a>, who participated less and more often considered dropping out.</li>
+    <li>COVID-19 pushed learning online and raised the need for independence and stable internet. That made the <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">fit gap costlier</a> for working-class students, who participated less and more often considered dropping out.</li>
   </ul>
 
   <p class="list-label"><strong>Current work</strong></p>
