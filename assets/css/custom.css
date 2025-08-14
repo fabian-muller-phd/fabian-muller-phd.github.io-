@@ -1870,3 +1870,45 @@ button:focus-visible {
 .masthead__inner-wrap { border-bottom: 0 !important; }
 
 .masthead { border-bottom: 1px solid var(--line) !important; }
+
+/* ===== Research: Text+Bild Layout in jeder Section ===== */
+.page--research .section-body {
+  display: grid;
+  grid-template-columns: 1fr min(38%, 360px);     /* Text links, Bild rechts */
+  grid-template-areas: "text media";
+  gap: clamp(12px, 2vw, 20px);
+  align-items: start;
+  margin-top: .25rem;                              /* etwas Luft unter dem H2 */
+}
+
+.page--research .section-text  { grid-area: text; }
+.page--research .section-media { grid-area: media; }
+
+.page--research .section-media img {
+  width: 100%;
+  height: auto;               /* kein Zwangs-Aspect-Ratio -> kein Zuschnitt */
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;           /* falls SVG mit transparentem Rand */
+}
+
+/* Mobile/Tablet: Bild oben, Text darunter, volle Breite */
+@media (max-width: 900px) {
+  .page--research .section-body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "media"
+      "text";
+  }
+}
+
+/* Optional: minimales Caption-Styling, falls du später <figcaption> nutzt */
+.page--research .section-media figcaption {
+  margin-top: .35rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* Why it matters – linke Brand-Leiste beibehalten (deine Regeln existieren schon) */
+/* nichts weiter nötig */
