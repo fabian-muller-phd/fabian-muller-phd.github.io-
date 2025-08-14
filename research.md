@@ -155,7 +155,7 @@ classes: page--research
 
   <p class="list-label"><strong>Role</strong></p>
   <ul class="list-tight">
-    <li>I served for several years as the international representative of the German professional association <a href="https://www.vlsp.de/en" target="_blank" rel="noopener">VLSP*</a> in <a href="https://www.apa.org/ipsynet" target="_blank" rel="noopener">IPsyNet</a>, connecting national groups and contributing to international policy statements.</li>
+    <li>I served for several years as the international representative of the German professional association <a href="https://www.vlsp.de/en" target="_blank" rel="noopener">VLSP*</a> in <a href="https://www.apa.org/ipsynet" target="_blank" rel="noopener">IPsyNet</a> (APA’s international LGBTIQ+ psychology network), connecting national groups and contributing to international policy statements.</li>
   </ul>
 
   <p class="why-it-matters"><strong>Why it matters.</strong> Concealment is costly: when people have to hide who they are, health, focus, and productivity suffer. When workplaces make inclusion explicit and credible, satisfaction, retention, and performance improve. The payoff is human and organizational, and it starts with clear, evidence-based practices.</p>
