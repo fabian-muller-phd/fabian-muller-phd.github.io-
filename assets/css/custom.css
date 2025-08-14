@@ -1796,7 +1796,7 @@ button:focus-visible {
 }
 
 
-/* Blau für alle Why it matters Absätze */
+/* Blau für alle "Why it matters"-Absätze */
 .why-it-matters {
-  color: var(--link); /* nutzt dein vorhandenes Blau */
+  color: var(--brand); /* dein Blau (#0a4c86) */
 }
