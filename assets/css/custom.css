@@ -1863,3 +1863,10 @@ button:focus-visible {
   border-top: 0 !important;
   box-shadow: none !important;
 }
+
+
+/* Header: nur eine durchgehende Linie, keine Doppel-Linie in der Mitte */
+.site-header,
+.masthead__inner-wrap { border-bottom: 0 !important; }
+
+.masthead { border-bottom: 1px solid var(--line) !important; }
