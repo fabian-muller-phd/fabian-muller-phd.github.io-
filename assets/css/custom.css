@@ -26,7 +26,7 @@
   --ink-2: #222;
   --ink-3: #333;
   --muted: #6f777d;
-  --line:  #e0e3e8;
+  --line:  #c6ced7; /* statt #e0e3e8 oder #eee */
 
   /* Hero-Hintergrund */
   --hero-bg: #f7f7f7;
@@ -1825,4 +1825,20 @@ button:focus-visible {
 @media (max-width: 700px) {
   .page--research .why-it-matters { padding-left: .8rem; }
   .page--research .why-it-matters::before { width: 2px; }
+}
+
+
+
+/* Research: H2-Unterstrich erzwingen in --line */
+.page--research .research-section > h2 {
+  border-bottom: 1px solid var(--line) !important;
+  box-shadow: none !important;         /* Theme-Schatten neutralisieren */
+  padding-bottom: .35rem;
+  margin-bottom: .5rem;
+}
+
+/* Sicherstellen, dass NICHT zusätzlich das Folge-Element eine Linie bekommt */
+.page--research .research-section > h2 + * {
+  border-top: 0 !important;
+  box-shadow: none !important;
 }
