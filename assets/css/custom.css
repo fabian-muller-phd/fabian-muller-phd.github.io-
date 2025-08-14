@@ -1819,7 +1819,7 @@ button:focus-visible {
   width: 3px;
   background: var(--brand);
   border-radius: 2px;
-  opacity: .9;
+  opacity: .6;
 }
 
 @media (max-width: 700px) {
