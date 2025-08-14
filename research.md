@@ -122,7 +122,7 @@ classes: page--research
 
   <p class="list-label"><strong>Key findings</strong></p>
   <ul class="list-tight">
-    <li>A <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">systematic review</a> of ~14,000 records mapped ~<a href="https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf" target="_blank" rel="noopener">150 tools</a> for social, emotional, and intercultural competencies and showed why intercultural skills need stronger coverage.</li>
+    <li>A <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">systematic review</a> of ~14,000 records mapped ~<a href="https://2017-20.handinhand.si/wp-content/uploads/2019/12/SEI-measures_CATALOGUE.pdf" target="_blank" rel="noopener">150 tools</a> for social, emotional, and intercultural competencies and showed where current measures work, where they don’t, and why intercultural skills need much stronger coverage.</li>
     <li>Inclusion in <a href="https://doi.org/10.1007/978-3-658-27608-9_3" target="_blank" rel="noopener">large-scale assessments</a> improves when we separate testability from SEN status and strengthen sampling and task design.</li>
     <li><a href="https://doi.org/10.13140/RG.2.2.15675.98087" target="_blank" rel="noopener">Eye-tracking</a> in Taiwan and Germany shows response processes differ and shift under social-desirability pressure, limiting cross-country comparisons based on self-reports.</li>
   </ul>
