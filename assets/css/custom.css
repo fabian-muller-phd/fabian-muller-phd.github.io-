@@ -1796,34 +1796,3 @@ button:focus-visible {
 }
 
 
-/* Research: erste Section NACH dem Card-Grid ohne Divider */
-.page--research .research-grid + .research-section {
-  border-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Kompakte Bullet-Listen in Research */
-.page--research .list-tight {
-  margin: .2rem 0 1rem 1.1rem;   /* wenig top-Gap, normale bottom-Luft */
-}
-.page--research .list-tight li + li { margin-top: .25rem; }
-
-/* <details> / "More" – inline Link mit kleinem Pfeil */
-.expand { margin: .35rem 0 1rem; }
-.expand > summary {
-  list-style: none;
-  cursor: pointer;
-  color: var(--brand);
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: .35rem;
-}
-.expand > summary::-webkit-details-marker { display: none; }
-.expand > summary::after { content: "▾"; transition: transform .2s ease; }
-.expand[open] > summary::after { transform: rotate(180deg); }
-.expand > *:not(summary) { margin-top: .5rem; }
-
-/* (Optional) kleines Fade/Slide beim Aufklappen */
-@keyframes sweep { from { opacity: 0; transform: translateY(-2px); } to { opacity: 1; transform: none; } }
-.expand[open] > *:not(summary) { animation: sweep .18s ease-out; }
