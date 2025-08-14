@@ -26,7 +26,7 @@
   --ink-2: #222;
   --ink-3: #333;
   --muted: #6f777d;
-  --line:  #eee;
+  --line:  #e0e3e8;
 
   /* Hero-Hintergrund */
   --hero-bg: #f7f7f7;
@@ -1799,4 +1799,30 @@ button:focus-visible {
 /* Blau für alle "Why it matters"-Absätze */
 .why-it-matters {
   color: var(--brand); /* dein Blau (#0a4c86) */
+}
+
+
+/* Research: Why-it-matters – blau + linke Brand-Leiste */
+.page--research .why-it-matters {
+  position: relative;
+  color: var(--brand);               /* Text in deinem Blau */
+  padding-left: 1rem;                /* Platz für den Strich */
+  margin-top: .6rem;
+}
+
+.page--research .why-it-matters::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .15em;                        /* kleine Luft oben/unten */
+  bottom: .15em;
+  width: 3px;
+  background: var(--brand);
+  border-radius: 2px;
+  opacity: .9;
+}
+
+@media (max-width: 700px) {
+  .page--research .why-it-matters { padding-left: .8rem; }
+  .page--research .why-it-matters::before { width: 2px; }
 }
