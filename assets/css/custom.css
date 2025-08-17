@@ -2065,3 +2065,22 @@ button:focus-visible {
   border-top: 0 !important;
   padding-top: 0 !important;
 }
+
+
+/* === RESEARCH: H2 oben + unten; erster Abschnitt nur unten === */
+.page--research .research-section > h2 {
+  border-top: 1px solid var(--line) !important;
+  border-bottom: 1px solid var(--line) !important;
+  padding-top: .6rem !important;
+  padding-bottom: .35rem !important;
+  margin: 0 0 .6rem !important;
+}
+
+/* Erster Abschnitt: kein oberer Border, unterer bleibt */
+.page--research .research-grid + .research-section > h2,
+.page--research .research-wrapper > .research-section:first-child > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+  border-bottom: 1px solid var(--line) !important;
+  padding-bottom: .35rem !important;
+}
