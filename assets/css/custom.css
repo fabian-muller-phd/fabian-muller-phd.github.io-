@@ -2131,3 +2131,47 @@ button:focus-visible {
     float: none; width: 100%; margin: 0 0 .6rem 0;
   }
 }
+
+
+/* === RESEARCH: Floats korrekt umfließen lassen === */
+.page--research .section-body { 
+  display: flow-root !important;    /* enthält den Float */
+}
+.page--research .section-text { 
+  overflow: visible !important;     /* BFC ausschalten -> Text darf unter das Bild laufen */
+}
+
+/* Default (>=900px): Bild rechts, Text fließt daneben & darunter */
+.page--research .section-media {
+  float: right;
+  width: min(38%, 360px);
+  margin: .2rem 0 .6rem 1rem;
+}
+
+/* Phone PORTRAIT: Bild oben, volle Breite (Stack wie Home) */
+@media (max-width: 700px) and (orientation: portrait) {
+  .page--research .section-media {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 .6rem 0 !important;
+  }
+}
+
+/* Phone/Tablet LANDSCAPE: Bild rechts, Text läuft neben & unter dem Bild */
+@media (orientation: landscape) and (max-width: 1100px) {
+  .page--research .section-body { display: flow-root !important; }
+  .page--research .section-media {
+    float: right !important;
+    width: clamp(220px, 40vw, 360px);
+    margin: .2rem 0 .6rem 1rem;
+  }
+}
+
+/* Sicherheitsnetz: ultraklein -> wieder stacken */
+@media (max-width: 360px) {
+  .page--research .section-media { 
+    float: none !important; 
+    width: 100% !important; 
+    margin: 0 0 .6rem 0 !important;
+  }
+}
