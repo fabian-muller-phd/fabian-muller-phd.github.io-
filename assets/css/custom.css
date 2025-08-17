@@ -1916,102 +1916,61 @@ button:focus-visible {
 
 
 
-/* ===== Research: Karten-Look je Abschnitt ===== */
-:root {
-  --card-bg: #fff;
-  --card-shadow: 0 1px 10px rgba(0,0,0,.03);
-}
-
+/* RESEARCH: zurück ohne Karten-Rahmen, aber mit H2-Unterlinie */
 .page--research .research-section {
-  background: var(--card-bg);
-  border: 1px solid var(--line) !important;     /* Rahmen statt Top-Divider */
-  border-radius: 12px;
-  padding: clamp(14px, 2vw, 20px) !important;
-  box-shadow: var(--card-shadow);
-  margin: 1.25rem 0 1.5rem;                     /* enger als vorher */
-  max-width: var(--text-max);                   /* wie dein Textmaß */
+  background: transparent;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  max-width: 100%;              /* wieder volle Wrapper-Breite */
+  padding: 0 !important;        /* Karten-Innenabstand zurücknehmen */
+  border-top: 0 !important;     /* kein Container-Divider oben */
 }
 
-/* innerhalb der Karte: H2 mit Unterlinie behalten */
+/* angenehmer Abstand zwischen Abschnitten */
+.page--research .research-section + .research-section { margin-top: 1.75rem; }
+
+/* H2: nur Unterlinie lassen */
 .page--research .research-section > h2 {
   border-bottom: 1px solid var(--line) !important;
   padding-bottom: .35rem;
   margin: 0 0 .6rem !important;
-  border-top: 0 !important;                     /* sicher kein Top-Border */
+  border-top: 0 !important;
 }
 
-/* ===== Text + Bild: Float-Layout (Text läuft darunter weiter) ===== */
-.page--research .section-body {
-  display: flow-root;                            /* enthält den Float (clearfix) */
-}
-
+/* Text + Bild: Float-Layout (Bild rechts, Text fließt unten weiter) */
+.page--research .section-body { display: flow-root; }  /* enthält den Float */
 .page--research .section-media {
   float: right;
-  width: min(38%, 360px);                        /* responsive Breite rechts */
-  margin: .2rem 0 .6rem 1rem;                    /* Abstand zum Text links */
+  width: min(38%, 360px);
+  margin: .2rem 0 .6rem 1rem;
 }
-
 .page--research .section-media img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  display: block;
-  background: #fff;
+  width: 100%; height: auto; display: block;
+  border-radius: 10px; border: 1px solid var(--line); background: #fff;
 }
-
 .page--research .section-media figcaption {
-  margin-top: .35rem;
-  color: var(--muted);
-  font-size: .9rem;
-  line-height: 1.4;
+  margin-top: .35rem; color: var(--muted);
+  font-size: .9rem; line-height: 1.4;
 }
-
-/* Mobile/Tablet: Bild oben, Text darunter, volle Breite */
 @media (max-width: 900px) {
-  .page--research .section-media {
-    float: none;
-    width: 100%;
-    margin: 0 0 .6rem 0;
-  }
+  .page--research .section-media { float: none; width: 100%; margin: 0 0 .6rem 0; }
 }
 
-/* ===== Why it matters: hellblauer Callout + dünne Brand-Leiste links ===== */
-/* Alte blaue Schrift überschreiben -> wieder dunkler Text */
-.page--research .research-section .why-it-matters {
+/* Why it matters: hellblauer Callout mit linker Brand-Leiste */
+.page--research .why-it-matters {
   position: relative;
-  color: var(--ink-2) !important;                /* Text dunkel */
-  background: #eaf2fb;                           /* helles Blau */
+  color: var(--ink-2) !important;    /* dunkler Text */
+  background: #eaf2fb;               /* hellblau */
   border: 1px solid #cfe0f3;
   border-radius: 10px;
   padding: .6rem .75rem .6rem 1rem;
   margin-top: .65rem;
 }
-
-.page--research .research-section .why-it-matters::before {
+.page--research .why-it-matters::before {
   content: "";
   position: absolute;
-  left: 0.5rem;                                  /* etwas nach innen */
-  top: .5rem;
-  bottom: .5rem;
-  width: 3px;
-  background: var(--brand);
-  border-radius: 2px;
-  opacity: .8;
+  left: .5rem; top: .5rem; bottom: .5rem;
+  width: 3px; background: var(--brand); border-radius: 2px; opacity: .8;
 }
-
-/* Fett im Lead bleibt fett (dein Wunsch) */
-.page--research .research-section .why-it-matters strong {
-  color: inherit;                                 /* kein Blau erzwingen */
-}
-
-/* ===== Kompaktere Listen in Karten ===== */
-.page--research .list-label { margin: .4rem 0 0; font-weight: 700; }
-.page--research .list-tight { margin: 0 0 .6rem 1.1rem; }
-
-/* ===== Safety: alte Top-Divider-Logik neutralisieren (nur Research) ===== */
-.page--research .research-grid + .research-section,
-.page--research .research-wrapper > .research-section:first-child {
-  border-top: 1px solid var(--line) !important;  /* (Teil des Kartenrahmens) */
-  padding-top: clamp(14px, 2vw, 20px) !important;
-}
+.page--research .why-it-matters strong { color: inherit; } /* fett bleibt, aber nicht blau */
