@@ -2033,3 +2033,35 @@ button:focus-visible {
 
   margin-top: .35rem;
 }
+
+/* === FIX: figcaption sauber schließen & kleiner setzen === */
+.page--research .section-media figcaption {
+  font-size: .80rem !important;
+  line-height: 1.35 !important;
+  color: var(--muted) !important;
+  margin-top: .30rem !important;
+}
+
+/* === RESEARCH: H2 mit Top-Divider (außer beim ersten Abschnitt) === */
+/* Container selbst bekommt KEINEN Divider oben */
+.page--research .research-section {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Alle H2: Linie OBEN, keine Linie unten */
+.page--research .research-section > h2 {
+  border-top: 1px solid var(--line) !important;
+  padding-top: .6rem !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 0 .5rem !important;
+}
+
+/* Der ERSTE Abschnitt (direkt nach den Cards bzw. erster im Wrapper): KEINE obere Linie */
+.page--research .research-grid + .research-section > h2,
+.page--research .research-wrapper > .research-section:first-child > h2,
+.page--research .research-wrapper > .research-section:first-of-type > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
