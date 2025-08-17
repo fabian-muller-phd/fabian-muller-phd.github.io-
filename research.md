@@ -206,7 +206,7 @@ classes: page--research
     </div>
 
     <figure class="section-media">
-      <img src="/assets/images/PAW.JPG"
+      <img src="/assets/images/lgbt.JPG"
            alt="PROUT AT WORK – workplace inclusion"
            loading="lazy" decoding="async">
     </figure>
