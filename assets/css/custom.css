@@ -2100,3 +2100,34 @@ button:focus-visible {
     overflow: hidden;                         /* kleine Layout-Sauberkeit */
   }
 }
+
+
+/* === RESEARCH · PHONE PORTRAIT: Bild rechts, Text läuft daneben & darunter === */
+@media (max-width: 700px) and (orientation: portrait) {
+  .page--research .section-body { 
+    display: flow-root;            /* enthält den Float -> Text fließt darunter weiter */
+  }
+  .page--research .section-media {
+    float: right;                   /* Bild rechts */
+    width: clamp(180px, 52vw, 360px);
+    margin: .2rem 0 .6rem 1rem;     /* Abstand links zum Text */
+  }
+  .page--research .section-text { overflow: hidden; } /* kleine Layout-Sauberkeit */
+}
+
+/* === RESEARCH · PHONE/TABLET LANDSCAPE: ebenfalls Bild rechts === */
+@media (orientation: landscape) and (max-width: 900px) {
+  .page--research .section-body { display: flow-root; }
+  .page--research .section-media {
+    float: right;
+    width: clamp(220px, 40vw, 360px);
+    margin: .2rem 0 .6rem 1rem;
+  }
+}
+
+/* Sicherheitsnetz für ultrakleine Breiten: wieder stapeln */
+@media (max-width: 360px) {
+  .page--research .section-media { 
+    float: none; width: 100%; margin: 0 0 .6rem 0;
+  }
+}
