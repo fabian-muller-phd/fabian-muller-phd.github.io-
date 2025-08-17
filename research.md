@@ -89,7 +89,7 @@ classes: page--research
 
   <div class="section-body">
     <figure class="section-media">
-      <img src="/assets/images/Alex_first_gen.jpg" alt="First-generation student navigating university" loading="lazy" decoding="async">
+      <img src="/assets/images/Alex_first_gen.JPG" alt="First-generation student navigating university" loading="lazy" decoding="async">
       <figcaption>Caption placeholder</figcaption>
     </figure>
 
@@ -119,7 +119,7 @@ classes: page--research
 
   <div class="section-body">
     <figure class="section-media">
-      <img src="/assets/images/Math_test.jpg" alt="Student taking a math test" loading="lazy" decoding="async">
+      <img src="/assets/images/Math_test.JPG" alt="Student taking a math test" loading="lazy" decoding="async">
       <figcaption>Caption placeholder</figcaption>
     </figure>
 
@@ -180,7 +180,7 @@ classes: page--research
 
   <div class="section-body">
     <figure class="section-media">
-      <img src="/assets/images/PAW.jpg" alt="PROUT AT WORK – workplace inclusion" loading="lazy" decoding="async">
+      <img src="/assets/images/lgbt.JPG" alt="PROUT AT WORK – workplace inclusion" loading="lazy" decoding="async">
       <figcaption>Caption placeholder</figcaption>
     </figure>
 
