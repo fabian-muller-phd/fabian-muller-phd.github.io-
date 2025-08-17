@@ -2001,5 +2001,35 @@ button:focus-visible {
   font-size: .82rem;      /* vorher ~0.9rem */
   line-height: 1.4;
   color: var(--muted);
+
+
+
+   /* === FINAL OVERRIDE: Research-H2 mit Top-Divider (außer beim ersten) === */
+.page--research .research-section > h2 {
+  /* nix unten */
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+
+  /* Linie oben wieder einschalten */
+  border-top: 1px solid var(--line) !important;
+  padding-top: .6rem !important;
+  margin: 0 0 .5rem !important;
+}
+
+/* Erster Abschnitt nach den Cards bzw. erster Abschnitt: KEINE obere Linie */
+.page--research .research-grid + .research-section > h2,
+.page--research .research-wrapper > .research-section:first-child > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Bildunterschrift kleiner & dezenter */
+.page--research .section-media figcaption {
+  font-size: .78rem !important;   /* kleiner als vorher */
+  line-height: 1.35;
+  color: var(--muted);
+  margin-top: .3rem;
+}
+
   margin-top: .35rem;
 }
