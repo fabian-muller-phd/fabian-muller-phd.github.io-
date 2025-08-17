@@ -1974,3 +1974,32 @@ button:focus-visible {
   width: 3px; background: var(--brand); border-radius: 2px; opacity: .8;
 }
 .page--research .why-it-matters strong { color: inherit; } /* fett bleibt, aber nicht blau */
+
+
+
+/* === RESEARCH: H2 mit Top-Divider (außer beim ersten Abschnitt) === */
+.page--research .research-section > h2 {
+  /* unten keine Linie */
+  border-bottom: 0 !important;
+  padding-bottom: 0;
+
+  /* oben Linie wie früher */
+  border-top: 1px solid var(--line);
+  padding-top: .6rem;
+  margin: 0 0 .5rem !important;
+}
+
+/* Sonderfälle: erster Abschnitt bekommt KEINE obere Linie */
+.page--research .research-grid + .research-section > h2,
+.page--research .research-wrapper > .research-section:first-child > h2 {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* === RESEARCH: Bildunterschrift kleiner & dezenter === */
+.page--research .section-media figcaption {
+  font-size: .82rem;      /* vorher ~0.9rem */
+  line-height: 1.4;
+  color: var(--muted);
+  margin-top: .35rem;
+}
