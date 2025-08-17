@@ -46,6 +46,11 @@ classes: page--research
   <h2>Methods</h2>
 
   <div class="section-body">
+    <figure class="section-media">
+      <img src="/assets/images/R_code.jpg" alt="R code and reproducible analysis pipelines" loading="lazy" decoding="async">
+      <figcaption>Caption placeholder</figcaption>
+    </figure>
+
     <div class="section-text">
       <p>I take a flexible, problem-driven approach: I start with the question and choose, or learn, the methods that will answer it best. My work draws on national administrative education data, international assessments, and preregistered experiments.</p>
 
@@ -76,12 +81,6 @@ classes: page--research
 
       <p class="why-it-matters"><strong>Why it matters.</strong> For me, methods are not an end in themselves. They’re tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
     </div>
-
-    <figure class="section-media">
-      <img src="/assets/images/R_code.jpg"
-           alt="R code and reproducible analysis pipelines"
-           loading="lazy" decoding="async">
-    </figure>
   </div>
 </div>
 
@@ -89,6 +88,11 @@ classes: page--research
   <h2>Social Class</h2>
 
   <div class="section-body">
+    <figure class="section-media">
+      <img src="/assets/images/Alex_first_gen.jpg" alt="First-generation student navigating university" loading="lazy" decoding="async">
+      <figcaption>Caption placeholder</figcaption>
+    </figure>
+
     <div class="section-text">
       <p>I study how social class shapes students’ paths through school and university.</p>
 
@@ -107,12 +111,6 @@ classes: page--research
 
       <p class="why-it-matters"><strong>Why it matters.</strong> If we understand how and when inequalities grow, we can design supports that respect different ways of being (not just one “right” student profile), make classroom and admissions practices more inclusive, and target recovery resources where they help most.</p>
     </div>
-
-    <figure class="section-media">
-      <img src="/assets/images/Alex_first_gen.JPG"
-           alt="First-generation student navigating university"
-           loading="lazy" decoding="async">
-    </figure>
   </div>
 </div>
 
@@ -120,6 +118,11 @@ classes: page--research
   <h2>SEN (Special Educational Needs)</h2>
 
   <div class="section-body">
+    <figure class="section-media">
+      <img src="/assets/images/Math_test.jpg" alt="Student taking a math test" loading="lazy" decoding="async">
+      <figcaption>Caption placeholder</figcaption>
+    </figure>
+
     <div class="section-text">
       <p>I study when exam accommodations actually level the playing field, and how teachers’ perceptions shape grading and competence judgments.</p>
 
@@ -138,12 +141,6 @@ classes: page--research
 
       <p class="why-it-matters"><strong>Why it matters.</strong> Accommodations advance equity only when they work in practice and are seen as legitimate. By clarifying their purpose, aligning them with assessment criteria, and communicating this clearly to educators, schools can make support work as intended, ensuring fairness without undermining trust in results.</p>
     </div>
-
-    <figure class="section-media">
-      <img src="/assets/images/Math_test.JPG"
-           alt="Student taking a math test"
-           loading="lazy" decoding="async">
-    </figure>
   </div>
 </div>
 
@@ -151,6 +148,11 @@ classes: page--research
   <h2>Assessment</h2>
 
   <div class="section-body">
+    <figure class="section-media">
+      <img src="/assets/images/Assessment_SEI.svg" alt="Mapping of social-emotional-intercultural assessment tools" loading="lazy" decoding="async">
+      <figcaption>Caption placeholder</figcaption>
+    </figure>
+
     <div class="section-text">
       <p>I work on measures that policy can trust.</p>
 
@@ -170,12 +172,6 @@ classes: page--research
 
       <p class="why-it-matters"><strong>Why it matters.</strong> Policy and practice need measures that are valid, culturally responsive, and seen as legitimate by educators. Triangulating methods beyond surveys and designing inclusive assessments make the data strong enough to guide real decisions about teaching, resources, and equity.</p>
     </div>
-
-    <figure class="section-media">
-      <img src="/assets/images/Assessment_SEI.svg"
-           alt="Mapping of social-emotional-intercultural assessment tools"
-           loading="lazy" decoding="async">
-    </figure>
   </div>
 </div>
 
@@ -183,6 +179,11 @@ classes: page--research
   <h2>LGBTIQ+</h2>
 
   <div class="section-body">
+    <figure class="section-media">
+      <img src="/assets/images/PAW.jpg" alt="PROUT AT WORK – workplace inclusion" loading="lazy" decoding="async">
+      <figcaption>Caption placeholder</figcaption>
+    </figure>
+
     <div class="section-text">
       <p>I study what makes inclusion real: how language, policies, and everyday practices shape whether LGBTIQ+ people can be open at work and thrive.</p>
 
@@ -204,12 +205,9 @@ classes: page--research
 
       <p class="why-it-matters"><strong>Why it matters.</strong> Concealment is costly: when people have to hide who they are, health, focus, and productivity suffer. When workplaces make inclusion explicit and credible, satisfaction, retention, and performance improve. The payoff is human and organizational, and it starts with clear, evidence-based practices.</p>
     </div>
+  </div>
+</div>
 
-    <figure class="section-media">
-      <img src="/assets/images/lgbt.JPG"
-           alt="PROUT AT WORK – workplace inclusion"
-           loading="lazy" decoding="async">
-    </figure>
   </div>
 </div>
 
