@@ -2084,3 +2084,19 @@ button:focus-visible {
   border-bottom: 1px solid var(--line) !important;
   padding-bottom: .35rem !important;
 }
+
+
+/* === Research: Phone/Tablet LANDSCAPE -> Bild links, Text rechts (nebeneinander) === */
+@media (orientation: landscape) and (max-width: 900px) {
+  .page--research .section-body {
+    display: flow-root; /* enthält den Float, Text fließt darunter weiter */
+  }
+  .page--research .section-media {
+    float: left;                              /* wie auf der Startseite */
+    width: clamp(240px, 40vw, 360px);         /* responsive Breite */
+    margin: .2rem 1rem .6rem 0;               /* Abstand zum Text rechts */
+  }
+  .page--research .section-text { 
+    overflow: hidden;                         /* kleine Layout-Sauberkeit */
+  }
+}
