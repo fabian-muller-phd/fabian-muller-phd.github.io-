@@ -48,35 +48,16 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/R_code.jpg" alt="R code and reproducible analysis pipelines" loading="lazy" decoding="async">
-      <figcaption>Caption placeholder</figcaption>
+      <figcaption>Reproducible pipeline in R: multiple imputation workflow</figcaption>
     </figure>
 
     <div class="section-text">
       <p>I take a flexible, problem-driven approach: I start with the question and choose, or learn, the methods that will answer it best. My work draws on national administrative education data, international assessments, and preregistered experiments.</p>
 
-      <p class="list-label"><strong>What I work with</strong></p>
       <ul class="list-tight">
-        <li>Administrative education data (French Ministry of Education, DEPP)</li>
-        <li>International assessments such as PISA</li>
-        <li>Multi-university surveys</li>
-        <li>Preregistered experiments with students and teachers</li>
-      </ul>
-
-      <p class="list-label"><strong>How I analyze</strong></p>
-      <ul class="list-tight">
-        <li>Randomized behavioral experiments</li>
-        <li>Quasi-experimental designs (e.g., difference-in-differences)</li>
-        <li>Longitudinal growth and multilevel models</li>
-        <li>Structural equation modeling (SEM)</li>
-        <li>Systematic literature reviews</li>
-        <li>All analyses in R with fully reproducible pipelines</li>
-      </ul>
-
-      <p class="list-label"><strong>Open science</strong></p>
-      <ul class="list-tight">
-        <li>Preregistration</li>
-        <li>Sharing materials, code, and, where possible, data</li>
-        <li>Transparent reporting so results can be scrutinized, replicated, and applied</li>
+        <li><strong>Data:</strong> Administrative education records (French Ministry of Education, DEPP); international assessments such as PISA; multi-university surveys; preregistered experiments.</li>
+        <li><strong>Designs:</strong> Randomized behavioral experiments; quasi-experiments (e.g., difference-in-differences); longitudinal and multilevel models; structural equation modeling (SEM); systematic literature reviews.</li>
+        <li><strong>Practice:</strong> Analyses in R with fully reproducible pipelines; open science by default (preregistration, shared materials and code, and, where possible, data); transparent reporting so results can be scrutinized, replicated, and applied.</li>
       </ul>
 
       <p class="why-it-matters"><strong>Why it matters.</strong> For me, methods are not an end in themselves. They’re tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
