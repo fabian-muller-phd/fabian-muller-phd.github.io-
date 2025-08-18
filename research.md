@@ -81,12 +81,7 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/Alex_first_gen.JPG" alt="First-generation student navigating university" loading="lazy" decoding="async">
-      <figcaption>
-  Mapping SEI measures (based on
-  <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">
-    Müller et al., 2020
-  </a>)
-</figcaption>
+<figcaption>Alex, a working-class student navigating university’s unwritten rules</figcaption>
     </figure>
 
     <div class="section-text">
@@ -146,7 +141,12 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/Assessment_SEI.svg" alt="Mapping of social-emotional-intercultural assessment tools" loading="lazy" decoding="async">
-      <figcaption>Mapping SEI measures (based on Müller et al., 2020)</figcaption>
+            <figcaption>
+  Mapping SEI measures (based on
+  <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">
+    Müller et al., 2020
+  </a>)
+</figcaption>
     </figure>
 
     <div class="section-text">
