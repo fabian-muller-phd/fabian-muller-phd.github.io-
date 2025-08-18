@@ -2175,3 +2175,12 @@ button:focus-visible {
     margin: 0 0 .6rem 0 !important;
   }
 }
+
+
+/* Desktop/Laptop: Captions kleiner (Phone & iPad bleiben unverändert) */
+@media (min-width: 1101px) {
+  .page--research .section-media figcaption {
+    font-size: 0.72rem !important;   /* nach Bedarf z.B. 0.70–0.76rem */
+    line-height: 1.35 !important;
+  }
+}
