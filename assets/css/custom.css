@@ -2184,3 +2184,9 @@ button:focus-visible {
     line-height: 1.35 !important;
   }
 }
+/* Captions: gleiche Schrift wie der Fließtext */
+figure figcaption {
+  font-family: inherit !important;
+  font-style: normal !important;  /* kein Kursiv */
+  font-weight: 400 !important;
+}
