@@ -59,7 +59,7 @@ classes: page--research
   <li>Administrative education records (French Ministry of Education, DEPP); international assessments (e.g., PISA); multi-university surveys; preregistered experiments.</li>
 </ul>
 
-<p class="list-label"><strong>Designs</strong></p>
+<p class="list-label"><strong>Designs & analyses</strong></p>
 <ul class="list-tight">
   <li>Randomized behavioral experiments; quasi-experiments (e.g., difference-in-differences); longitudinal and multilevel models; SEM; systematic literature reviews.</li>
 </ul>
