@@ -66,7 +66,7 @@ classes: page--research
 
 <p class="list-label"><strong>Practice</strong></p>
 <ul class="list-tight">
-  <li>Analyses in R with fully reproducible pipelines; open science by default (preregistration, shared materials and code, and—where possible—data); transparent reporting so results can be scrutinized, replicated, and applied.</li>
+  <li>Analyses in R with fully reproducible pipelines; open science by default (preregistration, shared materials and code, and — where possible — data); transparent reporting so results can be scrutinized, replicated, and applied.</li>
 </ul>
 
 
