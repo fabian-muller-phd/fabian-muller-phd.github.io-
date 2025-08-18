@@ -61,7 +61,7 @@ classes: page--research
 
 <p class="list-label"><strong>Designs & analyses</strong></p>
 <ul class="list-tight">
-  <li>Randomized behavioral experiments; quasi-experiments (e.g., difference-in-differences); longitudinal and multilevel models; SEM; systematic literature reviews.</li>
+  <li>Randomized behavioral experiments; quasi-experiments (e.g., difference-in-differences); longitudinal growth and multilevel models; structural equation modeling (SEM); systematic literature reviews.</li>
 </ul>
 
 <p class="list-label"><strong>Practice</strong></p>
