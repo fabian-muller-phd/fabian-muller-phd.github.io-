@@ -54,11 +54,21 @@ classes: page--research
     <div class="section-text">
       <p>I take a flexible, problem-driven approach: I start with the question and choose, or learn, the methods that will answer it best. My work draws on national administrative education data, international assessments, and preregistered experiments.</p>
 
-      <ul class="list-tight">
-        <li><strong>Data:</strong> Administrative education records (French Ministry of Education, DEPP); international assessments such as PISA; multi-university surveys; preregistered experiments.</li>
-        <li><strong>Designs:</strong> Randomized behavioral experiments; quasi-experiments (e.g., difference-in-differences); longitudinal and multilevel models; structural equation modeling (SEM); systematic literature reviews.</li>
-        <li><strong>Practice:</strong> Analyses in R with fully reproducible pipelines; open science by default (preregistration, shared materials and code, and, where possible, data); transparent reporting so results can be scrutinized, replicated, and applied.</li>
-      </ul>
+<p class="list-label"><strong>Data</strong></p>
+<ul class="list-tight">
+  <li>Administrative education records (French Ministry of Education, DEPP); international assessments (e.g., PISA); multi-university surveys; preregistered experiments.</li>
+</ul>
+
+<p class="list-label"><strong>Designs</strong></p>
+<ul class="list-tight">
+  <li>Randomized behavioral experiments; quasi-experiments (e.g., difference-in-differences); longitudinal and multilevel models; SEM; systematic literature reviews.</li>
+</ul>
+
+<p class="list-label"><strong>Practice</strong></p>
+<ul class="list-tight">
+  <li>Analyses in R with fully reproducible pipelines; open science by default (preregistration, shared materials and code, and—where possible—data); transparent reporting so results can be scrutinized, replicated, and applied.</li>
+</ul>
+
 
       <p class="why-it-matters"><strong>Why it matters.</strong> For me, methods are not an end in themselves. They’re tools to solve real problems in education and inequality, so policy can rely on evidence rather than assumptions.</p>
     </div>
@@ -71,7 +81,12 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/Alex_first_gen.JPG" alt="First-generation student navigating university" loading="lazy" decoding="async">
-      <figcaption>Alex, a working-class student navigating university’s unwritten rules</figcaption>
+      <figcaption>
+  Mapping SEI measures (based on
+  <a href="https://doi.org/10.1016/j.edurev.2019.100304" target="_blank" rel="noopener">
+    Müller et al., 2020
+  </a>)
+</figcaption>
     </figure>
 
     <div class="section-text">
