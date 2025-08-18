@@ -25,7 +25,7 @@ classes: page--research
     </div>
     <div class="research-card">
       <h3><a href="#social-class">Social Class</a></h3>
-      <p>Educational trajectories, cultural fit, resilience profiles</p>
+      <p>Educational trajectories, cultural (mis)match, resilience profiles</p>
     </div>
     <div class="research-card">
       <h3><a href="#sen">SEN</a></h3>
@@ -71,7 +71,7 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/Alex_first_gen.JPG" alt="First-generation student navigating university" loading="lazy" decoding="async">
-      <figcaption>Caption placeholder</figcaption>
+      <figcaption>Alex, a working-class student navigating university’s unwritten rules</figcaption>
     </figure>
 
     <div class="section-text">
@@ -79,9 +79,9 @@ classes: page--research
 
       <p class="list-label"><strong>Key findings</strong></p>
       <ul class="list-tight">
-        <li><a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">Work</a> across France and Germany shows success isn’t only about ability; it’s also about fit with the unwritten rules of academic life.</li>
+        <li><a href="https://theses.hal.science/tel-04163355" target="_blank" rel="noopener">Work</a> across France and Germany shows success isn’t only about ability; it also depends on the match between students’ relational norms and the unwritten rules of academic life.</li>
         <li>Working-class students often bring a strong “we” orientation (family, community, mutual support) into settings that reward “I” (self-promotion, individual initiative). Some high-achieving working-class students adjust how they present themselves at home and at university, yet feeling “in place” can still lag behind similar grades.</li>
-        <li>COVID-19 pushed learning online and raised the need for independence and stable internet. That made the <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">fit gap costlier</a> for working-class students, who participated less and more often considered dropping out.</li>
+        <li>COVID-19 pushed learning online and raised the need for independence and stable internet. That <a href="https://doi.org/10.5334/irsp.716" target="_blank" rel="noopener">widened achievement gaps:</a> working-class students participated less and were more likely to consider dropping out.</li>
       </ul>
 
       <p class="list-label"><strong>Current work</strong></p>
@@ -101,7 +101,7 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/Math_test.JPG" alt="Student taking a math test" loading="lazy" decoding="async">
-      <figcaption>Caption placeholder</figcaption>
+      <figcaption>Accommodated assessment</figcaption>
     </figure>
 
     <div class="section-text">
@@ -131,7 +131,7 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/Assessment_SEI.svg" alt="Mapping of social-emotional-intercultural assessment tools" loading="lazy" decoding="async">
-      <figcaption>Caption placeholder</figcaption>
+      <figcaption>Mapping SEI measures (based on Müller et al., 2020)</figcaption>
     </figure>
 
     <div class="section-text">
@@ -162,7 +162,7 @@ classes: page--research
   <div class="section-body">
     <figure class="section-media">
       <img src="/assets/images/lgbt.JPG" alt="PROUT AT WORK – workplace inclusion" loading="lazy" decoding="async">
-      <figcaption>Caption placeholder</figcaption>
+      <figcaption>Policies that scale</figcaption>
     </figure>
 
     <div class="section-text">
